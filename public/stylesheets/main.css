@@ -19,7 +19,30 @@ body {
 .container-header {
   width: 100%;
   height: 7em;
-  border: 1px solid red;
+}
+
+.container-header__line {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  height: 0.3em;
+}
+.container-header__line .container-header__line-blue {
+  width: 70%;
+  height: 100%;
+  background-color: #253276;
+}
+.container-header__line .container-header__line-red {
+  width: 30%;
+  height: 100%;
+  background-color: #b5050e;
+}
+
+.container-header__logo {
+  width: 100%;
+  height: 5em;
+  background-color: #c7d9ff;
 }
 
 /*# sourceMappingURL=main.css.map */
