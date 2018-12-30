@@ -1,0 +1,11 @@
+@import '_lang-menu__label';
+
+.logo-options__lang-menu {
+	display: flex;
+	justify-content: space-around;
+	border-left: 1px solid #000;
+
+	.lang-menu__checkbox {
+		display: none;
+	}
+}

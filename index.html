@@ -4,6 +4,7 @@
 	<title>Berlin - Offizielles Stadtportal der Hauptstadt Deutschlands – Berlin.de</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="public/stylesheets/main.css">
+	<link rel="mask-icon" href="public/images/logo-tab.svg">
 </head>
 <body>
 	<div class="container">
@@ -12,8 +13,61 @@
 				<div class="container-header__line-blue"></div>
 				<div class="container-header__line-red"></div>
 			</div>
-			<div class="container-header__logo"></div>
-			<nav></nav>
+			<div class="container-header__logo">
+				<div class="container-header__logo-name">
+					<a href="https://nikitabutkevich.github.io/" title="Link zu: Startseite Berlin.de">
+						<img class="logo-name__image" src="public/images/logo_berlin_de.svg" align="Berlin.de">
+					</a>
+					<span>Das offizielle Hauptstadtportal</span>
+				</div>
+				<div class="container-header__logo-options">
+					<form class="logo-options__form">
+						<input class="logo-options__search" type="search" name="logo-search" placeholder="Suchbegriff">
+						<button class="logo-options__submit" name="search-submit">&#xe803;</button>
+					</form>
+					
+					<div class="logo-options__lang">
+						<a class="maps-link" href="#"><i class="icon-location">&#xe801;</i>Stadtplan</a>
+						<div class="logo-options__lang-menu">
+							<input class="lang-menu__checkbox" type="checkbox" name="check-menu" id="check-menu">
+							<label class="lang-menu__label" for="check-menu" title="Sprache der Webseite ändern">DE</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav class="container-header__menu">
+  				<ul class="container-header__menu-list">
+				    <li class="menu-list__item">
+				      <input class="list__item__input" id="item__label1" type="checkbox">
+				      <label class="list__item__label" for="item__label1">Politik, Verwaltung, Bürger</label>
+				    </li>
+				    <li class="menu-list__item">
+				      <input class="list__item__input" id="item__label2" type="checkbox">
+				      <label class="list__item__label" for="item__label2">Kultur &amp; Ausgehen</label>
+				    </li>
+				    <li class="menu-list__item">
+				       <input class="list__item__input" id="item__label3" type="checkbox">
+				       <label class="list__item__label" for="item__label3">Tourismus</label>
+				    </li>
+				    <li class="menu-list__item">
+				      <input class="list__item__input" id="item__label4" type="checkbox">
+				      <label class="list__item__label" for="item__label4">Wirtschaft</label>
+				    </li>
+				    <li class="menu-list__item">
+				      <input class="list__item__input" id="item__label5" type="checkbox">
+				      <label class="list__item__label" for="item__label5">Lifestyle</label>
+				    </li>  
+				    <li class="menu-list__item">
+				      <input class="list__item__input" id="item__label6" type="checkbox">
+				      <label class="list__item__label" for="item__label6">BerlinFinder</label>
+				    </li>
+  				</ul>
+
+				<span class="menu-burger">
+    				<input class="menu-burger__input" id="burger-check" type="checkbox">
+    				<label class="menu-burger__label" for="burger-check"><img class="menu-burger__label-image" src="https://img.icons8.com/windows/50/000000/menu.png"><label>
+  				</span>
+  			</nav>
 		</header>
 	</div>
 </body>

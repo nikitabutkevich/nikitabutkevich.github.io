@@ -1,0 +1,11 @@
+@import '_logo-options__search';
+@import '_logo-options__submit';
+@import '_logo-options__lang';
+@import '_logo-options__form';
+
+.container-header__logo-options {
+	width: 50%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}

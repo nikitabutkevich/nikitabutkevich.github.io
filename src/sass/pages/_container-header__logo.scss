@@ -1,5 +1,10 @@
+@import '_container-header__logo-name';
+@import '_container-header__logo-options';
+
 .container-header__logo {
+	display: flex;
+	justify-content: flex-start;
 	width: 100%;
-	height: 1em;
+	color: #003684;
 	background-color: #c7d9ff;
 }
