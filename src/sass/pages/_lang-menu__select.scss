@@ -1,0 +1,40 @@
+.lang-menu__select {
+  	position: absolute;
+  	top: 4em;
+  	right: 14em;
+  	box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+ 	background: #fff;
+	width: 10em;
+	display: none;
+	flex-direction: column;
+	justify-content: flex-start;
+
+	.select-de, .select-en, .select-fr, .select-it, .select-cn, .select-pl, .select-ru, .select-tr {
+  		width: 100%;
+  		margin: .5em 0;
+
+  		.select-lang__right {
+  			display: inline-block;
+  			width: 20%;
+		}
+
+		.select-lang--left {
+		  	text-align: right;
+		  	padding-right: 1.5em;
+		}
+
+		.select-lang {
+		  	display: inline-block;
+		  	width: 50%;
+
+		  	&:hover {
+		  		cursor: pointer;
+		  		text-decoration: underline;
+		  	}
+		}
+	}
+
+	.select-de {
+		font-weight: 700;
+	}
+}

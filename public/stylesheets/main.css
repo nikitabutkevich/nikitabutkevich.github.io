@@ -92,6 +92,41 @@ body {
   text-decoration: underline;
 }
 
+.lang-menu__select {
+  position: absolute;
+  top: 4em;
+  right: 14em;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  background: #fff;
+  width: 10em;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.lang-menu__select .select-de, .lang-menu__select .select-en, .lang-menu__select .select-fr, .lang-menu__select .select-it, .lang-menu__select .select-cn, .lang-menu__select .select-pl, .lang-menu__select .select-ru, .lang-menu__select .select-tr {
+  width: 100%;
+  margin: 0.5em 0;
+}
+.lang-menu__select .select-de .select-lang__right, .lang-menu__select .select-en .select-lang__right, .lang-menu__select .select-fr .select-lang__right, .lang-menu__select .select-it .select-lang__right, .lang-menu__select .select-cn .select-lang__right, .lang-menu__select .select-pl .select-lang__right, .lang-menu__select .select-ru .select-lang__right, .lang-menu__select .select-tr .select-lang__right {
+  display: inline-block;
+  width: 20%;
+}
+.lang-menu__select .select-de .select-lang--left, .lang-menu__select .select-en .select-lang--left, .lang-menu__select .select-fr .select-lang--left, .lang-menu__select .select-it .select-lang--left, .lang-menu__select .select-cn .select-lang--left, .lang-menu__select .select-pl .select-lang--left, .lang-menu__select .select-ru .select-lang--left, .lang-menu__select .select-tr .select-lang--left {
+  text-align: right;
+  padding-right: 1.5em;
+}
+.lang-menu__select .select-de .select-lang, .lang-menu__select .select-en .select-lang, .lang-menu__select .select-fr .select-lang, .lang-menu__select .select-it .select-lang, .lang-menu__select .select-cn .select-lang, .lang-menu__select .select-pl .select-lang, .lang-menu__select .select-ru .select-lang, .lang-menu__select .select-tr .select-lang {
+  display: inline-block;
+  width: 50%;
+}
+.lang-menu__select .select-de .select-lang:hover, .lang-menu__select .select-en .select-lang:hover, .lang-menu__select .select-fr .select-lang:hover, .lang-menu__select .select-it .select-lang:hover, .lang-menu__select .select-cn .select-lang:hover, .lang-menu__select .select-pl .select-lang:hover, .lang-menu__select .select-ru .select-lang:hover, .lang-menu__select .select-tr .select-lang:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.lang-menu__select .select-de {
+  font-weight: 700;
+}
+
 .logo-options__lang-menu {
   display: flex;
   justify-content: space-around;
@@ -99,6 +134,13 @@ body {
 }
 .logo-options__lang-menu .lang-menu__checkbox {
   display: none;
+}
+.logo-options__lang-menu .lang-menu__checkbox:checked ~ .lang-menu__select {
+  display: flex;
+}
+.logo-options__lang-menu .lang-menu__checkbox:checked ~ .lang-menu__label {
+  background: url("../../public/images/icon-up.png") no-repeat right center;
+  background-size: 30% auto;
 }
 
 .logo-options__lang {

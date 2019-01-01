@@ -1,4 +1,6 @@
 @import '_lang-menu__label';
+@import '_lang-menu__select';
+
 
 .logo-options__lang-menu {
 	display: flex;
@@ -7,5 +9,14 @@
 
 	.lang-menu__checkbox {
 		display: none;
+
+		&:checked~.lang-menu__select {
+  			display: flex;
+		}
+
+		&:checked~.lang-menu__label {
+  			background: url('../../public/images/icon-up.png') no-repeat right center;
+  			background-size: 30%  auto;
+		}
 	}
 }
