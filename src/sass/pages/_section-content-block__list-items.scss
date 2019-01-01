@@ -1,0 +1,15 @@
+@import '_block-list-items__data';
+@import '_block-list-items__link';
+
+.section-content-block__list-items {
+	border-top: 1px solid #e0e0e0;
+	font-size: $font-size*0.9;
+	padding: .5em 0;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+
+	&:first-child, &:last-child {
+		border-top: 0;
+	}
+}

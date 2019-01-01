@@ -1,0 +1,8 @@
+@import '_section-content-block';
+
+.container-news__section-content {
+	width: 67.5%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+}

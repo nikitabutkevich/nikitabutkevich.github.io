@@ -1,0 +1,10 @@
+.content-block__text-link {
+	margin: .8em;
+	font-size: $font-size*0.9;
+	color: #253276;
+	font-weight: 700;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}

@@ -1,0 +1,17 @@
+@import '_container-news__section-name';
+@import '_container-news__section-menu';
+@import '_section-menu__list';
+@import '_section-menu__list-item';
+@import '_container-news__section-content';
+@import '_news__section-name--padding';
+@import '_nth-child';
+@import '_news__section-border';
+
+.container-news__section {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	margin: 0 1%;
+	width: 98%;
+	border-bottom: 2px solid #253276;
+}

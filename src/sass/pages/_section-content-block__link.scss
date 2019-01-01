@@ -1,0 +1,18 @@
+.section-content-block__link {
+	font-size: $font-size*0.9;
+	box-sizing: border-box;
+	display: inline-block;
+	width: 100%;
+	color: #003685;
+	padding: .5em 0 .5em 2em;
+	background: url('../../public/images/right-arrow.svg') 4% center no-repeat;
+	background-size: 3% auto;
+
+	&:hover {
+		text-decoration: underline;
+	}
+
+	&:first-child {
+		margin-top: 2em;
+	}
+}

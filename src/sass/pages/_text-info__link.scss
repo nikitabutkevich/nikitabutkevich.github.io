@@ -1,0 +1,10 @@
+.text-info__link {
+	color: #003684;
+	padding-right: 1.5em;
+	background: url('../../public/images/link-arrow.svg') 85% 50% no-repeat;
+	background-size: 15% auto;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}

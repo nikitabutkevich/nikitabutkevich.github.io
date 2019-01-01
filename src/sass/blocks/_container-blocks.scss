@@ -1,0 +1,10 @@
+.container-blocks {
+	display: grid;
+	grid-template-columns: 60% 40%;
+	grid-template-rows: auto;
+	grid-area: 
+		"container-slider container-service"
+		"container-news container-immobiliensuche";
+	width: 100%;
+	border: 1px solid red;
+}

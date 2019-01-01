@@ -1,0 +1,10 @@
+.block-list__link {
+	font-size: $font-size*.9;
+	padding-right: 1.5em;
+	background: url('../../public/images/link-arrow.svg') 95% 50% no-repeat;
+	background-size: 8% auto;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}

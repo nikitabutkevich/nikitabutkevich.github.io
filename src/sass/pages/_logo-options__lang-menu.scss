@@ -11,7 +11,7 @@
 		display: none;
 
 		&:checked~.lang-menu__select {
-  			display: flex;
+  			display: block;
 		}
 
 		&:checked~.lang-menu__label {

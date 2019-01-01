@@ -1,0 +1,10 @@
+.section-content-others__links {
+	font-size: $font-size*.7;
+	color: #003586;
+	padding: 0 1em 0 1em;
+	border-right: 1px solid #000;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
