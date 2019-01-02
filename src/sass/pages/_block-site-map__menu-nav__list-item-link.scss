@@ -1,0 +1,9 @@
+.block-site-map__menu-nav__list-item-link {
+	color: #c9cdde;
+	font-size: $font-size*.9;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}

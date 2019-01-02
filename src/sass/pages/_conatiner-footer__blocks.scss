@@ -1,0 +1,10 @@
+@import '_conatiner-footer__block-about';
+@import '_conatiner-footer__block-site-map';
+
+.conatiner-footer__blocks {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 1em 3em 1em;
+}

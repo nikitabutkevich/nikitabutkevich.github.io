@@ -1,0 +1,13 @@
+@import '_footer__block-about__image';
+@import '_footer__block-about__text-head';
+@import '_footer__block-about__text';
+@import '_footer__block-about__button';
+@import '_footer__block-about__social';
+@import '_footer__block-about__social-link';
+
+.conatiner-footer__block-about {
+	width: 30%;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+}

@@ -1,0 +1,10 @@
+@import '_block-site-map__form-search';
+@import '_block-site-map__form-submit';
+
+.footer__block-site-map__form {
+	width: 100%;
+	margin-top: .25em;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}

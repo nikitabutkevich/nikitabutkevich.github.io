@@ -1,0 +1,15 @@
+.footer__block-about__button {
+	width: 12em;
+	margin: 1.7em 0 3.5em 0;
+	background: #253276;
+	color: #c9cdde;
+	border: 1px solid #c9cdde;
+	padding: .5em;
+	transition: .2s linear;
+
+	&:hover {
+		cursor: pointer;
+		border: 1px solid rgba(201, 205, 222, .8);
+		color: rgba(201, 205, 222, .5);
+	}
+}

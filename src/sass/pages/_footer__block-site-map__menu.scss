@@ -1,0 +1,11 @@
+.footer__block-site-map__menu {
+	width: 100%;
+	padding-bottom: 1em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	&:last-child {
+		border-top: 1px solid #c9cdde;
+	}
+}
