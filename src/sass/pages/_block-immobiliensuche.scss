@@ -1,5 +1,13 @@
+@import '_block-immobiliensuche__name';
+@import '_block-immobiliensuche__name-link';
+@import '_block-immobiliensuche__items';
+@import '_id-select';
+@import '_block-immobiliensuche__items__button';
+@import '_block-immobiliensuche__items__link';
+
+
 .block-immobiliensuche {
-	height: 10em;
+	height: 18em;
+	width: 40%;
 	padding: 1em;
-	border: 1px solid red;
 }

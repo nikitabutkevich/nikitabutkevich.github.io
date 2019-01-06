@@ -1,5 +1,11 @@
+@import '_block-service__content';
+@import '_block-service__input';
+@import '_block-service__label';
+
 .block-service {
+	position: relative;
 	padding: 1em;
-	height: 15em;
-	border: 1px solid red;
+	width: 40%;
+	height: 22em;
+	display: flex;
 }

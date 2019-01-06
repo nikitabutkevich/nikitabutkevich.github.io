@@ -1,0 +1,30 @@
+@import '_block-service__content__link';
+@import '_stadtplan';
+@import '_notdienste';
+@import '_serviceportal';
+@import '_hotels';
+@import '_verkehr';
+@import '_wetter';
+@import '_block-service__content__title';
+@import '_block-service__content__text';
+@import '_block-service__content_e-mail-address';
+@import '_block-service__content__buuton-E';
+@import '_block-service__content__e-mail';
+@import '_block-service__content__buuton-R';
+@import '_blocks-content__text-uber';
+@import '_block-service__content__image';
+@import '_blocks-content__text-uber__link';
+
+.block-service__content {
+	display: none;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 3.8em;
+    left: 1em;
+    width: calc(100% - 2em);
+    height: calc(100% - 4.5em);
+    background: #253276;
+    color: #fff;
+}

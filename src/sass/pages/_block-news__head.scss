@@ -1,0 +1,13 @@
+@import '_block-news__head__name';
+@import '_block-news__head__navigation-buttons';
+@import '_section-content-block__link--size';
+
+.block-news__head {
+	position: absolute;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	height: calc(100% - 2em);
+	width: calc(100% - 2em);
+	overflow: hidden;
+}

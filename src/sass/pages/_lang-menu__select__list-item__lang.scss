@@ -1,0 +1,9 @@
+.lang-menu__select__list-item__lang {
+	display: inline-block;
+	width: 50%;
+	text-align: right;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}

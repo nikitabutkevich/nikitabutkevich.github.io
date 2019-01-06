@@ -1,0 +1,46 @@
+.block-service__input {
+	display: none;
+
+	&:checked + .block-service__content {
+		display: flex;
+	}
+}
+
+#service:checked {
+    
+    &~#service-content {
+      display: flex;
+     }
+     
+    &~.label-service {
+      color: #fff;
+      background: #253276;
+      text-decoration: underline;
+    }
+  }
+  
+  #berlin-mail:checked {
+    
+    &~#berlin-mail-content {
+      display: block;
+     }
+     
+    &~.label-berlin-mail {
+      color: #fff;
+      background: #253276;
+      text-decoration: underline;
+    }
+  }
+  
+  #uber:checked {
+    
+    &~#uber-content {
+      display: block;
+     }
+     
+    &~.label-uber {
+      color: #fff;
+      background: #253276;
+      text-decoration: underline;
+    }
+  }

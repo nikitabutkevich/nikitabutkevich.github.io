@@ -1,0 +1,21 @@
+@import '_block-news__content__block__link';
+@import '_block-news__content__block__text';
+@import '_block-news__content__block__image';
+@import '_block-left';
+@import '_block-left1';
+@import '_block-left2';
+@import '_block-left3';
+@import '_block-left4';
+@import '_block-news__content__block--border-bottom';
+@import '_block-news__content__block-list__item';
+@import '_block-news__content__block-list__items';
+@import '_block-news__content__block-list__item-link';
+
+.block-news__content__block {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	margin-left: 1%; 
+	width: 30%;
+	height: calc(100% - 1em);
+}

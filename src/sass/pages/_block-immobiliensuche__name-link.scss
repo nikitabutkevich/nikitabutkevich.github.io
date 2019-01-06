@@ -1,0 +1,10 @@
+.block-immobiliensuche__name-link {
+	text-decoration: none;
+    font-weight: 700;
+    font-size: $font-size;
+    color: #253276;
+      
+    &:hover {
+        text-decoration: underline;
+    }
+}

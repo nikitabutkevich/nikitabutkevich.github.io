@@ -1,0 +1,10 @@
+.block-news__content__block__link {
+	font-size: $font-size*.8;
+	font-weight: 700;
+	width: 100%;
+	color: #253276;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}

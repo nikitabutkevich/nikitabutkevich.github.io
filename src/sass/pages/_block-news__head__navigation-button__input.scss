@@ -1,0 +1,25 @@
+.block-news__head__navigation-button__input {
+	display: none;
+}
+
+.input-prev:checked {
+	&~.block-news__content {
+		transform: translateX(0%);
+	}
+
+	&~.block-news__head__navigation-button__prev {
+		background: url('../../public/images/arrow-left_l.svg') no-repeat center center;
+		background-size: 100% auto;	
+	}
+}
+
+.input-next:checked {
+	&~.block-news__content {
+		transform: translateX(-100%);
+	}
+
+	&~.block-news__head__navigation-button__next {
+		background: url('../../public/images/arrow-right_b.svg') no-repeat center center;
+		background-size: 100% auto;
+	}
+}

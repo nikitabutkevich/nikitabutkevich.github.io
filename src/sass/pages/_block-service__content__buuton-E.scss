@@ -1,0 +1,13 @@
+.block-service__content__buuton-E {
+	cursor: pointer;
+    background: #fff;
+    border: 0;
+    padding: .6em 0;
+    margin: 0 1em;
+    width: calc(100% - 2em);
+    transition: linear .2s;
+    
+    &:hover {
+      opacity: .7;
+    }
+}

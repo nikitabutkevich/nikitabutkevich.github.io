@@ -1,0 +1,14 @@
+.block-service__content__buuton-R {
+	cursor: pointer;
+    background: #253276;
+    color: #fff;
+    border: .1em solid #fff;
+    padding: .6em 0;
+    margin: 0 1em;
+    width: calc(100% - 2em);
+    transition: linear .2s;
+    
+    &:hover {
+      opacity: .7;
+    }
+}

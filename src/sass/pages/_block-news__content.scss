@@ -1,0 +1,8 @@
+.block-news__content {
+	position: absolute;
+	top: 3em;
+	display: flex;
+	width: 100%;
+	height: calc(100% - 2.5em);
+	transition: .5s;
+}

@@ -1,0 +1,14 @@
+.block-service__label {
+	width: 8em;
+    height: 3em;
+    font-size: $font-size*.95;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+    
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+}

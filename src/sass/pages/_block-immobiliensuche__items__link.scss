@@ -1,0 +1,11 @@
+.block-immobiliensuche__items__link {
+	text-align: right;
+    font-size: $font-size*.8;
+    color: #003684;
+    padding: .5em 0;
+    text-decoration: none;
+      
+    &:hover {
+    	text-decoration: underline;
+    }
+}

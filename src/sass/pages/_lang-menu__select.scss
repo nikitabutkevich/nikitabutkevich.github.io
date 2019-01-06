@@ -1,39 +1,16 @@
+@import '_lang-menu__select__list';
+@import '_lang-menu__select__list-item__secet-lang';
+@import '_text-bold';
+
 .lang-menu__select {
   	position: absolute;
-  	margin-top: 1.5rem;
+  	margin-top: 1.5rem;    
+  	margin-left: -3rem;   /*использовал отрицательное значение, знаю что лучше не использовать */
   	box-shadow: 0 0 5px rgba(0, 0, 0, .3);
  	background: #fff;
 	width: 10em;
 	display: none;
 	flex-direction: column;
-	justify-content: flex-start;
-
-	.select-de, .select-en, .select-fr, .select-it, .select-cn, .select-pl, .select-ru, .select-tr {
-  		width: 100%;
-  		margin: .5em 0;
-
-  		.select-lang__right {
-  			display: inline-block;
-  			width: 20%;
-		}
-
-		.select-lang--left {
-		  	text-align: right;
-		  	padding-right: 1.5em;
-		}
-
-		.select-lang {
-		  	display: inline-block;
-		  	width: 50%;
-
-		  	&:hover {
-		  		cursor: pointer;
-		  		text-decoration: underline;
-		  	}
-		}
-	}
-
-	.select-de {
-		font-weight: 700;
-	}
+	justify-content: flex-end;
+	z-index: 2;
 }
