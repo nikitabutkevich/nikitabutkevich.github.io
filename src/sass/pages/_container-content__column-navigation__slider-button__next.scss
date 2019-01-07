@@ -1,0 +1,11 @@
+.container-content__column-navigation__slider-button__next {
+	display: inline-block;
+	position: absolute;
+	top: 1.5%;
+	right: 0;
+	width: 1em;
+	height: 1em;
+	background: url('../../public/images/arrow-right_l.svg') no-repeat center center;
+	background-size: 100% auto;
+	cursor: pointer;
+}

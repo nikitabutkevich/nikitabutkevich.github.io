@@ -1,0 +1,17 @@
+@import '_buy-tickets__phone-text';
+@import '_buy-tickets__phone-number';
+@import '_buy-tickets__phone-work-time';
+
+.container-content__column-navigation__buy-tickets__phone {
+	margin: 40% 0 0 1em;
+	color: #fff;
+	display: flex;
+	flex-flow: row wrap;
+	width: 90%;
+	height: 40%;
+	font-weight: 700;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}

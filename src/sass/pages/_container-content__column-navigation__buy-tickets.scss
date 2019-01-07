@@ -1,0 +1,10 @@
+@import '_container-content__column-navigation__buy-tickets__phone';
+
+.container-content__column-navigation__buy-tickets {
+	border: 1px solid $color-blue;
+	width: 100%;
+	height: 15em;
+	margin-bottom: 2em;
+	background: url('../../public/images/tickets.png') no-repeat 115% -25%, url('../../public/images/logo_berlin_de_footer.svg') no-repeat 10% 30%, $color-blue;
+	background-size: 50% auto, 45% auto;
+}

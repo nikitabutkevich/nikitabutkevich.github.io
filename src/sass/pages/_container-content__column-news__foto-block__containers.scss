@@ -1,0 +1,9 @@
+@import '_container-content__column-news__foto-block__container';
+
+.container-content__column-news__foto-block__containers {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	width: 100%;
+	margin-top: 1em;
+}

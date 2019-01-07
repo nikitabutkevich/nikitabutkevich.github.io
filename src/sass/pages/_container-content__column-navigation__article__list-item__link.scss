@@ -1,0 +1,8 @@
+.container-content__column-navigation__article__list-item__link {
+	color: $color-blue;
+	font-size: $font-size*.9;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}

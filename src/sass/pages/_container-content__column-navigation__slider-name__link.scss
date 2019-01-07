@@ -1,0 +1,9 @@
+.container-content__column-navigation__slider-name__link {
+	font-size: $font-size*.9;
+	font-weight: 700;
+	color: $color-blue;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}

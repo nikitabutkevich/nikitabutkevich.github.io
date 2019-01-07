@@ -1,0 +1,189 @@
+@media screen and (max-width: 965px) {
+	.container {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+
+		.container-header {
+			height: 4em ;
+
+			.logo-name__image {
+				width: 11em;
+				margin: .25em 0;
+				height: 3em;
+			}
+
+			.container-header__logo span {
+				display: none;
+			}
+
+			.container-header__logo-options {
+				display: none;
+			}
+
+			.container-header__menu {
+				display: none;
+			}
+		}
+
+		.container-blocks {
+			flex-flow: column wrap;
+			align-items: center;
+
+			.block-slider {
+				max-width: 625px;
+				min-width: 95%;
+			}
+
+			.block-service {
+				display: none;
+			}
+
+			.block-news {
+				max-width: 625px;
+				min-width: 95%;
+			}
+
+			.block-immobiliensuche {
+				width: 400px;
+			}
+		}
+
+		.container-news {
+			width: 100%;
+			overflow: hidden;
+			
+			.container-news__section {
+				display: flex;
+				flex-flow: column wrap;
+				justify-content: flex-start;
+				width: calc(100% - 1em);
+				margin-top: 1.5em;
+
+				.container-news__section-name {
+					display: none;
+				}
+
+				.container-news__section-name--mobile {
+					display: block;
+					font-size: $font-size;
+					cursor: pointer;
+				}
+
+				#menu-ckeck1:checked~.container-news__section-menu, #menu-ckeck2:checked~.container-news__section-menu, #menu-ckeck3:checked~.container-news__section-menu, #menu-ckeck4:checked~.container-news__section-menu, #menu-ckeck5:checked~.container-news__section-menu, #menu-ckeck6:checked~.container-news__section-menu, #menu-ckeck7:checked~.container-news__section-menu {
+					display: inline-block;
+				}
+
+				.container-news__section-menu {
+					display: none;
+					width: 100%;
+				}
+
+				.container-news__section-content {
+					width: 100%;
+					display: flex;
+					flex-flow: column wrap;
+
+					.section-content-block--wrap {
+						flex-wrap: wrap !important;
+					}
+
+					.nth-child {
+						margin: 0;
+					}
+
+					.section-content-block {
+						width: 100%;
+						display: flex;
+						flex-flow: row no-wrap;
+						justify-content: flex-start;
+						
+						.section-content-block__link-image {
+							width: 15em;
+	
+							.content-block__image {
+								margin: 0;
+								padding: .5em;
+								height: 100%;
+								width: 100%;
+							}
+						}
+						
+						.content-block__text {
+							text-align: left;
+							margin: 0;
+							padding: .5em 0;
+						}
+
+						.section-content-block__list {
+							margin: 0;
+							padding-top: 0;
+						}
+					}
+
+					.section-content-others {
+						margin-top: 2em;
+					}
+				}
+			}
+		}
+
+	/*Music page*/
+		.container-content {
+			flex-flow: column wrap;
+			margin: 0;
+			padding: 0;
+
+			.container-content__column-news {
+				width: 100%;
+				margin-top: 1em;
+				padding: 0 1em;
+
+				.container-content__column-news__path {
+					display: none;
+				}
+
+				.container-content__column-news__logo {
+					margin: 0 0 .5em 0;
+					padding: 0;
+				}
+
+				.container-content__column-news__article {
+					border: 1px solid green;
+					display: flex;
+					flex-flow: row wpar;
+					justify-content: space-between;
+					
+					.container-content__column-news__article__link {
+						border: 1px solid red;
+						width: 9em;
+						height: calc(100% - 3em);
+
+						.container-content__column-news__article-image {
+							width: 100%;
+							height: 100%;
+							padding: 0;
+							border: 1px solid red;
+						}
+					}
+
+					.container-content__column-news__article-block {
+						border: 1px solid red;
+						padding: 0;
+						margin: 0;
+
+						.container-content__column-news__article-link {
+							padding: 0;
+							margin: 0;
+						}
+
+						.container-content__column-news__article-text {
+							padding: 0;
+							margin: 0;
+						}
+					}					
+				}
+			}
+		}
+	}
+}

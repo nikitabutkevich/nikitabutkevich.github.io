@@ -1,0 +1,10 @@
+@import '_container-content__column-news__path__home';
+@import '_container-content__column-news__path__prev';
+@import '_container-content__column-news__path-list';
+
+.container-content__column-news__path {
+	border: 1px solid red;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}

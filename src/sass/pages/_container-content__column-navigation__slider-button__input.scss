@@ -1,0 +1,25 @@
+.container-content__column-navigation__slider-button__input {
+	display: none;
+}
+
+.input-prev:checked {
+	&~.container-content__column-navigation__slider__content {
+		transform: translateX(0%);
+	}
+
+	&~.container-content__column-navigation__slider-button__prev {
+		background: url('../../public/images/arrow-left_l.svg') no-repeat center center;
+		background-size: 100% auto;	
+	}
+}
+
+.input-next:checked {
+	&~.container-content__column-navigation__slider__content {
+		transform: translateX(-20%);
+	}
+
+	&~.container-content__column-navigation__slider-button__next {
+		background: url('../../public/images/arrow-right_b.svg') no-repeat center center;
+		background-size: 100% auto;
+	}
+}

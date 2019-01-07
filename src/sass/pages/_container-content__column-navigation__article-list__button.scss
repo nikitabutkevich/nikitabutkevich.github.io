@@ -1,0 +1,12 @@
+.container-content__column-navigation__article-list__button {
+	color: #fff;
+    cursor: pointer;
+    border: 0;
+    margin-top: 1em;
+    padding: .65em 0;
+    background: #253276;
+      
+    &:hover {
+        opacity: .9;
+    }
+}

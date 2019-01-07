@@ -1,0 +1,12 @@
+.container-content__column-news__link {
+	color: $color-blue;
+	display: inline-block;
+	font-weight: 700;
+	width: 100%;
+	font-size: $font-size;
+	margin-top: 2em;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}

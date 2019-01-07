@@ -1,0 +1,12 @@
+@import '_container-content__column-navigation__slider__content-full';
+
+.container-content__column-navigation__slider__content {
+	border: 1px solid red;
+	position: absolute;
+	top: 2em;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	height: calc(100% - 2em);
+	transition: .5s;
+}

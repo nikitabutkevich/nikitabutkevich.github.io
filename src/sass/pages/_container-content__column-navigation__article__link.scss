@@ -1,0 +1,12 @@
+.container-content__column-navigation__article__link {
+	display: inline-block;
+	width: 100%;
+	color: $color-blue;
+	font-size: $font-size;
+	font-weight: 700;
+	margin-bottom: 1em;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}

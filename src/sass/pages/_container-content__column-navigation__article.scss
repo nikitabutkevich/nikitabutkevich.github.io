@@ -1,0 +1,13 @@
+@import '_container-content__column-navigation__article-image';
+@import '_container-content__column-navigation__article-image-link';
+@import '_container-content__column-navigation__article-block';
+@import '_container-content__column-navigation__article__link';
+@import '_container-content__column-navigation__article__list';
+@import '_container-content__column-navigation__article-list__button';
+
+.container-content__column-navigation__article {
+	width: 100%;
+	padding: 1em 0 .5em 0;
+	margin-top: 1em;
+	display: flex;
+}

@@ -1,0 +1,9 @@
+.container-content__column-news__foto-block__container-link {
+	font-size: $font-size*.95;
+	font-weight: 700;
+	color: $color-blue;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}

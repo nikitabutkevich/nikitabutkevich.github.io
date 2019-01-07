@@ -5,6 +5,8 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="public/stylesheets/main.css">
 	<link rel="mask-icon" href="public/images/logo-tab.svg">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<div class="container">
@@ -27,7 +29,7 @@
 					</form>
 					
 					<div class="logo-options__lang">
-						<a class="maps-link" href="#"><i class="icon-location">&#xe801;</i>Stadtplan</a>
+						<a class="maps-link" href="#">Stadtplan</a>
 						
 						<div class="logo-options__lang-menu">
 					  		<input class="lang-menu__checkbox" type="checkbox" name="check-menu" id="check-menu">
@@ -125,7 +127,75 @@
 		</header>
 
 		<div class="container-blocks">
-			<div class="block-slider">slider</div>
+			<div class="block-slider">
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+					  	<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					  	<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					  	<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					  	<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+					  	<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+					</ol>
+  
+  					<div class="carousel-inner">
+    					<div class="carousel-item active">
+       						<a class="carousel-item__link" href="#" >
+		     					<img class="d-block w-100 carousel-item__link-image" src="https://www.berlin.de/binaries/asset/image_assets/1590107/ratio_2_1/1419841530/624x312/" alt="">
+		     					<section class="carousel-item__link-info">
+		       						<span class="carousel-item__link-info__name">Abholtermine der Weihnachtsbäume</span>
+		       						<span class="carousel-item__link-info__text">Im Januar holt die BSR die ausgedienten Weihnachtsbäume ab. Die Termine für jeden Bezirk.</span>
+		       					</section>
+			       			</a>
+			    		</div>
+    					
+    					<div class="carousel-item">
+      						<a class="carousel-item__link" href="#" >
+		         				<img class="d-block w-100 carousel-item__link-image" src="https://www.berlin.de/binaries/asset/image_assets/1267405/ratio_2_1/1542286785/624x312/" alt="">
+		         				<section class="carousel-item__link-info">
+			          				<span class="carousel-item__link-info__name">Stadtführungen</span>
+			           				<span class="carousel-item__link-info__text">Mit erfahrenen Stadtführern Berlin (neu) entdecken.</span>
+		         				</section>
+       						</a>
+	    				</div>
+	    				<div class="carousel-item">
+      						<a class="carousel-item__link" href="#" >
+         						<img class="d-block w-100 carousel-item__link-image" src="https://www.berlin.de/binaries/asset/image_assets/5633584/ratio_2_1/1546420435/624x312/" alt="">
+         						<section class="carousel-item__link-info">
+					           		<span class="carousel-item__link-info__name">Kino-Tipp: Colette</span>
+					           		<span class="carousel-item__link-info__text">Die junge Colette schreibt für ihren Mann einen Roman. "Claudine" wird zu Erfolg, die Leser verlangen nach Fortsetzungen.</span>
+					         	</section>
+					       	</a>
+    					</div>
+					    <div class="carousel-item">
+					      	<a class="carousel-item__link" href="#" >
+					         	<img class="d-block w-100 carousel-item__link-image" src="https://www.berlin.de/binaries/asset/image_assets/5351128/ratio_2_1/1523970819/624x312/" alt="">
+					         	<section class="carousel-item__link-info">
+					           		<span class="carousel-item__link-info__name">Pergamon-Panorama</span>
+					           		<span class="carousel-item__link-info__text">In dem neuen Panorama von Yadegar Asisi sind Originalteile des Pergamonaltars sowie eine Videoinstallation zum Pergamonaltar zu besichtigen.</span>
+					         	</section>
+					       	</a>
+					    </div>
+					    <div class="carousel-item">
+					      	<a class="carousel-item__link" href="#" >
+					         	<img class="d-block w-100 carousel-item__link-image" src="https://www.berlin.de/binaries/asset/image_assets/5611625/ratio_2_1/1544790574/624x312/" alt="">
+					         	<section class="carousel-item__link-info">
+					           		<span class="carousel-item__link-info__name">Highlights 2019</span>
+					           		<span class="carousel-item__link-info__text">Ausstellungen, Events und Konzerte: Eine Übersicht der Highlights im Berliner Kulturkalender 2019.</span>
+					         	</section>
+					       	</a>
+					    </div>
+    				</div>
+  
+  					<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+					    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					    <span class="sr-only"></span>
+  					</a>
+  					<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					    <span class="sr-only"></span>
+  					</a>
+				</div>
+			</div>
 			
 			<div class="block-service">
 				<input class="block-service__input" id="service" type="radio" name="blocks" checked>
@@ -193,7 +263,7 @@
 						<div class="block-news__content__block block-left2">
 							<a class="block-news__content__block__link" href="#" >Gratis</a>
 							<img class="block-news__content__block__image" src="public/images/jurten_9349403dpa.jpg" alt="" >
-							<span class="block-news__content__block__text">Geschichten in Jurten <a class="text-info__link" href="#">mehr</a></span>
+							<span class="block-news__content__block__text">Geschichten in Jurten<br> <a class="text-info__link" href="#">mehr</a></span>
 						</div>
 						<div class="block-news__content__block block-left3 block-news__content__block--border-bottom">
 							<a class="block-news__content__block__link" href="#" >Wetter</a>
@@ -202,7 +272,6 @@
 								<li class="block-news__content__block-list__items"><span>09:00 Urh</span><span>2 &#x00B0;C</span></li>
 								<li class="block-news__content__block-list__items"><span>10:00 Urh</span><span>2 &#x00B0;C</span></li>
 								<li class="block-news__content__block-list__items"><span>11:00 Urh</span><span>2 &#x00B0;C</span></li>
-								<li class="block-news__content__block-list__item-link"><a class="block-list__link" href="">Alle anzeigen</a></li>
 							</ul>
 							
 						</div>
@@ -214,6 +283,7 @@
 					</div>
 				</div>
 			</div>
+
 			<div class="block-immobiliensuche">
 				<div class="block-immobiliensuche__name">
     				<a class="block-immobiliensuche__name-link" href="">Immobiliensuche</a>
@@ -265,6 +335,10 @@
 
 			<div class="container-news__section">
 				<div class="container-news__section-name"><span>Politik, Verwaltung, Bürger</span></div>
+
+				<input id="menu-ckeck1" type="checkbox" name="menu-ckeck">
+				<label class="container-news__section-name container-news__section-name--mobile" for="menu-ckeck1">Politik, Verwaltung, Bürger</label>
+				
 				<div class="container-news__section-menu">
 					<ul class="section-menu__list">
 						<li class="section-menu__list-item">
@@ -293,15 +367,17 @@
 						</li>
 					</ul>
 				</div>
+				
 				<div class="container-news__section-content">
 					<div class="section-content-block">
-						<a class="" href="#"><img class="content-block__image" src="public/images/politic-content-first.jpg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/politic-content-first.jpg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Betriebsprüfungen Gastronomie</a>
 							<p class="content-block__text-info">Steuerliche Überprüfungen erbrachten bisher ein Mehrergebnis von 15,9 Mio Euro. <a class="text-info__link" href="#">mehr</a></p>
 						</div>
 					</div>
-					<div class="section-content-block">
+
+					<div class="section-content-block section-content-block--wrap">
 						<div class="content-block__text block__text">
 							<a class="content-block__text-link" href="#">Karl-Marx-Allee</a>
 							<p class="content-block__text-info">Senat setzt sich für den Schutz der Mieterinnen und Mieter ein. <a class="text-info__link" href="#">mehr</a></p>
@@ -315,7 +391,7 @@
 							<p class="content-block__text-info">So verbessert das Land Berlin weiter Fachkräftesicherung und -bindung. <a class="text-info__link" href="#">mehr</a></p>
 						</div>
 					</div>
-					<div class="section-content-block">
+					<div class="section-content-block section-content-block--wrap">
 						<a class="section-content-block__link" href="#">Richtlinien der Regierungspolitik</a>
 						<a class="section-content-block__link" href="#">Sicherheit - Präventions- und Sicherheitspaket des Senats</a>
 						<a class="section-content-block__link" href="#">Wissenschaft und Universitäten - Berlin als Wissenschaftsregion</a>
@@ -326,7 +402,7 @@
 						<a class="section-content-block__link" href="#">NUR MIT EUCH - die Berliner Bundesratspräsidentschaft</a>
 					</div>
 					<div class="section-content-block">
-						<a class="" href="#"><img class="content-block__image" src="public/images/politic-content-second.png"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/politic-content-second.png"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Ehrenamt: Berlin sagt Danke!</a>
 							<p class="content-block__text-info">Am 16. Februar 2019 bedanken sich Senat und Abgeordnetenhaus für das freiwillige Engagement.<a class="text-info__link" href="#">mehr</a></p>
@@ -337,6 +413,10 @@
 
 			<div class="container-news__section  news__section-border">
 				<div class="container-news__section-name news__section-name--padding"><span>Tourismus & Hotels</span></div>
+
+				<input id="menu-ckeck2" type="checkbox" name="menu-ckeck">
+				<label class="container-news__section-name container-news__section-name--mobile" for="menu-ckeck2">Tourismus & Hotels</label>
+
 				<div class="container-news__section-menu">
 					<ul class="section-menu__list">
 						<li class="section-menu__list-item">
@@ -362,30 +442,31 @@
 						</li>
 					</ul>
 				</div>
+
 				<div class="container-news__section-content">
 					<div class="section-content-block">
-						<a class="" href="#"><img class="content-block__image" src="public/images/Berlin_City_Tour_Tour-A.JPG"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/Berlin_City_Tour_Tour-A.JPG"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Hop-on Hop-off Tour mit 24h-Ticket</a>
 							<p class="content-block__text-info">Entdecken Sie 24 Stunden lang die wichtigsten Sehenswürdigkeiten Berlins per Hop-on Hop-off-Bustour.<a class="text-info__link" href="#">mehr</a></p>
 						</div>
 					</div>
 					<div class="section-content-block">
-						<a class="" href="#"><img class="content-block__image" src="public/images/Spree-Winter-Berlin.jpeg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/Spree-Winter-Berlin.jpeg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Winterfahrt über die Spree</a>
 							<p class="content-block__text-info">Entdecken Sie das winterliche Berlin und die Sehenswürdigkeiten der Stadt entspannt an Bord eines Schiffes.<a class="text-info__link" href="#">mehr</a></p>
 						</div>
 					</div>
 					<div class="section-content-block nth-child">
-						<a class="" href="#"><img class="content-block__image" src="public/images/Mauer-in-Berlin.jpg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/Mauer-in-Berlin.jpg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Mauer in Berlin</a>
 							<p class="content-block__text-info">Wer in die Hauptstadt kommt, will sie sehen. Wo in Berlin noch echte Mauer steht - und was nur Nachbau ist. <a class="text-info__link" href="#">mehr</a></p>
 						</div>
 					</div>
 					<div class="section-content-block nth-child">
-						<a class="" href="#"><img class="content-block__image" src="public/images/Show-Erlebnis.jpg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/Show-Erlebnis.jpg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Das neue Show-Erlebnis!</a>
 							<p class="content-block__text-info">Diese Blue Man Group gibt es nur in Berlin! Jetzt noch länger, noch überraschender und noch näher dran!<a class="text-info__link" href="#">mehr</a></p>
@@ -396,6 +477,10 @@
 
 			<div class="container-news__section news__section-border">
 				<div class="container-news__section-name news__section-name--padding"><span>Kultur & Ausgehen</span></div>
+
+				<input id="menu-ckeck3" type="checkbox" name="menu-ckeck">
+				<label class="container-news__section-name container-news__section-name--mobile" for="menu-ckeck3">Kultur & Ausgehen</label>
+
 				<div class="container-news__section-menu">
 					<ul class="section-menu__list">
 						<li class="section-menu__list-item">
@@ -421,30 +506,31 @@
 						</li>
 					</ul>
 				</div>
+
 				<div class="container-news__section-content">
 					<div class="section-content-block">
-						<a class="" href="#"><img class="content-block__image" src="public/images/Pergamonmuseum_Das_Panorama_asisi.jpg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/Pergamonmuseum_Das_Panorama_asisi.jpg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Pergamon-Panorama</a>
 							<p class="content-block__text-info">In dem neuen Pergamon-Panorama des Künstlers Yadegar Asisi sind Originalteile des Pergamonaltars sowie eine Videoinstallation zum Pergamonaltar zu besichtigen.<a class="text-info__link" href="#">mehr</a></p>
 						</div>
 					</div>
 					<div class="section-content-block">
-						<a class="" href="#"><img class="content-block__image" src="public/images/christmas_garden_berlin.jpg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/christmas_garden_berlin.jpg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Christmas Garden Berlin</a>
 							<p class="content-block__text-info">Der Botanische Garten in Berlin wird bei «Christmas Garden» in eine leuchtende Märchenlandschaft mit allerlei Lichtspielen, Traumwäldern und 3D-Leuchtfiguren verwandelt. <a class="text-info__link" href="#">mehr</a></p>
 						</div>
 					</div>
 					<div class="section-content-block nth-child">
-						<a class="" href="#"><img class="content-block__image" src="public/images/Lasergame_Berlin.jpg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/Lasergame_Berlin.jpg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Special: Action & Abenteuer</a>
 							<p class="content-block__text-info">Paintball, House-Running, Lasergame & Co.: Die besten Adressen in Berlin für Action, Abenteuer und Trendsportarten.<a class="text-info__link" href="#">mehr</a></p>
 						</div>
 					</div>
 					<div class="section-content-block nth-child">
-						<a class="" href="#"><img class="content-block__image" src="public/images/18043_TDVB_2_Banner.jpg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/18043_TDVB_2_Banner.jpg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Tanz der Vampire</a>
 							<p class="content-block__text-info">Das Meisterwerk verlässt Deutschland. Nur noch bis März 2019 im Berliner Stage Theater des Westens.<a class="text-info__link" href="#">mehr</a></p>
@@ -455,6 +541,10 @@
 
 			<div class="container-news__section news__section-border">
 				<div class="container-news__section-name news__section-name--padding"><span>Aktuelle Meldungen</span></div>
+
+				<input id="menu-ckeck4" type="checkbox" name="menu-ckeck">
+				<label class="container-news__section-name container-news__section-name--mobile" for="menu-ckeck4">Aktuelle Meldungen</label>
+
 				<div class="container-news__section-menu">
 					<ul class="section-menu__list">
 						<li class="section-menu__list-item">
@@ -474,8 +564,9 @@
 						</li>
 					</ul>
 				</div>
+
 				<div class="container-news__section-content">
-					<div class="section-content-block">
+					<div class="section-content-block section-content-block--wrap">
 						<a class="content-block__text-link" href="#">Polizei–Meldungen</a>
 						<ul class="section-content-block__list">
 							<li class="section-content-block__list-items">
@@ -503,7 +594,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="section-content-block">
+					<div class="section-content-block section-content-block--wrap">
 						<a class="content-block__text-link" href="#">dpa–Nachrichtenticker</a>
 						<ul class="section-content-block__list">
 							<li class="section-content-block__list-items">
@@ -536,6 +627,10 @@
 
 			<div class="container-news__section news__section-border">
 				<div class="container-news__section-name news__section-name--padding"><span>Lifestyle</span></div>
+
+				<input id="menu-ckeck5" type="checkbox" name="menu-ckeck">
+				<label class="container-news__section-name container-news__section-name--mobile" for="menu-ckeck5">Lifestyle</label>
+
 				<div class="container-news__section-menu">
 					<ul class="section-menu__list">
 						<li class="section-menu__list-item">
@@ -561,29 +656,30 @@
 						</li>
 					</ul>
 				</div>
+
 				<div class="container-news__section-content">
 					<div class="section-content-block">
-						<a class="" href="#"><img class="content-block__image" src="public/images/Weihnachtsbxumexam.jpg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/Weihnachtsbxumexam.jpg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Weihnachtsbaumabholung</a>
 							<p class="content-block__text-info">Im Januar holt die BSR die ausgedienten Weihnachtsbäume ab. Die Termine für jeden Bezirk im Überblick. <a class="text-info__link" href="#">mehr</a></p>
 						</div>
 					</div>
 					<div class="section-content-block">
-						<a class="" href="#"><img class="content-block__image" src="public/images/urn-newsml-dpa-com-.jpg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/urn-newsml-dpa-com-.jpg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Das ändert sich 2019</a>
 							<p class="content-block__text-info">Im neuen Jahr kommen auf Verbraucher in vielen Bereichen Neuerungen zu. Die wichtigsten Änderungen im Überblick. <a class="text-info__link" href="#">mehr</a></p>
 						</div>
 					</div>
 					<div class="section-content-block nth-child">
-						<a class="" href="#"><img class="content-block__image" src="public/images/sal.jpg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/sal.jpg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Leichte Rezepte fürs neue Jahr</a>
 							<p class="content-block__text-info">Diese Gerichte helfen bei einem schwungvollen Start ins neue Jahr - und bringen die Freude am Kochen zurück. <a class="text-info__link" href="#">mehr</a></p>
 						</div>
 					</div>
-					<div class="section-content-block nth-child">
+					<div class="section-content-block nth-child section-content-block--wrap">
 						<a class="content-block__text-link " href="#">Oft gesucht</a>
 						<a class="section-content-block__link" href="#">Eventlocations</a>
 						<a class="section-content-block__link" href="#">Tickets</a>
@@ -601,6 +697,10 @@
 
 			<div class="container-news__section">
 				<div class="container-news__section-name news__section-name--padding"><span>Wirtschaft</span></div>
+				
+				<input id="menu-ckeck6" type="checkbox" name="menu-ckeck">
+				<label class="container-news__section-name container-news__section-name--mobile" for="menu-ckeck6">Wirtschaft</label>
+
 				<div class="container-news__section-menu">
 					<ul class="section-menu__list">
 						<li class="section-menu__list-item">
@@ -623,30 +723,31 @@
 						</li>
 					</ul>
 				</div>
+
 				<div class="container-news__section-content">
 					<div class="section-content-block">
-						<a class="" href="#"><img class="content-block__image" src="public/images/Maischak.jpg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/Maischak.jpg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Gründer-Interview: Benjamin Maischak</a>
 							<p class="content-block__text-info">Mit der JobUfo-App können sich Jugendliche per Smartphone-Video bei Unternehmen bewerben. <a class="text-info__link" href="#">mehr</a></p>
 						</div>
 					</div>
 					<div class="section-content-block">
-						<a class="" href="#"><img class="content-block__image" src="public/images/modeleisenbahn.jpg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/modeleisenbahn.jpg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Messe: Modellbahnbörse Berlin</a>
 							<p class="content-block__text-info">Sammler können hier Modelleisenbahnen und -autos tauschen, kaufen und verkaufen. <a class="text-info__link" href="#">mehr</a></p>
 						</div>
 					</div>
 					<div class="section-content-block nth-child">
-						<a class="" href="#"><img class="content-block__image" src="public/images/Pandion4Living.jpg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/Pandion4Living.jpg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Bauprojekt: Pandion 4Living</a>
 							<p class="content-block__text-info">In Prenzlauer Berg wird bis 2020 ein Wohnensemble mit über 350 Eigentumswohnungen errichtet. <a class="text-info__link" href="#">mehr</a></p>
 						</div>
 					</div>
 					<div class="section-content-block nth-child">
-						<a class="" href="#"><img class="content-block__image" src="public/images/zeughaus_gallery_02.jpg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/zeughaus_gallery_02.jpg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Event-Locations in Berlin</a>
 							<p class="content-block__text-info">Ob Firmenevent, Produktpräsentation oder Hochzeitsfest: Berlin bietet Veranstaltungsorte in jeglicher Größe und für jeden Bedarf. <a class="text-info__link" href="#">mehr</a></p>
@@ -657,6 +758,10 @@
 
 			<div class="container-news__section news__section-border">
 				<div class="container-news__section-name news__section-name--padding"><span>Shopping</span></div>
+
+				<input id="menu-ckeck7" type="checkbox" name="menu-ckeck">
+				<label class="container-news__section-name container-news__section-name--mobile" for="menu-ckeck7">Shopping</label>
+
 				<div class="container-news__section-menu">
 					<ul class="section-menu__list">
 						<li class="section-menu__list-item">
@@ -682,30 +787,31 @@
 						</li>
 					</ul>
 				</div>
+
 				<div class="container-news__section-content">
 					<div class="section-content-block">
-						<a class="" href="#"><img class="content-block__image" src="public/images/Iittala_2018_Store_Friedrichstrasse_Berlin_1.jpg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/Iittala_2018_Store_Friedrichstrasse_Berlin_1.jpg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Neueröffnung: Iittala</a>
 							<p class="content-block__text-info">Gleiche Straße, neue Räume: Die finnische Designmarke Iittala hat einen neuen Store in der Friedrichstraße eröffnet. <a class="text-info__link" href="#">mehr</a></p>
 						</div>
 					</div>
 					<div class="section-content-block">
-						<a class="" href="#"><img class="content-block__image" src="public/images/gift.jpg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/gift.jpg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Tauschbörse für Weihnachtsgeschenke</a>
 							<p class="content-block__text-info">Wieder Socken? Mit Glück gibt es bei der Tauschbörse etwas anderes dafür. <a class="text-info__link" href="#">mehr</a></p>
 						</div>
 					</div>
 					<div class="section-content-block nth-child">
-						<a class="" href="#"><img class="content-block__image" src="public/images/bags.jpg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/bags.jpg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Verkaufsoffener Sonntag</a>
 							<p class="content-block__text-info">Zum nächsten verkaufsoffenen Sonntag am 27. Januar öffnen viele Einkaufszentren und Geschäfte von 13 bis 18 Uhr. <a class="text-info__link" href="#">mehr</a></p>
 						</div>
 					</div>
 					<div class="section-content-block nth-child">
-						<a class="" href="#"><img class="content-block__image" src="public/images/IGW19.jpg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/IGW19.jpg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Grüne Woche</a>
 							<p class="content-block__text-info">Lebenskünstler willkommen! Wie steht es um die ökologische Landwirtschaft? Fragen und Antworten finde Sie in Halle 1.2. <a class="text-info__link" href="#">mehr</a></p>

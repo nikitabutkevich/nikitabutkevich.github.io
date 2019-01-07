@@ -1,0 +1,14 @@
+@import '_container-content__column-navigation__slider-name';
+@import '_container-content__column-navigation__slider-button__input';
+@import '_container-content__column-navigation__slider-button__prev';
+@import '_container-content__column-navigation__slider-button__next';
+@import '_container-content__column-navigation__slider__content';
+
+.container-content__column-navigation__slider {
+	position: relative;
+	margin-top: 1em;
+	width: 100%;
+	height: 12em;
+	overflow: hiden;
+	border: 1px solid red;
+}

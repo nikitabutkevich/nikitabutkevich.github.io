@@ -1,9 +1,13 @@
 @import '_fonts';
 @import '_reset';
 
+$color-blue: #253276;
+$color-red: #b5050e;
+
 body {
 	display: flex;
 	justify-content: center;
 	background-color: #fafafa;
 	font-family: $font-project;
+	line-height: 1.25;
 }
