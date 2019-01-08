@@ -3,8 +3,10 @@
 <head>
 	<title>Berlin - Offizielles Stadtportal der Hauptstadt Deutschlands – Berlin.de</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="public/stylesheets/main.css">
 	<link rel="mask-icon" href="public/images/logo-tab.svg">
+	<link rel="stylesheet" type="text/css" href="public/stylesheets/css-font-awesome/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </head>
@@ -91,38 +93,181 @@
 					</div>
 				</div>
 			</div>
+			
 			<nav class="container-header__menu">
-  				<ul class="container-header__menu-list">
-				    <li class="menu-list__item">
-				      <input class="list__item__input" id="item__label1" type="checkbox">
-				      <label class="list__item__label" for="item__label1">Politik, Verwaltung, Bürger</label>
-				    </li>
-				    <li class="menu-list__item">
-				      <input class="list__item__input" id="item__label2" type="checkbox">
-				      <label class="list__item__label" for="item__label2">Kultur &amp; Ausgehen</label>
-				    </li>
-				    <li class="menu-list__item">
-				       <input class="list__item__input" id="item__label3" type="checkbox">
-				       <label class="list__item__label" for="item__label3">Tourismus</label>
-				    </li>
-				    <li class="menu-list__item">
-				      <input class="list__item__input" id="item__label4" type="checkbox">
-				      <label class="list__item__label" for="item__label4">Wirtschaft</label>
-				    </li>
-				    <li class="menu-list__item">
-				      <input class="list__item__input" id="item__label5" type="checkbox">
-				      <label class="list__item__label" for="item__label5">Lifestyle</label>
-				    </li>  
-				    <li class="menu-list__item">
-				      <input class="list__item__input" id="item__label6" type="checkbox">
-				      <label class="list__item__label" for="item__label6">BerlinFinder</label>
-				    </li>
-  				</ul>
+  				<div class="container-header__menu-item">
+			    <!-- main menu items -->
+			    <input class="container-header__menu-item__input" id="item1" type="radio" name="menu-item">
+			    <label class="container-header__menu-item__label" for="item1">
+			      	<a class="container-header__menu-item__label__link-static" >Politik, Verwaltung, Bürger</a>
+			    </label>
 
-				<span class="menu-burger">
-    				<input class="menu-burger__input" id="burger-check" type="checkbox">
-    				<label class="menu-burger__label" for="burger-check"><img class="menu-burger__label-image" src="https://img.icons8.com/windows/50/000000/menu.png"><label>
-  				</span>
+			    <input class="container-header__menu-item__input" id="item2" type="radio" name="menu-item">
+			    <label class="container-header__menu-item__label" for="item2">
+			      	<a class="container-header__menu-item__label__link-static" >Kultur &amp; Ausgehen</a>
+			    </label>
+
+			    <input class="container-header__menu-item__input" id="item3" type="radio" name="menu-item">
+			    <label class="container-header__menu-item__label" for="item3">
+			      	<a class="container-header__menu-item__label__link-static" >Tourismus</a>
+			    </label>
+
+			    <input class="container-header__menu-item__input" id="item4" type="radio" name="menu-item">
+			    <label class="container-header__menu-item__label" for="item4">
+			      	<a class="container-header__menu-item__label__link-static" >Wirtschaft</a>
+			    </label>
+
+			    <input class="container-header__menu-item__input" id="item5" type="radio" name="menu-item">
+			    <label class="container-header__menu-item__label" for="item5">
+			      	<a class="container-header__menu-item__label__link-static" >Lifestyle</a>
+			    </label>
+
+			    <input class="container-header__menu-item__input" id="item6" type="radio" name="menu-item">
+			    <label class="container-header__menu-item__label" for="item6">
+			      	<a class="container-header__menu-item__label__link-static" >BerlinFinder</a>
+			    </label>
+
+			    <input class="container-header__menu-burger__input" id="burger-check" type="radio" name="menu-item">
+			    <label class="container-header__menu-burger__label" for="burger-check">
+			     	<img src="https://img.icons8.com/windows/50/000000/menu.png">
+			    </label>
+
+			    <!-- end main menu items -->
+
+			    <!-- aside menu items -->
+			    <label class="container-header__menu-item__content-nav__link list-item1" for="item1">Politik, Verwaltung, Bürger</label>
+
+			    <label class="container-header__menu-item__content-nav__link list-item2" for="item2">Kultur &amp; Ausgehen</label>
+
+			    <label class="container-header__menu-item__content-nav__link list-item3" for="item3">Tourismus</label>
+
+			    <label class="container-header__menu-item__content-nav__link list-item4" for="item4">Wirtschaft</label>
+
+			    <label class="container-header__menu-item__content-nav__link list-item5" for="item5">Lifestyle</label>
+
+			    <label class="container-header__menu-item__content-nav__link list-item6" for="item6">BerlinFinder</label>
+
+			    <!-- end aside menu items -->
+
+			    <!-- menu content -->
+			    
+			    <div class="container-header__menu-item__content__chapter  content-politik" id="item-content1">
+			      <div class="container-header__menu-item__content__chapter-block">
+			        <a class="container-header__menu-item__content__chapter-block__link" href="#">Zur Startseite: Politik, Verwaltung, Bürger</a>
+			        
+			        <section class="container-header__menu-item__content__chapter-block__section">
+			        <a class="container-header__menu-item__content__chapter-block__section-link" href="#">Service</a>
+			          <ul class="container-header__menu-item__content__chapter-block__section-list">
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Bürgerämter</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Terminvereinbarung</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Online-Verfahren</a>
+			            </li>
+			          </ul>
+			        </section>
+			        
+			        <section class="container-header__menu-item__content__chapter-block__section">
+			        <a class="container-header__menu-item__content__chapter-block__section-link" href="#">Presse &#38; Newsletter</a>
+			          <ul class="container-header__menu-item__content__chapter-block__section-list">
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Aktuelle Mitteilungen</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Newsletter abonnieren</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Polizei-Meldungen</a>
+			            </li>
+			          </ul>
+			        </section>
+			        
+			        <section class="container-header__menu-item__content__chapter-block__section">
+			        <a class="container-header__menu-item__content__chapter-block__section-link" href="#">Regierender Bürgermeister</a>
+			          <ul class="container-header__menu-item__content__chapter-block__section-list">
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Rathaus aktuell</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Senat</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Politik</a>
+			            </li>
+			          </ul>
+			        </section>
+			        
+			        <section class="container-header__menu-item__content__chapter-block__section">
+			        <a class="container-header__menu-item__content__chapter-block__section-link" href="#">Karriere &#38; Ausbildung</a>
+			          <ul class="container-header__menu-item__content__chapter-block__section-list">
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Aktuelle Stellenangebote</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Berlin als Arbeitgeberin</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Ausbildung</a>
+			            </li>
+			          </ul>
+			        </section>
+			        
+			        <section class="container-header__menu-item__content__chapter-block__section">
+			        <a class="container-header__menu-item__content__chapter-block__section-link" href="#">Behörden</a>
+			          <ul class="container-header__menu-item__content__chapter-block__section-list">
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Senatsverwaltungen</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Bezirksämter</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Finanzämter</a>
+			            </li>
+			          </ul>
+			        </section>
+			        
+			        <section class="container-header__menu-item__content__chapter-block__section">
+			        <a class="container-header__menu-item__content__chapter-block__section-link" href="#">Oft gesucht</a>
+			          <ul class="container-header__menu-item__content__chapter-block__section-list">
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Volkshochschulen</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Bibliotheken</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Jobcenter</a>
+			            </li>
+			          </ul>
+			        </section>
+			      </div>
+			      
+			      <div class="container-header__menu-item__content__chapter-image">
+			        <section class="container-header__menu-item__content__chapter-image__section">
+			          <img class="container-header__menu-item__content__chapter-image__section-image" src="" alt="">
+			          <a class="container-header__menu-item__content__chapter-image__section-link" href="#">Oft gesucht</a>
+			        </section>
+			      </div>
+			    </div>
+			    
+			    <div class="container-header__menu-item__content__chapter  content-kultur" id="item-content1">Kultur</div>
+			    
+			    <div class="container-header__menu-item__content__chapter  content-tourismus" id="item-content1">Tourismus</div>
+			    
+			    <div class="container-header__menu-item__content__chapter  content-wirtschaft" id="item-content1">Wirtschaft</div>
+			    
+			    <div class="container-header__menu-item__content__chapter  content-lifestyle" id="item-content1">Lifestyle</div>
+			    
+			    <div class="container-header__menu-item__content__chapter  content-berlin" id="item-content1">BerlinFinder</div>
+			    
+
+			    <!-- end menu content -->
+
+			  </div>
   			</nav>
 		</header>
 
@@ -829,7 +974,7 @@
 		</section>
 
 		<footer class="conatiner-footer">
-			<a href="#header" class="conatiner-footer__to-up">Zum Seitenanfang</a>
+			<a class="conatiner-footer__to-up" href="#header" >Zum Seitenanfang</a>
 			<div class="conatiner-footer__blocks">
 				<div class="conatiner-footer__block-about">
 					<img class="footer__block-about__image" src="public/images/logo_berlin_de_footer.svg">
@@ -854,127 +999,163 @@
 					<div class="footer__block-site-map__menu">
 						<div class="footer__block-site-map__menu-nav">
 							<span class="footer__block-about__text-head">Suche</span>
-							<ul class="block-site-map__menu-nav__list">
-								<li class="block-site-map__menu-nav__list-item">
-									<a class="block-site-map__menu-nav__list-item-link" href="">Tickets & Events</a>
-								</li>
-								<li class="block-site-map__menu-nav__list-item">
-									<a class="block-site-map__menu-nav__list-item-link" href="">Jobs</a>
-								</li>
-								<li class="block-site-map__menu-nav__list-item">
-									<a class="block-site-map__menu-nav__list-item-link" href="">Immobilien</a>
-								</li>
-								<li class="block-site-map__menu-nav__list-item">
-									<a class="block-site-map__menu-nav__list-item-link" href="">Unternehmen und<br> Dienstleister</a>
-								</li>
-								<li class="block-site-map__menu-nav__list-item">
-									<a class="block-site-map__menu-nav__list-item-link" href="">Eventlocations</a>
-								</li>
-								<li class="block-site-map__menu-nav__list-item">
-									<a class="block-site-map__menu-nav__list-item-link" href="">Silvesterpartys</a>
-								</li>
-							</ul>
+
+							<input id="footer-ckeck1" type="checkbox" name="menu-footer">
+							<label class="footer__block-site-map__menu-nav__label" for="footer-ckeck1">Suche</label>
+
+							<div class="block-site-map__menu-nav__block">
+								<ul class="block-site-map__menu-nav__list">
+									<li class="block-site-map__menu-nav__list-item">
+										<a class="block-site-map__menu-nav__list-item-link" href="">Tickets & Events</a>
+									</li>
+									<li class="block-site-map__menu-nav__list-item">
+										<a class="block-site-map__menu-nav__list-item-link" href="">Jobs</a>
+									</li>
+									<li class="block-site-map__menu-nav__list-item">
+										<a class="block-site-map__menu-nav__list-item-link" href="">Immobilien</a>
+									</li>
+									<li class="block-site-map__menu-nav__list-item">
+										<a class="block-site-map__menu-nav__list-item-link" href="">Unternehmen und Dienstleister</a>
+									</li>
+									<li class="block-site-map__menu-nav__list-item">
+										<a class="block-site-map__menu-nav__list-item-link" href="">Eventlocations</a>
+									</li>
+									<li class="block-site-map__menu-nav__list-item">
+										<a class="block-site-map__menu-nav__list-item-link" href="">Silvesterpartys</a>
+									</li>
+								</ul>
+							</div>
 						</div>
 
 						<div class="footer__block-site-map__menu-nav">
 							<span class="footer__block-about__text-head">Über uns</span>
-							<ul class="block-site-map__menu-nav__list">
-								<li class="block-site-map__menu-nav__list-item">
-									<a class="block-site-map__menu-nav__list-item-link" href="">Kontakt</a>
-								</li>
-								<li class="block-site-map__menu-nav__list-item">
-									<a class="block-site-map__menu-nav__list-item-link" href="">AGB</a>
-								</li>
-								<li class="block-site-map__menu-nav__list-item">
-									<a class="block-site-map__menu-nav__list-item-link" href="">Impressum</a>
-								</li>
-								<li class="block-site-map__menu-nav__list-item">
-									<a class="block-site-map__menu-nav__list-item-link" href="">Datenschutz</a>
-								</li>
-								<li class="block-site-map__menu-nav__list-item">
-									<a class="block-site-map__menu-nav__list-item-link" href="">Werben auf Berlin.de</a>
-								</li>
-							</ul>
+							
+							<input id="footer-ckeck2" type="checkbox" name="menu-footer">
+							<label class="footer__block-site-map__menu-nav__label" for="footer-ckeck2">Über uns</label>
+							
+							<div class="block-site-map__menu-nav__block">
+								<ul class="block-site-map__menu-nav__list">
+									<li class="block-site-map__menu-nav__list-item">
+										<a class="block-site-map__menu-nav__list-item-link" href="">Kontakt</a>
+									</li>
+									<li class="block-site-map__menu-nav__list-item">
+										<a class="block-site-map__menu-nav__list-item-link" href="">AGB</a>
+									</li>
+									<li class="block-site-map__menu-nav__list-item">
+										<a class="block-site-map__menu-nav__list-item-link" href="">Impressum</a>
+									</li>
+									<li class="block-site-map__menu-nav__list-item">
+										<a class="block-site-map__menu-nav__list-item-link" href="">Datenschutz</a>
+									</li>
+									<li class="block-site-map__menu-nav__list-item">
+										<a class="block-site-map__menu-nav__list-item-link" href="">Werben auf Berlin.de</a>
+									</li>
+								</ul>
+							</div>
 						</div>
 
 						<div class="footer__block-site-map__menu-nav">
 							<span class="footer__block-about__text-head">Politik & Verwaltung</span>
-							<ul class="block-site-map__menu-nav__list">
-								<li class="block-site-map__menu-nav__list-item">
-									<a class="block-site-map__menu-nav__list-item-link" href="">Service-Portal</a>
-								</li>
-								<li class="block-site-map__menu-nav__list-item">
-									<a class="block-site-map__menu-nav__list-item-link" href="">Bürgertelefon 115</a>
-								</li>
-								<li class="block-site-map__menu-nav__list-item">
-									<a class="block-site-map__menu-nav__list-item-link" href="">Terminvereinbarung</a>
-								</li>
-								<li class="block-site-map__menu-nav__list-item">
-									<a class="block-site-map__menu-nav__list-item-link" href="">Bürgerämter</a>
-								</li>
-								<li class="block-site-map__menu-nav__list-item">
-									<a class="block-site-map__menu-nav__list-item-link" href="">Aktuelle Landespolitik</a>
-								</li>
-								<li class="block-site-map__menu-nav__list-item">
-									<a class="block-site-map__menu-nav__list-item-link" href="">Karriere beim Land Berlin</a>
-								</li>
-							</ul>
+							
+							<input id="footer-ckeck3" type="checkbox" name="menu-footer">
+							<label class="footer__block-site-map__menu-nav__label" for="footer-ckeck3">Politik & Verwaltung</label>
+
+							<div class="block-site-map__menu-nav__block">
+								<ul class="block-site-map__menu-nav__list">
+									<li class="block-site-map__menu-nav__list-item">
+										<a class="block-site-map__menu-nav__list-item-link" href="">Service-Portal</a>
+									</li>
+									<li class="block-site-map__menu-nav__list-item">
+										<a class="block-site-map__menu-nav__list-item-link" href="">Bürgertelefon 115</a>
+									</li>
+									<li class="block-site-map__menu-nav__list-item">
+										<a class="block-site-map__menu-nav__list-item-link" href="">Terminvereinbarung</a>
+									</li>
+									<li class="block-site-map__menu-nav__list-item">
+										<a class="block-site-map__menu-nav__list-item-link" href="">Bürgerämter</a>
+									</li>
+									<li class="block-site-map__menu-nav__list-item">
+										<a class="block-site-map__menu-nav__list-item-link" href="">Aktuelle Landespolitik</a>
+									</li>
+									<li class="block-site-map__menu-nav__list-item">
+										<a class="block-site-map__menu-nav__list-item-link" href="">Karriere beim Land Berlin</a>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 
 					<div class="footer__block-site-map__menu">
 						<div class="footer__block-site-map__menu-nav">
 							<span class="footer__block-about__text-head">Berlin Top 10</span>
-							<ul class="block-site-map__menu-nav__list">
-								<li class="block-site-map__menu-nav__list-item">
-									<a class="block-site-map__menu-nav__list-item-link" href="">Tickets</a>
-								</li>
-								<li class="block-site-map__menu-nav__list-item">
-									<a class="block-site-map__menu-nav__list-item-link" href="">Stadtführungen</a>
-								</li>
-								<li class="block-site-map__menu-nav__list-item">
-									<a class="block-site-map__menu-nav__list-item-link" href="">Museen</a>
-								</li>
-								<li class="block-site-map__menu-nav__list-item">
-									<a class="block-site-map__menu-nav__list-item-link" href="">Sehenswürdigkeiten</a>
-								</li>
-								<li class="block-site-map__menu-nav__list-item">
-									<a class="block-site-map__menu-nav__list-item-link" href="">Stadtrundfahrten</a>
-								</li>
-							</ul>
+
+							<input id="footer-ckeck4" type="checkbox" name="menu-footer">
+							<label class="footer__block-site-map__menu-nav__label" for="footer-ckeck4">Berlin Top 10</label>
+
+							<div class="block-site-map__menu-nav__block">
+								<ul class="block-site-map__menu-nav__list">
+									<li class="block-site-map__menu-nav__list-item">
+										<a class="block-site-map__menu-nav__list-item-link" href="">Tickets</a>
+									</li>
+									<li class="block-site-map__menu-nav__list-item">
+										<a class="block-site-map__menu-nav__list-item-link" href="">Stadtführungen</a>
+									</li>
+									<li class="block-site-map__menu-nav__list-item">
+										<a class="block-site-map__menu-nav__list-item-link" href="">Museen</a>
+									</li>
+									<li class="block-site-map__menu-nav__list-item">
+										<a class="block-site-map__menu-nav__list-item-link" href="">Sehenswürdigkeiten</a>
+									</li>
+									<li class="block-site-map__menu-nav__list-item">
+										<a class="block-site-map__menu-nav__list-item-link" href="">Stadtrundfahrten</a>
+									</li>
+								</ul>
+							</div>
 						</div>
 
 						<div class="footer__block-site-map__menu-nav">
 							<span class="footer__block-about__text-head">Extra</span>
-							<ul class="block-site-map__menu-nav__list">
-								<li class="block-site-map__menu-nav__list-item">
-									<a class="block-site-map__menu-nav__list-item-link" href="">Berlin.de-Mail</a>
-								</li>
-								<li class="block-site-map__menu-nav__list-item">
-									<a class="block-site-map__menu-nav__list-item-link" href="">Gutscheine</a>
-								</li>
-								<li class="block-site-map__menu-nav__list-item">
-									<a class="block-site-map__menu-nav__list-item-link" href="">Gewinnspiele</a>
-								</li>
-								<li class="block-site-map__menu-nav__list-item">
-									<a class="block-site-map__menu-nav__list-item-link" href="">Gratis</a>
-								</li>
-							</ul>
+
+							<input id="footer-ckeck5" type="checkbox" name="menu-footer">
+							<label class="footer__block-site-map__menu-nav__label" for="footer-ckeck5">Extra</label>
+
+							<div class="block-site-map__menu-nav__block">
+								<ul class="block-site-map__menu-nav__list">
+									<li class="block-site-map__menu-nav__list-item">
+										<a class="block-site-map__menu-nav__list-item-link" href="">Berlin.de-Mail</a>
+									</li>
+									<li class="block-site-map__menu-nav__list-item">
+										<a class="block-site-map__menu-nav__list-item-link" href="">Gutscheine</a>
+									</li>
+									<li class="block-site-map__menu-nav__list-item">
+										<a class="block-site-map__menu-nav__list-item-link" href="">Gewinnspiele</a>
+									</li>
+									<li class="block-site-map__menu-nav__list-item">
+										<a class="block-site-map__menu-nav__list-item-link" href="">Gratis</a>
+									</li>
+								</ul>
+							</div>	
 						</div>
 
 						<div class="footer__block-site-map__menu-nav">
 							<span class="footer__block-about__text-head">In anderen Sprachen</span>
-							<ul class="block-site-map__menu-nav__list">
-								<li class="block-site-map__menu-nav__list-item">
-									<a class="block-site-map__menu-nav__list-item-link" href="">English</a>
-								</li>
-								<li class="block-site-map__menu-nav__list-item">
-									<a class="block-site-map__menu-nav__list-item-link" href="">Français</a>
-								</li>
-								<li class="block-site-map__menu-nav__list-item">
-									<a class="block-site-map__menu-nav__list-item-link" href="">Italiano</a>
-								</li>
-							</ul>
+
+							<input id="footer-ckeck6" type="checkbox" name="menu-footer">
+							<label class="footer__block-site-map__menu-nav__label" for="footer-ckeck6">In anderen Sprachen</label>
+
+							<div class="block-site-map__menu-nav__block">
+								<ul class="block-site-map__menu-nav__list">
+									<li class="block-site-map__menu-nav__list-item">
+										<a class="block-site-map__menu-nav__list-item-link" href="">English</a>
+									</li>
+									<li class="block-site-map__menu-nav__list-item">
+										<a class="block-site-map__menu-nav__list-item-link" href="">Français</a>
+									</li>
+									<li class="block-site-map__menu-nav__list-item">
+										<a class="block-site-map__menu-nav__list-item-link" href="">Italiano</a>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>

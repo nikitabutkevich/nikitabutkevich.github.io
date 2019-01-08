@@ -1,12 +1,12 @@
-@import '_menu-list__item';
-@import '_container-header__menu-list';
-@import '_menu-burger.scss';
+@import '_container-header__menu-item';
 
 .container-header__menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  color: #5f3697;
-  background-color: #f5f5f5;
+	position: relative;
+  	display: flex;
+  	flex-flow: row wrap;
+  	justify-content: space-between;
+  	width: 100%;
+  	color: #5f3697;
+  	background-color: #f5f5f5;
+  	overflow: hidden;
 }

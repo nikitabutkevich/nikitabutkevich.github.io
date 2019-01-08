@@ -1,0 +1,156 @@
+.container-header__menu-item__input {
+	display: none;
+}
+
+ /*Нажатие на Politik, Verwaltung, Bürger*/
+    #item1:checked {
+      
+      &~.list-item1, &~.list-item2, &~.list-item3, &~.list-item4, &~.list-item5, &~.list-item6 {
+         display: inline-block;
+      }
+      
+      &~.list-item1 {
+         color: #fff;
+         background: #253276;
+      }
+      
+      &~.content-politik {
+         display: flex;
+      }
+    }
+    /*Нажатие на Politik, Verwaltung, Bürger левое меню*/
+    .list-item1:checked {
+      color: #fff;
+      background: #253276;
+    
+      &~.content-politik {
+           display: flex;
+      }
+    }
+    
+    /*Нажатие на Kultur & Ausgehen*/
+    #item2:checked {
+      
+      &~.list-item1, &~.list-item2, &~.list-item3, &~.list-item4, &~.list-item5, &~.list-item6 {
+         display: inline-block;
+      }
+      
+      &~.list-item2 {
+         color: #fff;
+         background: #253276;
+      }
+      
+      &~.content-kultur {
+         display: flex;
+      }
+    }
+    /*Нажатие на Kultur & Ausgehen левое меню*/
+    .list-item2:checked {
+      color: #fff;
+      background: #253276;
+    
+      &~.content-kultur {
+           display: flex;
+      }
+    }
+    /*Нажатие на Tourismus*/
+    #item3:checked {
+      
+      &~.list-item1, &~.list-item2, &~.list-item3, &~.list-item4, &~.list-item5, &~.list-item6 {
+         display: inline-block;
+      }
+      
+      &~.list-item3 {
+         color: #fff;
+         background: #253276;
+      }
+      
+      &~.content-tourismus {
+         display: flex;
+      }
+    }
+    /*Нажатие на Tourismus левое */
+    .list-item3:checked {
+      color: #fff;
+      background: #253276;
+    
+      &~.content-tourismus {
+           display: flex;
+      }
+    }
+    /*Нажатие на  Wirtschaft */
+    #item4:checked {
+      
+      &~.list-item1, &~.list-item2, &~.list-item3, &~.list-item4, &~.list-item5, &~.list-item6 {
+         display: inline-block;
+      }
+      
+      &~.list-item4 {
+         color: #fff;
+         background: #253276;
+      }
+      
+      &~.content-wirtschaft {
+         display: flex;
+      }
+    }
+    /*Нажатие на  Wirtschaft левое меню*/
+    .list-item4:checked {
+      color: #fff;
+      background: #253276;
+    
+      &~.content-wirtschaft {
+           display: flex;
+      }
+    }
+    /*Нажатие на Lifestyle*/
+    #item5:checked {
+      
+      &~.list-item1, &~.list-item2, &~.list-item3, &~.list-item4, &~.list-item5, &~.list-item6 {
+         display: inline-block;
+      }
+      
+      &~.list-item5 {
+         color: #fff;
+         background: #253276;
+      }
+      
+      &~.content-lifestyle {
+         display: flex;
+      }
+    }
+    /*Нажатие на Lifestyle левое меню*/
+    .list-item5:checked {
+      color: #fff;
+      background: #253276;
+    
+      &~.content-lifestyle {
+           display: flex;
+      }
+    }
+    
+    /*Нажатие на  BerlinFinder*/
+    #item6:checked {
+      
+      &~.list-item1, &~.list-item2, &~.list-item3, &~.list-item4, &~.list-item5, &~.list-item6 {
+         display: inline-block;
+      }
+      
+      &~.list-item6 {
+         color: #fff;
+         background: #253276;
+      }
+      
+      &~.content-berlin {
+         display: flex;
+      }
+    }
+    /*Нажатие на  BerlinFinder левое меню*/
+    .list-item6:checked {
+      color: #fff;
+      background: #253276;
+    
+      &~.content-berlin {
+           display: flex;
+      }
+    }
