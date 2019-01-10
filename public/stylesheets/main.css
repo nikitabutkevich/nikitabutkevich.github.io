@@ -1722,7 +1722,7 @@ input [type=checkbox], input [type=radio] {
 }
 
 .container-content__column-navigation__article__list-item {
-  	margin: 0 0 .5em 1em;
+  	margin: 0 0 .5em 1.5em;
 }
 
 .container-content__column-navigation__article__list {
