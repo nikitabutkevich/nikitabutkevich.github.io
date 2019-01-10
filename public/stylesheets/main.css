@@ -379,6 +379,10 @@ input [type=checkbox], input [type=radio] {
   display: flex;
 }
 
+.container-header__menu-item__label__link-static {
+   color: #253276;
+}
+
 .container-header__menu-item__label {
   display: inline-block;
   padding: 1em 1em;
