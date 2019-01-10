@@ -4,18 +4,8 @@
 	display: inline-block;
 	width: 100%;
 	color: #003685;
-	padding: .5em 0 .5em 2em;
-	/*background: url('../../public/images/right-arrow.svg') 4% center no-repeat;
-	background-size: 3% auto;*/
+	padding: .5em 0 .5em 0;
 	
-	&:before {
-		content: '\f105';
-		font-family: 'FontAwesome';
-		padding-right: .5em;
-		margin-left: -1.8em;
-		border: 1px solid red;
-	}
-
 	&:hover {
 		text-decoration: underline;
 	}

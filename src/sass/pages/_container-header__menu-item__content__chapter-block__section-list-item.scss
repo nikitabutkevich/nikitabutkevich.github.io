@@ -1,0 +1,8 @@
+.container-header__menu-item__content__chapter-block__section-list-item {
+	padding: .25em 0;
+	cursor: pointer;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}

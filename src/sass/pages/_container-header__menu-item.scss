@@ -3,8 +3,10 @@
 @import '_container-header__menu-item__content-nav__link';
 @import '_container-header__menu-item__content__chapter';
 @import '_container-header__menu-burger__label';
+@import '_container-header__menu__link-burger';
 
 .container-header__menu-item {
+	position: relative;
 	margin: 0;
     padding: 0;
 }

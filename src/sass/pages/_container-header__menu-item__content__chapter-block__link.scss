@@ -1,0 +1,10 @@
+.container-header__menu-item__content__chapter-block__link {
+	display: inline-block;
+    width: 100%;
+    margin: 1em 1em 0 1em;
+    font-weight: 700;
+             
+    &:hover {
+        text-decoration: underline;
+    }
+}

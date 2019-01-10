@@ -1,0 +1,11 @@
+.container-header__menu-burger {
+	display: none;
+	position: absolute;
+	top: .5em;
+	right: 0;
+	width: 3em;
+	height: 3em;
+	background: url('../../public/images/menu-burger.svg') no-repeat center center;
+	background-size: 70% auto;
+	cursor: pointer;
+}

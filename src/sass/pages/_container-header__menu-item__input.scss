@@ -5,13 +5,14 @@
  /*Нажатие на Politik, Verwaltung, Bürger*/
     #item1:checked {
       
-      &~.list-item1, &~.list-item2, &~.list-item3, &~.list-item4, &~.list-item5, &~.list-item6 {
+      &~.list-item1, &~.list-item2, &~.list-item3, &~.list-item4, &~.list-item5, &~.list-item6, &~.container-header__menu-burger__label {
          display: inline-block;
       }
       
       &~.list-item1 {
          color: #fff;
-         background: #253276;
+         background: url('../../public/images/triangel.svg') no-repeat 108% center, #253276;
+         background-size: 22.5% auto;
       }
       
       &~.content-politik {
@@ -21,7 +22,8 @@
     /*Нажатие на Politik, Verwaltung, Bürger левое меню*/
     .list-item1:checked {
       color: #fff;
-      background: #253276;
+      background: url('../../public/images/triangel.svg') no-repeat 108% center, #253276;
+      background-size: 22.5% auto;
     
       &~.content-politik {
            display: flex;
@@ -31,13 +33,14 @@
     /*Нажатие на Kultur & Ausgehen*/
     #item2:checked {
       
-      &~.list-item1, &~.list-item2, &~.list-item3, &~.list-item4, &~.list-item5, &~.list-item6 {
+      &~.list-item1, &~.list-item2, &~.list-item3, &~.list-item4, &~.list-item5, &~.list-item6, &~.container-header__menu-burger__label {
          display: inline-block;
       }
       
       &~.list-item2 {
          color: #fff;
-         background: #253276;
+         background: url('../../public/images/triangel.svg') no-repeat 108% center, #253276;
+         background-size: 22.5% auto;
       }
       
       &~.content-kultur {
@@ -47,7 +50,8 @@
     /*Нажатие на Kultur & Ausgehen левое меню*/
     .list-item2:checked {
       color: #fff;
-      background: #253276;
+      background: url('../../public/images/triangel.svg') no-repeat 108% center, #253276;
+      background-size: 22.5% auto;
     
       &~.content-kultur {
            display: flex;
@@ -56,13 +60,14 @@
     /*Нажатие на Tourismus*/
     #item3:checked {
       
-      &~.list-item1, &~.list-item2, &~.list-item3, &~.list-item4, &~.list-item5, &~.list-item6 {
+      &~.list-item1, &~.list-item2, &~.list-item3, &~.list-item4, &~.list-item5, &~.list-item6, &~.container-header__menu-burger__label {
          display: inline-block;
       }
       
       &~.list-item3 {
          color: #fff;
-         background: #253276;
+         background: url('../../public/images/triangel.svg') no-repeat 108% center, #253276;
+         background-size: 22.5% auto;
       }
       
       &~.content-tourismus {
@@ -72,7 +77,8 @@
     /*Нажатие на Tourismus левое */
     .list-item3:checked {
       color: #fff;
-      background: #253276;
+      background: url('../../public/images/triangel.svg') no-repeat 108% center, #253276;
+      background-size: 22.5% auto;
     
       &~.content-tourismus {
            display: flex;
@@ -81,13 +87,14 @@
     /*Нажатие на  Wirtschaft */
     #item4:checked {
       
-      &~.list-item1, &~.list-item2, &~.list-item3, &~.list-item4, &~.list-item5, &~.list-item6 {
+      &~.list-item1, &~.list-item2, &~.list-item3, &~.list-item4, &~.list-item5, &~.list-item6, &~.container-header__menu-burger__label {
          display: inline-block;
       }
       
       &~.list-item4 {
          color: #fff;
-         background: #253276;
+         background: url('../../public/images/triangel.svg') no-repeat 108% center, #253276;
+         background-size: 22.5% auto;
       }
       
       &~.content-wirtschaft {
@@ -97,7 +104,8 @@
     /*Нажатие на  Wirtschaft левое меню*/
     .list-item4:checked {
       color: #fff;
-      background: #253276;
+      background: url('../../public/images/triangel.svg') no-repeat 108% center, #253276;
+      background-size: 22.5% auto;
     
       &~.content-wirtschaft {
            display: flex;
@@ -106,13 +114,14 @@
     /*Нажатие на Lifestyle*/
     #item5:checked {
       
-      &~.list-item1, &~.list-item2, &~.list-item3, &~.list-item4, &~.list-item5, &~.list-item6 {
+      &~.list-item1, &~.list-item2, &~.list-item3, &~.list-item4, &~.list-item5, &~.list-item6, &~.container-header__menu-burger__label {
          display: inline-block;
       }
       
       &~.list-item5 {
          color: #fff;
-         background: #253276;
+         background: url('../../public/images/triangel.svg') no-repeat 108% center, #253276;
+         background-size: 22.5% auto;
       }
       
       &~.content-lifestyle {
@@ -122,7 +131,8 @@
     /*Нажатие на Lifestyle левое меню*/
     .list-item5:checked {
       color: #fff;
-      background: #253276;
+      background: url('../../public/images/triangel.svg') no-repeat 108% center, #253276;
+      background-size: 22.5% auto;
     
       &~.content-lifestyle {
            display: flex;
@@ -132,13 +142,14 @@
     /*Нажатие на  BerlinFinder*/
     #item6:checked {
       
-      &~.list-item1, &~.list-item2, &~.list-item3, &~.list-item4, &~.list-item5, &~.list-item6 {
+      &~.list-item1, &~.list-item2, &~.list-item3, &~.list-item4, &~.list-item5, &~.list-item6, &~.container-header__menu-burger__label {
          display: inline-block;
       }
       
       &~.list-item6 {
          color: #fff;
-         background: #253276;
+         background: url('../../public/images/triangel.svg') no-repeat 108% center, #253276;
+         background-size: 22.5% auto;
       }
       
       &~.content-berlin {
@@ -148,7 +159,8 @@
     /*Нажатие на  BerlinFinder левое меню*/
     .list-item6:checked {
       color: #fff;
-      background: #253276;
+      background: url('../../public/images/triangel.svg') no-repeat 108% center, #253276;
+      background-size: 22.5% auto;
     
       &~.content-berlin {
            display: flex;

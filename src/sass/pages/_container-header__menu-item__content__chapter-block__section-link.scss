@@ -1,0 +1,9 @@
+.container-header__menu-item__content__chapter-block__section-link {
+	display: inline-block;
+    font-weight: 700;
+    width: 100%;
+               
+    &:hover {
+        text-decoration: underline;
+    }
+}

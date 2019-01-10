@@ -4,9 +4,8 @@
 	<title>Berlin - Offizielles Stadtportal der Hauptstadt Deutschlands – Berlin.de</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="public/stylesheets/main.css">
-	<link rel="mask-icon" href="public/images/logo-tab.svg">
-	<link rel="stylesheet" type="text/css" href="public/stylesheets/css-font-awesome/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+	<link rel="mask-icon" href="images/logo-tab.svg">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </head>
@@ -19,8 +18,8 @@
 			</div>
 			<div class="container-header__logo">
 				<div class="container-header__logo-name">
-					<a href="https://nikitabutkevich.github.io/" title="Link zu: Startseite Berlin.de">
-						<img class="logo-name__image" src="public/images/logo_berlin_de.svg" align="Berlin.de">
+					<a href="index.html" title="Link zu: Startseite Berlin.de">
+						<img class="logo-name__image" src="images/logo_berlin_de.svg" align="Berlin.de">
 					</a>
 					<span>Das offizielle Hauptstadtportal</span>
 				</div>
@@ -94,43 +93,45 @@
 				</div>
 			</div>
 			
+			<input class="container-header__menu-burger-input" id="burger-menu" type="checkbox" name="burger">
+			<label class="container-header__menu-burger" for="burger-menu"></label>
+
 			<nav class="container-header__menu">
+				
   				<div class="container-header__menu-item">
 			    <!-- main menu items -->
 			    <input class="container-header__menu-item__input" id="item1" type="radio" name="menu-item">
 			    <label class="container-header__menu-item__label" for="item1">
-			      	<a class="container-header__menu-item__label__link-static" >Politik, Verwaltung, Bürger</a>
+			      	<a class="container-header__menu-item__label__link-static" href="#">Politik, Verwaltung, Bürger</a>
 			    </label>
 
 			    <input class="container-header__menu-item__input" id="item2" type="radio" name="menu-item">
 			    <label class="container-header__menu-item__label" for="item2">
-			      	<a class="container-header__menu-item__label__link-static" >Kultur &amp; Ausgehen</a>
+			      	<a class="container-header__menu-item__label__link-static" href="#">Kultur &amp; Ausgehen</a>
 			    </label>
 
 			    <input class="container-header__menu-item__input" id="item3" type="radio" name="menu-item">
 			    <label class="container-header__menu-item__label" for="item3">
-			      	<a class="container-header__menu-item__label__link-static" >Tourismus</a>
+			      	<a class="container-header__menu-item__label__link-static" href="#">Tourismus</a>
 			    </label>
 
 			    <input class="container-header__menu-item__input" id="item4" type="radio" name="menu-item">
 			    <label class="container-header__menu-item__label" for="item4">
-			      	<a class="container-header__menu-item__label__link-static" >Wirtschaft</a>
+			      	<a class="container-header__menu-item__label__link-static" href="#">Wirtschaft</a>
 			    </label>
 
 			    <input class="container-header__menu-item__input" id="item5" type="radio" name="menu-item">
 			    <label class="container-header__menu-item__label" for="item5">
-			      	<a class="container-header__menu-item__label__link-static" >Lifestyle</a>
+			      	<a class="container-header__menu-item__label__link-static" href="#">Lifestyle</a>
 			    </label>
 
 			    <input class="container-header__menu-item__input" id="item6" type="radio" name="menu-item">
 			    <label class="container-header__menu-item__label" for="item6">
-			      	<a class="container-header__menu-item__label__link-static" >BerlinFinder</a>
+			      	<a class="container-header__menu-item__label__link-static" href="#">BerlinFinder</a>
 			    </label>
 
 			    <input class="container-header__menu-burger__input" id="burger-check" type="radio" name="menu-item">
-			    <label class="container-header__menu-burger__label" for="burger-check">
-			     	<img src="https://img.icons8.com/windows/50/000000/menu.png">
-			    </label>
+			    <label class="container-header__menu-burger__label" for="burger-check"></label>
 
 			    <!-- end main menu items -->
 
@@ -145,13 +146,14 @@
 
 			    <label class="container-header__menu-item__content-nav__link list-item5" for="item5">Lifestyle</label>
 
-			    <label class="container-header__menu-item__content-nav__link list-item6" for="item6">BerlinFinder</label>
+			    <label class="container-header__menu-item__content-nav__link list-item6 container-header__menu-item__content-nav__link--border" for="item6">BerlinFinder</label>
 
 			    <!-- end aside menu items -->
 
 			    <!-- menu content -->
 			    
 			    <div class="container-header__menu-item__content__chapter  content-politik" id="item-content1">
+			      
 			      <div class="container-header__menu-item__content__chapter-block">
 			        <a class="container-header__menu-item__content__chapter-block__link" href="#">Zur Startseite: Politik, Verwaltung, Bürger</a>
 			        
@@ -248,24 +250,652 @@
 			      
 			      <div class="container-header__menu-item__content__chapter-image">
 			        <section class="container-header__menu-item__content__chapter-image__section">
-			          <img class="container-header__menu-item__content__chapter-image__section-image" src="" alt="">
-			          <a class="container-header__menu-item__content__chapter-image__section-link" href="#">Oft gesucht</a>
+			          	<img class="container-header__menu-item__content__chapter-image__section-image" src="https://www.berlin.de/binaries/asset/image_assets/4672572/ratio_2_1/1499183900/192x96/" alt="">
+			        	<a class="container-header__menu-item__content__chapter-image__section-link" href="#">Landesregierung</a>
+			        </section>
+
+			        <section class="container-header__menu-item__content__chapter-image__section">
+			          	<img class="container-header__menu-item__content__chapter-image__section-image" src="https://www.berlin.de/binaries/asset/image_assets/4772212/ratio_2_1/1488368488/192x96/" alt="">
+			        	<a class="container-header__menu-item__content__chapter-image__section-link" href="#">Behörden-Leistungen</a>
+			        </section>
+
+			        <section class="container-header__menu-item__content__chapter-image__section">
+			          	<img class="container-header__menu-item__content__chapter-image__section-image" src="https://www.berlin.de/binaries/asset/image_assets/4772478/ratio_2_1/1488376102/192x96/" alt="">
+			        	<a class="container-header__menu-item__content__chapter-image__section-link" href="#">Karriere beim Land Berlin</a>
 			        </section>
 			      </div>
 			    </div>
 			    
-			    <div class="container-header__menu-item__content__chapter  content-kultur" id="item-content1">Kultur</div>
+			    <div class="container-header__menu-item__content__chapter  content-kultur" id="item-content1">
+			    	<div class="container-header__menu-item__content__chapter-block">
+			        <a class="container-header__menu-item__content__chapter-block__link" href="#">Zur Startseite: Kultur & Ausgehen</a>
+			        
+			        <section class="container-header__menu-item__content__chapter-block__section">
+			        <a class="container-header__menu-item__content__chapter-block__section-link" href="#">Tickets</a>
+			          <ul class="container-header__menu-item__content__chapter-block__section-list">
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Musical</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Theater</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Konzert-Highlights</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Comedy</a>
+			            </li>
+			          </ul>
+			        </section>
+			        
+			        <section class="container-header__menu-item__content__chapter-block__section">
+			        <a class="container-header__menu-item__content__chapter-block__section-link" href="#">Essen & Trinken</a>
+			          <ul class="container-header__menu-item__content__chapter-block__section-list">
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Restaurants</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Bars</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Cafés</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Neueröffnungen</a>
+			            </li>
+			          </ul>
+			        </section>
+			        
+			        <section class="container-header__menu-item__content__chapter-block__section">
+			        <a class="container-header__menu-item__content__chapter-block__section-link" href="#">Adressen</a>
+			          <ul class="container-header__menu-item__content__chapter-block__section-list">
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Museen</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Kinos</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Galerien</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Theaterbühnen</a>
+			            </li>
+			          </ul>
+			        </section>
+			        
+			        <section class="container-header__menu-item__content__chapter-block__section">
+			        <a class="container-header__menu-item__content__chapter-block__section-link" href="#">Termine</a>
+			          <ul class="container-header__menu-item__content__chapter-block__section-list">
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Kinoprogramm</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Ausstellungen</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Eventvorschau</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Street Food Markets</a>
+			            </li>
+			          </ul>
+			        </section>
+			        
+			        <section class="container-header__menu-item__content__chapter-block__section">
+			        <a class="container-header__menu-item__content__chapter-block__section-link" href="#">Tipps</a>
+			          <ul class="container-header__menu-item__content__chapter-block__section-list">
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Museumsführer</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Wochenende</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Clubs & Party</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Dinner-Shows</a>
+			            </li>
+			          </ul>
+			        </section>
+			        
+			        <section class="container-header__menu-item__content__chapter-block__section">
+			        <a class="container-header__menu-item__content__chapter-block__section-link" href="#">Weitere Angebote</a>
+			          <ul class="container-header__menu-item__content__chapter-block__section-list">
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Fotostrecken</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Kultur-Nachrichten</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Gratis</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Highlights 2019</a>
+			            </li>
+			          </ul>
+			        </section>
+			      </div>
+			      
+			      <div class="container-header__menu-item__content__chapter-image">
+			        <section class="container-header__menu-item__content__chapter-image__section">
+			          	<img class="container-header__menu-item__content__chapter-image__section-image" src="images/Pergamon-Panorama.jpg" alt="">
+			        	<a class="container-header__menu-item__content__chapter-image__section-link" href="#">Tipp: Pergamon-Panorama</a>
+			        </section>
+
+			        <section class="container-header__menu-item__content__chapter-image__section">
+			          	<img class="container-header__menu-item__content__chapter-image__section-image" src="images/Lasergame.jpg" alt="">
+			        	<a class="container-header__menu-item__content__chapter-image__section-link" href="#">Special: Action & Abenteuer</a>
+			        </section>
+
+			        <section class="container-header__menu-item__content__chapter-image__section">
+			          	<img class="container-header__menu-item__content__chapter-image__section-image" src="images/urn-newsml-dpa-com-20090101-131229-99-01285_large_4_3.jpg" alt="">
+			        	<a class="container-header__menu-item__content__chapter-image__section-link" href="#">100 Jahre Bauhaus</a>
+			        </section>
+			      </div>	
+			    </div>
 			    
-			    <div class="container-header__menu-item__content__chapter  content-tourismus" id="item-content1">Tourismus</div>
+			    <div class="container-header__menu-item__content__chapter  content-tourismus" id="item-content1">
+					<div class="container-header__menu-item__content__chapter-block">
+			        <a class="container-header__menu-item__content__chapter-block__link" href="#">Zur Startseite: Tourismus </a>
+			        
+			        <section class="container-header__menu-item__content__chapter-block__section">
+			        <a class="container-header__menu-item__content__chapter-block__section-link" href="#">Sightseeing</a>
+			          <ul class="container-header__menu-item__content__chapter-block__section-list">
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Sehenswürdigkeiten</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Aussichtspunkte</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Parks & Gärten</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Potsdam</a>
+			            </li>
+			          </ul>
+			        </section>
+			        
+			        <section class="container-header__menu-item__content__chapter-block__section">
+			        <a class="container-header__menu-item__content__chapter-block__section-link" href="#">Touren</a>
+			          <ul class="container-header__menu-item__content__chapter-block__section-list">
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Schiffstouren</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Stadtrundfahrten</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Stadtführungen</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Rundflüge</a>
+			            </li>
+			          </ul>
+			        </section>
+			        
+			        <section class="container-header__menu-item__content__chapter-block__section">
+			        <a class="container-header__menu-item__content__chapter-block__section-link" href="#">Mobilität & Verkehr</a>
+			          <ul class="container-header__menu-item__content__chapter-block__section-list">
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Fahrkarten & Pläne</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Routenplaner</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Verkehrslage</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Störungen</a>
+			            </li>
+			          </ul>
+			        </section>
+			        
+			        <section class="container-header__menu-item__content__chapter-block__section">
+			        <a class="container-header__menu-item__content__chapter-block__section-link" href="#">Hotels & Unterkünfte</a>
+			          <ul class="container-header__menu-item__content__chapter-block__section-list">
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Hotels</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Hostels</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Themenhotels</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Hotels & Bahn</a>
+			            </li>
+			          </ul>
+			        </section>
+			        
+			        <section class="container-header__menu-item__content__chapter-block__section">
+			        <a class="container-header__menu-item__content__chapter-block__section-link" href="#">Insider-Tipps</a>
+			          <ul class="container-header__menu-item__content__chapter-block__section-list">
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Für Abenteurer</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Für Foodies</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Für Romantiker</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Mit Eltern</a>
+			            </li>
+			          </ul>
+			        </section>
+			        
+			        <section class="container-header__menu-item__content__chapter-block__section">
+			        <a class="container-header__menu-item__content__chapter-block__section-link" href="#">Weitere Angebote</a>
+			          <ul class="container-header__menu-item__content__chapter-block__section-list">
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Ausstellungen</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Museen</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Zoos & Tierparks</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Klassenfahrten</a>
+			            </li>
+			          </ul>
+			        </section>
+			      </div>
+			      
+			      <div class="container-header__menu-item__content__chapter-image">
+			        <section class="container-header__menu-item__content__chapter-image__section">
+			          	<img class="container-header__menu-item__content__chapter-image__section-image" src="https://www.berlin.de/binaries/asset/image_assets/3773457/ratio_2_1/1441002633/192x96/" alt="">
+			        	<a class="container-header__menu-item__content__chapter-image__section-link" href="#">Special: Die Mauer</a>
+			        </section>
+
+			        <section class="container-header__menu-item__content__chapter-image__section">
+			          	<img class="container-header__menu-item__content__chapter-image__section-image" src="https://www.berlin.de/binaries/asset/image_assets/3592488/ratio_2_1/1530186417/192x96/" alt="">
+			        	<a class="container-header__menu-item__content__chapter-image__section-link" href="#">Tipp: Suarezstraße</a>
+			        </section>
+
+			        <section class="container-header__menu-item__content__chapter-image__section">
+			          	<img class="container-header__menu-item__content__chapter-image__section-image" src="https://www.berlin.de/binaries/asset/image_assets/1267405/ratio_2_1/1542286785/192x96/" alt="">
+			        	<a class="container-header__menu-item__content__chapter-image__section-link" href="#">Tipp: Reichstag mit Kuppel</a>
+			        </section>
+			      </div>
+			    </div>
 			    
-			    <div class="container-header__menu-item__content__chapter  content-wirtschaft" id="item-content1">Wirtschaft</div>
+			    <div class="container-header__menu-item__content__chapter  content-wirtschaft" id="item-content1">
+					<div class="container-header__menu-item__content__chapter-block">
+			        <a class="container-header__menu-item__content__chapter-block__link" href="#">Zur Startseite: Wirtschaft </a>
+			        
+			        <section class="container-header__menu-item__content__chapter-block__section">
+			        <a class="container-header__menu-item__content__chapter-block__section-link" href="#">Wirtschaftsstandort</a>
+			          <ul class="container-header__menu-item__content__chapter-block__section-list">
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Wirtschaftswachstum</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Brancheninformationen</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Messekalender</a>
+			            </li>
+			          </ul>
+			        </section>
+			        
+			        <section class="container-header__menu-item__content__chapter-block__section">
+			        <a class="container-header__menu-item__content__chapter-block__section-link" href="#">Investieren</a>
+			          <ul class="container-header__menu-item__content__chapter-block__section-list">
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Finanzierung & Förderung</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Fachkräfte</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Standortsuche</a>
+			            </li>
+			          </ul>
+			        </section>
+			        
+			        <section class="container-header__menu-item__content__chapter-block__section">
+			        <a class="container-header__menu-item__content__chapter-block__section-link" href="#">Wirtschaftsförderung</a>
+			          <ul class="container-header__menu-item__content__chapter-block__section-list">
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Für Investoren und Unternehmen</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Für Startups und Gründer</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Internationalisierung</a>
+			            </li>
+			          </ul>
+			        </section>
+			        
+			        <section class="container-header__menu-item__content__chapter-block__section">
+			        <a class="container-header__menu-item__content__chapter-block__section-link" href="#">Gründen</a>
+			          <ul class="container-header__menu-item__content__chapter-block__section-list">
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Beratung und Förderung</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Standort</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Start-up Interviews</a>
+			            </li>
+			          </ul>
+			        </section>
+			        
+			        <section class="container-header__menu-item__content__chapter-block__section">
+			        <a class="container-header__menu-item__content__chapter-block__section-link" href="#">Wissenschaft & Innovation</a>
+			          <ul class="container-header__menu-item__content__chapter-block__section-list">
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Wissenschaftsstandort</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Innovationsförderung</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Technologieparks</a>
+			            </li>
+			          </ul>
+			        </section>
+			        
+			        <section class="container-header__menu-item__content__chapter-block__section">
+			        <a class="container-header__menu-item__content__chapter-block__section-link" href="#">Service</a>
+			          <ul class="container-header__menu-item__content__chapter-block__section-list">
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Ansprechpartner</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Nachrichten</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Eventagenturen</a>
+			            </li>
+			          </ul>
+			        </section>
+			      </div>
+			      
+			      <div class="container-header__menu-item__content__chapter-image">
+			        <section class="container-header__menu-item__content__chapter-image__section">
+			          	<img class="container-header__menu-item__content__chapter-image__section-image" src="https://www.berlin.de/binaries/asset/image_assets/3914799/ratio_2_1/1478524672/192x96/" alt="">
+			        	<a class="container-header__menu-item__content__chapter-image__section-link" href="#">Service Packages</a>
+			        </section>
+
+			        <section class="container-header__menu-item__content__chapter-image__section">
+			          	<img class="container-header__menu-item__content__chapter-image__section-image" src="https://www.berlin.de/binaries/asset/image_assets/4171990/ratio_2_1/1445951184/192x96/" alt="">
+			        	<a class="container-header__menu-item__content__chapter-image__section-link" href="#">Wirtschaftsatlas</a>
+			        </section>
+
+			        <section class="container-header__menu-item__content__chapter-image__section">
+			          	<img class="container-header__menu-item__content__chapter-image__section-image" src="https://www.berlin.de/binaries/asset/image_assets/4560538/ratio_2_1/1473461372/192x96/" alt="">
+			        	<a class="container-header__menu-item__content__chapter-image__section-link" href="#">Start-up Interviews</a>
+			        </section>
+			      </div>
+			    </div>
 			    
-			    <div class="container-header__menu-item__content__chapter  content-lifestyle" id="item-content1">Lifestyle</div>
+			    <div class="container-header__menu-item__content__chapter  content-lifestyle" id="item-content1">
+					<div class="container-header__menu-item__content__chapter-block">
+			        <a class="container-header__menu-item__content__chapter-block__link" href="#">Zur Startseite: Lifestyle  </a>
+			        
+			        <section class="container-header__menu-item__content__chapter-block__section">
+			        <a class="container-header__menu-item__content__chapter-block__section-link" href="#">Shopping</a>
+			          <ul class="container-header__menu-item__content__chapter-block__section-list">
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Einkaufscenter</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Einkaufsmeilen</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Flohmärkte</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Best of Berlin</a>
+			            </li>
+			          </ul>
+			        </section>
+			        
+			        <section class="container-header__menu-item__content__chapter-block__section">
+			        <a class="container-header__menu-item__content__chapter-block__section-link" href="#">Immobilien & Wohnen</a>
+			          <ul class="container-header__menu-item__content__chapter-block__section-list">
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Immobiliensuche</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Mietrecht & Urteile</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Möbel & Design</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Haushaltstipps</a>
+			            </li>
+			          </ul>
+			        </section>
+			        
+			        <section class="container-header__menu-item__content__chapter-block__section">
+			        <a class="container-header__menu-item__content__chapter-block__section-link" href="#">Mobilität & Verkehr</a>
+			          <ul class="container-header__menu-item__content__chapter-block__section-list">
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Fahrkarten & Pläne</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Routenplaner</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Verkehrslage</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Störungen</a>
+			            </li>
+			          </ul>
+			        </section>
+			        
+			        <section class="container-header__menu-item__content__chapter-block__section">
+			        <a class="container-header__menu-item__content__chapter-block__section-link" href="#">Reisen & Ausflüge</a>
+			          <ul class="container-header__menu-item__content__chapter-block__section-list">
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Brandenburg</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Ostsee</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Städtereisen</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Reiserecht</a>
+			            </li>
+			          </ul>
+			        </section>
+			        
+			        <section class="container-header__menu-item__content__chapter-block__section">
+			        <a class="container-header__menu-item__content__chapter-block__section-link" href="#">Gesundheit & Beauty</a>
+			          <ul class="container-header__menu-item__content__chapter-block__section-list">
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Gesundheitslexikon</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Ernährung</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Rezepte</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Beauty & Kosmetik</a>
+			            </li>
+			          </ul>
+			        </section>
+			        
+			        <section class="container-header__menu-item__content__chapter-block__section">
+			        <a class="container-header__menu-item__content__chapter-block__section-link" href="#">Weitere Themen</a>
+			          <ul class="container-header__menu-item__content__chapter-block__section-list">
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Auto & Motor</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Finanzen & Recht</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Computer & Handy</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Liebe & Partnerschaft</a>
+			            </li>
+			          </ul>
+			        </section>
+			      </div>
+			      
+			      <div class="container-header__menu-item__content__chapter-image">
+			        <section class="container-header__menu-item__content__chapter-image__section">
+			          	<img class="container-header__menu-item__content__chapter-image__section-image" src="https://www.berlin.de/binaries/asset/image_assets/3236602/ratio_2_1/1487949881/192x96/" alt="">
+			        	<a class="container-header__menu-item__content__chapter-image__section-link" href="#">Special: Sharing</a>
+			        </section>
+
+			        <section class="container-header__menu-item__content__chapter-image__section">
+			          	<img class="container-header__menu-item__content__chapter-image__section-image" src="https://www.berlin.de/binaries/asset/image_assets/3761416/ratio_2_1/1490694120/192x96/" alt="">
+			        	<a class="container-header__menu-item__content__chapter-image__section-link" href="#">Special: Eventlocations</a>
+			        </section>
+
+			        <section class="container-header__menu-item__content__chapter-image__section">
+			          	<img class="container-header__menu-item__content__chapter-image__section-image" src="https://www.berlin.de/binaries/asset/image_assets/4238989/ratio_2_1/1488367456/192x96/" alt="">
+			        	<a class="container-header__menu-item__content__chapter-image__section-link" href="#">BerlinFinder: Alle Adressen</a>
+			        </section>
+			      </div>
+			    </div>
 			    
-			    <div class="container-header__menu-item__content__chapter  content-berlin" id="item-content1">BerlinFinder</div>
+			    <div class="container-header__menu-item__content__chapter  content-berlin" id="item-content1">
+					<div class="container-header__menu-item__content__chapter-block">
+			        <a class="container-header__menu-item__content__chapter-block__link" href="#">Zur Startseite: BerlinFinder  </a>
+			        
+			        <section class="container-header__menu-item__content__chapter-block__section">
+			        <a class="container-header__menu-item__content__chapter-block__section-link" href="#">Finanzen & Recht</a>
+			          <ul class="container-header__menu-item__content__chapter-block__section-list">
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Rechtsanwälte</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Steuerberater</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Versicherungen</a>
+			            </li>
+			          </ul>
+			        </section>
+			        
+			        <section class="container-header__menu-item__content__chapter-block__section">
+			        <a class="container-header__menu-item__content__chapter-block__section-link" href="#">Gesundheit & Beauty</a>
+			          <ul class="container-header__menu-item__content__chapter-block__section-list">
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Zahnärzte</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Friseure</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Wellness</a>
+			            </li>
+			          </ul>
+			        </section>
+			        
+			        <section class="container-header__menu-item__content__chapter-block__section">
+			        <a class="container-header__menu-item__content__chapter-block__section-link" href="#">Shopping</a>
+			          <ul class="container-header__menu-item__content__chapter-block__section-list">
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Schuhgeschäfte</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Second-Hand</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Mode</a>
+			            </li>
+			          </ul>
+			        </section>
+			        
+			        <section class="container-header__menu-item__content__chapter-block__section">
+			        <a class="container-header__menu-item__content__chapter-block__section-link" href="#">Jobs & Ausbildung</a>
+			          <ul class="container-header__menu-item__content__chapter-block__section-list">
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Bildungseinrichtungen</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Grundschulen</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Privatschulen</a>
+			            </li>
+			          </ul>
+			        </section>
+			        
+			        <section class="container-header__menu-item__content__chapter-block__section">
+			        <a class="container-header__menu-item__content__chapter-block__section-link" href="#">Immobilien & Wohnen</a>
+			          <ul class="container-header__menu-item__content__chapter-block__section-list">
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Hausverwaltungen</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Immobilien</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Immobilienmakler</a>
+			            </li>
+			          </ul>
+			        </section>
+			        
+			        <section class="container-header__menu-item__content__chapter-block__section">
+			        <a class="container-header__menu-item__content__chapter-block__section-link" href="#">Weitere Adressen</a>
+			          <ul class="container-header__menu-item__content__chapter-block__section-list">
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Hotels</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Restaurants</a>
+			            </li>
+			            <li class="container-header__menu-item__content__chapter-block__section-list-item">
+			              <a class="container-header__menu-item__content__chapter-block__section-list-item__link" href="">Sport & Freizeit</a>
+			            </li>
+			          </ul>
+			        </section>
+			      </div>
+			      
+			      <div class="container-header__menu-item__content__chapter-image">
+			        <section class="container-header__menu-item__content__chapter-image__section">
+			          	<img class="container-header__menu-item__content__chapter-image__section-image" src="https://www.berlin.de/binaries/asset/image_assets/2702905/ratio_2_1/1352208146/192x96/" alt="">
+			        	<a class="container-header__menu-item__content__chapter-image__section-link" href="#">Ihre Firma im BerlinFinder</a>
+			        </section>
+
+			        <section class="container-header__menu-item__content__chapter-image__section">
+			          	<img class="container-header__menu-item__content__chapter-image__section-image" src="https://www.berlin.de/binaries/asset/image_assets/3899736/ratio_2_1/1434698423/192x96/" alt="">
+			        	<a class="container-header__menu-item__content__chapter-image__section-link" href="#">Special: Beauty-Guide</a>
+			        </section>
+
+			        <section class="container-header__menu-item__content__chapter-image__section">
+			          	<img class="container-header__menu-item__content__chapter-image__section-image" src="https://www.berlin.de/binaries/asset/image_assets/4441213/ratio_2_1/1465209531/192x96/" alt="">
+			        	<a class="container-header__menu-item__content__chapter-image__section-link" href="#">Special: Handwerker</a>
+			        </section>
+			      </div>
+			    </div>
 			    
 
 			    <!-- end menu content -->
+
+			    <!-- menu burder -->
+					<a class="container-header__menu__link-burger" href="#">Politik, Verwaltung, Bürger</a>
+					<a class="container-header__menu__link-burger" href="#">Kultur &amp; Ausgehen</a>			      	
+					<a class="container-header__menu__link-burger" href="#">Tourismus</a>
+					<a class="container-header__menu__link-burger" href="#">Wirtschaft</a>
+					<a class="container-header__menu__link-burger" href="#">Lifestyle</a>
+					<a class="container-header__menu__link-burger" href="#">BerlinFinder</a>
+			    <!-- -->
 
 			  </div>
   			</nav>
@@ -391,7 +1021,7 @@
 					<div class="block-news__content">
 						<div class="block-news__content__block ">
 							<a class="block-news__content__block__link" href="#" >Breite Beteiligung</a>
-							<img class="block-news__content__block__image" src="public/images/sale.jpg" alt="" >
+							<img class="block-news__content__block__image" src="images/sale.jpg" alt="" >
 							<span class="block-news__content__block__text">Karl-Marx-Allee: Schutz vor Mietsteigerung. <a class="text-info__link" href="#">mehr</a></span>
 						</div>
 						<div class="block-news__content__block block-left block-news__content__block--border-bottom">
@@ -402,12 +1032,12 @@
 						</div>
 						<div class="block-news__content__block block-left1">
 							<a class="block-news__content__block__link" href="#" >Fotos</a>
-							<img class="block-news__content__block__image" src="public/images/Silvester_Berlin_2018_07.jpg" alt="" >
+							<img class="block-news__content__block__image" src="images/Silvester_Berlin_2018_07.jpg" alt="" >
 							<span class="block-news__content__block__text">Silvester 2018 am Brandenburger Tor <a class="text-info__link" href="#">mehr</a></span>
 						</div>
 						<div class="block-news__content__block block-left2">
 							<a class="block-news__content__block__link" href="#" >Gratis</a>
-							<img class="block-news__content__block__image" src="public/images/jurten_9349403dpa.jpg" alt="" >
+							<img class="block-news__content__block__image" src="images/jurten_9349403dpa.jpg" alt="" >
 							<span class="block-news__content__block__text">Geschichten in Jurten<br> <a class="text-info__link" href="#">mehr</a></span>
 						</div>
 						<div class="block-news__content__block block-left3 block-news__content__block--border-bottom">
@@ -422,7 +1052,7 @@
 						</div>
 						<div class="block-news__content__block block-left4">
 							<a class="block-news__content__block__link" href="#" >Störungen im Nahverkehr</a>
-							<img class="block-news__content__block__image" src="public/images/bahn.jpg" alt="" >
+							<img class="block-news__content__block__image" src="images/bahn.jpg" alt="" >
 							<span class="block-news__content__block__text">Aktuelle Informationen zu Störungen und <a class="text-info__link" href="#">mehr</a></span>
 						</div>
 					</div>
@@ -475,7 +1105,7 @@
 
 		<section class="container-news">
 			<div class="container-news__separator">
-				<img class="separator__image" src="public/images/separator.svg" alt="seporator image">
+				<img class="separator__image" src="images/separator.svg" alt="seporator image">
 			</div>
 
 			<div class="container-news__section">
@@ -515,7 +1145,7 @@
 				
 				<div class="container-news__section-content">
 					<div class="section-content-block">
-						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/politic-content-first.jpg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="images/politic-content-first.jpg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Betriebsprüfungen Gastronomie</a>
 							<p class="content-block__text-info">Steuerliche Überprüfungen erbrachten bisher ein Mehrergebnis von 15,9 Mio Euro. <a class="text-info__link" href="#">mehr</a></p>
@@ -547,7 +1177,7 @@
 						<a class="section-content-block__link" href="#">NUR MIT EUCH - die Berliner Bundesratspräsidentschaft</a>
 					</div>
 					<div class="section-content-block">
-						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/politic-content-second.png"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="images/politic-content-second.png"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Ehrenamt: Berlin sagt Danke!</a>
 							<p class="content-block__text-info">Am 16. Februar 2019 bedanken sich Senat und Abgeordnetenhaus für das freiwillige Engagement.<a class="text-info__link" href="#">mehr</a></p>
@@ -590,28 +1220,28 @@
 
 				<div class="container-news__section-content">
 					<div class="section-content-block">
-						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/Berlin_City_Tour_Tour-A.JPG"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="images/Berlin_City_Tour_Tour-A.JPG"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Hop-on Hop-off Tour mit 24h-Ticket</a>
 							<p class="content-block__text-info">Entdecken Sie 24 Stunden lang die wichtigsten Sehenswürdigkeiten Berlins per Hop-on Hop-off-Bustour.<a class="text-info__link" href="#">mehr</a></p>
 						</div>
 					</div>
 					<div class="section-content-block">
-						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/Spree-Winter-Berlin.jpeg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="images/Spree-Winter-Berlin.jpeg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Winterfahrt über die Spree</a>
 							<p class="content-block__text-info">Entdecken Sie das winterliche Berlin und die Sehenswürdigkeiten der Stadt entspannt an Bord eines Schiffes.<a class="text-info__link" href="#">mehr</a></p>
 						</div>
 					</div>
 					<div class="section-content-block nth-child">
-						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/Mauer-in-Berlin.jpg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="images/Mauer-in-Berlin.jpg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Mauer in Berlin</a>
 							<p class="content-block__text-info">Wer in die Hauptstadt kommt, will sie sehen. Wo in Berlin noch echte Mauer steht - und was nur Nachbau ist. <a class="text-info__link" href="#">mehr</a></p>
 						</div>
 					</div>
 					<div class="section-content-block nth-child">
-						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/Show-Erlebnis.jpg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="images/Show-Erlebnis.jpg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Das neue Show-Erlebnis!</a>
 							<p class="content-block__text-info">Diese Blue Man Group gibt es nur in Berlin! Jetzt noch länger, noch überraschender und noch näher dran!<a class="text-info__link" href="#">mehr</a></p>
@@ -654,28 +1284,28 @@
 
 				<div class="container-news__section-content">
 					<div class="section-content-block">
-						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/Pergamonmuseum_Das_Panorama_asisi.jpg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="images/Pergamonmuseum_Das_Panorama_asisi.jpg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Pergamon-Panorama</a>
 							<p class="content-block__text-info">In dem neuen Pergamon-Panorama des Künstlers Yadegar Asisi sind Originalteile des Pergamonaltars sowie eine Videoinstallation zum Pergamonaltar zu besichtigen.<a class="text-info__link" href="#">mehr</a></p>
 						</div>
 					</div>
 					<div class="section-content-block">
-						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/christmas_garden_berlin.jpg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="images/christmas_garden_berlin.jpg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Christmas Garden Berlin</a>
 							<p class="content-block__text-info">Der Botanische Garten in Berlin wird bei «Christmas Garden» in eine leuchtende Märchenlandschaft mit allerlei Lichtspielen, Traumwäldern und 3D-Leuchtfiguren verwandelt. <a class="text-info__link" href="#">mehr</a></p>
 						</div>
 					</div>
 					<div class="section-content-block nth-child">
-						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/Lasergame_Berlin.jpg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="images/Lasergame_Berlin.jpg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Special: Action & Abenteuer</a>
 							<p class="content-block__text-info">Paintball, House-Running, Lasergame & Co.: Die besten Adressen in Berlin für Action, Abenteuer und Trendsportarten.<a class="text-info__link" href="#">mehr</a></p>
 						</div>
 					</div>
 					<div class="section-content-block nth-child">
-						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/18043_TDVB_2_Banner.jpg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="images/18043_TDVB_2_Banner.jpg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Tanz der Vampire</a>
 							<p class="content-block__text-info">Das Meisterwerk verlässt Deutschland. Nur noch bis März 2019 im Berliner Stage Theater des Westens.<a class="text-info__link" href="#">mehr</a></p>
@@ -804,40 +1434,40 @@
 
 				<div class="container-news__section-content">
 					<div class="section-content-block">
-						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/Weihnachtsbxumexam.jpg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="images/Weihnachtsbxumexam.jpg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Weihnachtsbaumabholung</a>
 							<p class="content-block__text-info">Im Januar holt die BSR die ausgedienten Weihnachtsbäume ab. Die Termine für jeden Bezirk im Überblick. <a class="text-info__link" href="#">mehr</a></p>
 						</div>
 					</div>
 					<div class="section-content-block">
-						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/urn-newsml-dpa-com-.jpg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="images/urn-newsml-dpa-com-.jpg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Das ändert sich 2019</a>
 							<p class="content-block__text-info">Im neuen Jahr kommen auf Verbraucher in vielen Bereichen Neuerungen zu. Die wichtigsten Änderungen im Überblick. <a class="text-info__link" href="#">mehr</a></p>
 						</div>
 					</div>
 					<div class="section-content-block nth-child">
-						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/sal.jpg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="images/sal.jpg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Leichte Rezepte fürs neue Jahr</a>
 							<p class="content-block__text-info">Diese Gerichte helfen bei einem schwungvollen Start ins neue Jahr - und bringen die Freude am Kochen zurück. <a class="text-info__link" href="#">mehr</a></p>
 						</div>
 					</div>
-					<div class="section-content-block nth-child section-content-block--wrap">
+					<div class="section-content-block nth-child section-content-block-wrap">
 						<a class="content-block__text-link " href="#">Oft gesucht</a>
-						<a class="section-content-block__link" href="#">Eventlocations</a>
-						<a class="section-content-block__link" href="#">Tickets</a>
-						<a class="section-content-block__link" href="#">WLAN</a>
-						<a class="section-content-block__link" href="#">Messekalender</a>
-						<a class="section-content-block__link" href="#">Umzug</a>
-						<a class="section-content-block__link" href="#">Jobs & Praktika bei berlin.de</a>
+						<a class="section-content-block__link section-content-block--wrap" href="#">Eventlocations</a>
+						<a class="section-content-block__link section-content-block--wrap" href="#">Tickets</a>
+						<a class="section-content-block__link section-content-block--wrap" href="#">WLAN</a>
+						<a class="section-content-block__link section-content-block--wrap" href="#">Messekalender</a>
+						<a class="section-content-block__link section-content-block--wrap" href="#">Umzug</a>
+						<a class="section-content-block__link section-content-block--wrap" href="#">Jobs & Praktika bei berlin.de</a>
 					</div>
 				</div>
 			</div>
 
 			<div class="container-news__separator">
-				<img class="separator__image" src="public/images/separator.svg" alt="seporator image">
+				<img class="separator__image" src="images/separator.svg" alt="seporator image">
 			</div>
 
 			<div class="container-news__section">
@@ -871,28 +1501,28 @@
 
 				<div class="container-news__section-content">
 					<div class="section-content-block">
-						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/Maischak.jpg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="images/Maischak.jpg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Gründer-Interview: Benjamin Maischak</a>
 							<p class="content-block__text-info">Mit der JobUfo-App können sich Jugendliche per Smartphone-Video bei Unternehmen bewerben. <a class="text-info__link" href="#">mehr</a></p>
 						</div>
 					</div>
 					<div class="section-content-block">
-						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/modeleisenbahn.jpg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="images/modeleisenbahn.jpg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Messe: Modellbahnbörse Berlin</a>
 							<p class="content-block__text-info">Sammler können hier Modelleisenbahnen und -autos tauschen, kaufen und verkaufen. <a class="text-info__link" href="#">mehr</a></p>
 						</div>
 					</div>
 					<div class="section-content-block nth-child">
-						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/Pandion4Living.jpg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="images/Pandion4Living.jpg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Bauprojekt: Pandion 4Living</a>
 							<p class="content-block__text-info">In Prenzlauer Berg wird bis 2020 ein Wohnensemble mit über 350 Eigentumswohnungen errichtet. <a class="text-info__link" href="#">mehr</a></p>
 						</div>
 					</div>
 					<div class="section-content-block nth-child">
-						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/zeughaus_gallery_02.jpg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="images/zeughaus_gallery_02.jpg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Event-Locations in Berlin</a>
 							<p class="content-block__text-info">Ob Firmenevent, Produktpräsentation oder Hochzeitsfest: Berlin bietet Veranstaltungsorte in jeglicher Größe und für jeden Bedarf. <a class="text-info__link" href="#">mehr</a></p>
@@ -935,28 +1565,28 @@
 
 				<div class="container-news__section-content">
 					<div class="section-content-block">
-						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/Iittala_2018_Store_Friedrichstrasse_Berlin_1.jpg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="images/Iittala_2018_Store_Friedrichstrasse_Berlin_1.jpg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Neueröffnung: Iittala</a>
 							<p class="content-block__text-info">Gleiche Straße, neue Räume: Die finnische Designmarke Iittala hat einen neuen Store in der Friedrichstraße eröffnet. <a class="text-info__link" href="#">mehr</a></p>
 						</div>
 					</div>
 					<div class="section-content-block">
-						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/gift.jpg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="images/gift.jpg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Tauschbörse für Weihnachtsgeschenke</a>
 							<p class="content-block__text-info">Wieder Socken? Mit Glück gibt es bei der Tauschbörse etwas anderes dafür. <a class="text-info__link" href="#">mehr</a></p>
 						</div>
 					</div>
 					<div class="section-content-block nth-child">
-						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/bags.jpg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="images/bags.jpg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Verkaufsoffener Sonntag</a>
 							<p class="content-block__text-info">Zum nächsten verkaufsoffenen Sonntag am 27. Januar öffnen viele Einkaufszentren und Geschäfte von 13 bis 18 Uhr. <a class="text-info__link" href="#">mehr</a></p>
 						</div>
 					</div>
 					<div class="section-content-block nth-child">
-						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="public/images/IGW19.jpg"></a>
+						<a class="section-content-block__link-image" href="#"><img class="content-block__image" src="images/IGW19.jpg"></a>
 						<div class="content-block__text">
 							<a class="content-block__text-link" href="#">Grüne Woche</a>
 							<p class="content-block__text-info">Lebenskünstler willkommen! Wie steht es um die ökologische Landwirtschaft? Fragen und Antworten finde Sie in Halle 1.2. <a class="text-info__link" href="#">mehr</a></p>
@@ -977,7 +1607,7 @@
 			<a class="conatiner-footer__to-up" href="#header" >Zum Seitenanfang</a>
 			<div class="conatiner-footer__blocks">
 				<div class="conatiner-footer__block-about">
-					<img class="footer__block-about__image" src="public/images/logo_berlin_de_footer.svg">
+					<img class="footer__block-about__image" src="images/logo_berlin_de_footer.svg">
 					<span class="footer__block-about__text-head">Berlin.de Newsletter</span>
 					<span class="footer__block-about__text">Die Tipps für das Wochenende und für den kommenden Monat, ausgewählt von der Berlin.de-Redaktion. Kostenlos direkt in Ihr Postfach.</span>
 					<button class="footer__block-about__button">Newsletter bestellen</button>

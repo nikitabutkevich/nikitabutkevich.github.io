@@ -1,6 +1,12 @@
 .container-header__menu-burger__label {
+	display: none;
 	position: absolute;
     top: 0;
     right: 0;
+    cursor: pointer;
+    width: 3em;
+    height: 3em;
+    background: url('../../public/images/close.svg') no-repeat center center;
+    background-size: 50% auto;
     cursor: pointer;
 }

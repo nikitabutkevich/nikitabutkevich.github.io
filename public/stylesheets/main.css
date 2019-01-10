@@ -15,6 +15,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  list-style: none;
   box-sizing: border-box;
   word-wrap: break-word;
 }
@@ -45,6 +46,8 @@ input [type=checkbox], input [type=radio] {
 }
 
 .container-header {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   font-size: 0.9em;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
@@ -240,12 +243,13 @@ input [type=checkbox], input [type=radio] {
 }
 
 /*Нажатие на Politik, Verwaltung, Bürger*/
-#item1:checked ~ .list-item1, #item1:checked ~ .list-item2, #item1:checked ~ .list-item3, #item1:checked ~ .list-item4, #item1:checked ~ .list-item5, #item1:checked ~ .list-item6 {
+#item1:checked ~ .list-item1, #item1:checked ~ .list-item2, #item1:checked ~ .list-item3, #item1:checked ~ .list-item4, #item1:checked ~ .list-item5, #item1:checked ~ .list-item6, #item1:checked ~ .container-header__menu-burger__label {
   display: inline-block;
 }
 #item1:checked ~ .list-item1 {
   color: #fff;
-  background: #253276;
+  background: url("../../public/images/triangel.svg") no-repeat 108% center, #253276;
+  background-size: 22.5% auto;
 }
 #item1:checked ~ .content-politik {
   display: flex;
@@ -254,19 +258,21 @@ input [type=checkbox], input [type=radio] {
 /*Нажатие на Politik, Verwaltung, Bürger левое меню*/
 .list-item1:checked {
   color: #fff;
-  background: #253276;
+  background: url("../../public/images/triangel.svg") no-repeat 108% center, #253276;
+  background-size: 22.5% auto;
 }
 .list-item1:checked ~ .content-politik {
   display: flex;
 }
 
 /*Нажатие на Kultur & Ausgehen*/
-#item2:checked ~ .list-item1, #item2:checked ~ .list-item2, #item2:checked ~ .list-item3, #item2:checked ~ .list-item4, #item2:checked ~ .list-item5, #item2:checked ~ .list-item6 {
+#item2:checked ~ .list-item1, #item2:checked ~ .list-item2, #item2:checked ~ .list-item3, #item2:checked ~ .list-item4, #item2:checked ~ .list-item5, #item2:checked ~ .list-item6, #item2:checked ~ .container-header__menu-burger__label {
   display: inline-block;
 }
 #item2:checked ~ .list-item2 {
   color: #fff;
-  background: #253276;
+  background: url("../../public/images/triangel.svg") no-repeat 108% center, #253276;
+  background-size: 22.5% auto;
 }
 #item2:checked ~ .content-kultur {
   display: flex;
@@ -275,19 +281,21 @@ input [type=checkbox], input [type=radio] {
 /*Нажатие на Kultur & Ausgehen левое меню*/
 .list-item2:checked {
   color: #fff;
-  background: #253276;
+  background: url("../../public/images/triangel.svg") no-repeat 108% center, #253276;
+  background-size: 22.5% auto;
 }
 .list-item2:checked ~ .content-kultur {
   display: flex;
 }
 
 /*Нажатие на Tourismus*/
-#item3:checked ~ .list-item1, #item3:checked ~ .list-item2, #item3:checked ~ .list-item3, #item3:checked ~ .list-item4, #item3:checked ~ .list-item5, #item3:checked ~ .list-item6 {
+#item3:checked ~ .list-item1, #item3:checked ~ .list-item2, #item3:checked ~ .list-item3, #item3:checked ~ .list-item4, #item3:checked ~ .list-item5, #item3:checked ~ .list-item6, #item3:checked ~ .container-header__menu-burger__label {
   display: inline-block;
 }
 #item3:checked ~ .list-item3 {
   color: #fff;
-  background: #253276;
+  background: url("../../public/images/triangel.svg") no-repeat 108% center, #253276;
+  background-size: 22.5% auto;
 }
 #item3:checked ~ .content-tourismus {
   display: flex;
@@ -296,19 +304,21 @@ input [type=checkbox], input [type=radio] {
 /*Нажатие на Tourismus левое */
 .list-item3:checked {
   color: #fff;
-  background: #253276;
+  background: url("../../public/images/triangel.svg") no-repeat 108% center, #253276;
+  background-size: 22.5% auto;
 }
 .list-item3:checked ~ .content-tourismus {
   display: flex;
 }
 
 /*Нажатие на  Wirtschaft */
-#item4:checked ~ .list-item1, #item4:checked ~ .list-item2, #item4:checked ~ .list-item3, #item4:checked ~ .list-item4, #item4:checked ~ .list-item5, #item4:checked ~ .list-item6 {
+#item4:checked ~ .list-item1, #item4:checked ~ .list-item2, #item4:checked ~ .list-item3, #item4:checked ~ .list-item4, #item4:checked ~ .list-item5, #item4:checked ~ .list-item6, #item4:checked ~ .container-header__menu-burger__label {
   display: inline-block;
 }
 #item4:checked ~ .list-item4 {
   color: #fff;
-  background: #253276;
+  background: url("../../public/images/triangel.svg") no-repeat 108% center, #253276;
+  background-size: 22.5% auto;
 }
 #item4:checked ~ .content-wirtschaft {
   display: flex;
@@ -317,19 +327,21 @@ input [type=checkbox], input [type=radio] {
 /*Нажатие на  Wirtschaft левое меню*/
 .list-item4:checked {
   color: #fff;
-  background: #253276;
+  background: url("../../public/images/triangel.svg") no-repeat 108% center, #253276;
+  background-size: 22.5% auto;
 }
 .list-item4:checked ~ .content-wirtschaft {
   display: flex;
 }
 
 /*Нажатие на Lifestyle*/
-#item5:checked ~ .list-item1, #item5:checked ~ .list-item2, #item5:checked ~ .list-item3, #item5:checked ~ .list-item4, #item5:checked ~ .list-item5, #item5:checked ~ .list-item6 {
+#item5:checked ~ .list-item1, #item5:checked ~ .list-item2, #item5:checked ~ .list-item3, #item5:checked ~ .list-item4, #item5:checked ~ .list-item5, #item5:checked ~ .list-item6, #item5:checked ~ .container-header__menu-burger__label {
   display: inline-block;
 }
 #item5:checked ~ .list-item5 {
   color: #fff;
-  background: #253276;
+  background: url("../../public/images/triangel.svg") no-repeat 108% center, #253276;
+  background-size: 22.5% auto;
 }
 #item5:checked ~ .content-lifestyle {
   display: flex;
@@ -338,19 +350,21 @@ input [type=checkbox], input [type=radio] {
 /*Нажатие на Lifestyle левое меню*/
 .list-item5:checked {
   color: #fff;
-  background: #253276;
+  background: url("../../public/images/triangel.svg") no-repeat 108% center, #253276;
+  background-size: 22.5% auto;
 }
 .list-item5:checked ~ .content-lifestyle {
   display: flex;
 }
 
 /*Нажатие на  BerlinFinder*/
-#item6:checked ~ .list-item1, #item6:checked ~ .list-item2, #item6:checked ~ .list-item3, #item6:checked ~ .list-item4, #item6:checked ~ .list-item5, #item6:checked ~ .list-item6 {
+#item6:checked ~ .list-item1, #item6:checked ~ .list-item2, #item6:checked ~ .list-item3, #item6:checked ~ .list-item4, #item6:checked ~ .list-item5, #item6:checked ~ .list-item6, #item6:checked ~ .container-header__menu-burger__label {
   display: inline-block;
 }
 #item6:checked ~ .list-item6 {
   color: #fff;
-  background: #253276;
+  background: url("../../public/images/triangel.svg") no-repeat 108% center, #253276;
+  background-size: 22.5% auto;
 }
 #item6:checked ~ .content-berlin {
   display: flex;
@@ -359,7 +373,8 @@ input [type=checkbox], input [type=radio] {
 /*Нажатие на  BerlinFinder левое меню*/
 .list-item6:checked {
   color: #fff;
-  background: #253276;
+  background: url("../../public/images/triangel.svg") no-repeat 108% center, #253276;
+  background-size: 22.5% auto;
 }
 .list-item6:checked ~ .content-berlin {
   display: flex;
@@ -368,88 +383,199 @@ input [type=checkbox], input [type=radio] {
 .container-header__menu-item__label {
   display: inline-block;
   padding: 1em 1em;
+  cursor: pointer;
 }
 .container-header__menu-item__label:hover {
   text-decoration: underline;
 }
 
+.container-header__menu-item__content-nav__link--border {
+  border: 0 !important;
+}
+
+.background-list-item1 {
+  background: url("../../public/images/cloud.svg");
+}
+
 .list-item1 {
   position: absolute;
   left: 0;
-  top: 3.25em;
+  top: 3.2em;
 }
 
 .list-item2 {
   position: absolute;
   left: 0;
-  top: 6.5em;
+  top: 7.5em;
 }
 
 .list-item3 {
   position: absolute;
   left: 0;
-  top: 9.75em;
+  top: 11.8em;
 }
 
 .list-item4 {
   position: absolute;
   left: 0;
-  top: 13em;
+  top: 16.1em;
 }
 
 .list-item5 {
   position: absolute;
   left: 0;
-  top: 16.25em;
+  top: 20.4em;
 }
 
 .list-item6 {
   position: absolute;
   left: 0;
-  top: 19.5em;
+  top: 24.725em;
 }
 
 .container-header__menu-item__content-nav__link {
   display: none;
-  width: 25%;
-  padding: 1em 0 1em 3em;
-  border-bottom: 0.1em solid #999;
+  width: 30%;
+  padding: 1.5em 0 1.5em 2em;
+  border-bottom: 0.1em solid #c2c2c2;
   text-decoration: none;
   color: #253276;
   background: #f5f5f5;
+  background: url("../../public/images/arrow-to-right_list.svg") no-repeat 95% center;
+  background-size: 4% auto;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
 }
 .container-header__menu-item__content-nav__link:hover {
   text-decoration: underline;
 }
+.container-header__menu-item__content-nav__link:last-child {
+  border: 0em;
+}
+
+.container-header__menu-item__content__chapter-block__link {
+  display: inline-block;
+  width: 100%;
+  margin: 1em 1em 0 1em;
+  font-weight: 700;
+}
+.container-header__menu-item__content__chapter-block__link:hover {
+  text-decoration: underline;
+}
+
+.container-header__menu-item__content__chapter-block {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  background-color: #fff;
+}
+
+.container-header__menu-item__content__chapter-block__section-link {
+  display: inline-block;
+  font-weight: 700;
+  width: 100%;
+}
+.container-header__menu-item__content__chapter-block__section-link:hover {
+  text-decoration: underline;
+}
+
+.container-header__menu-item__content__chapter-block__section-list-item {
+  padding: 0.25em 0;
+  cursor: pointer;
+}
+.container-header__menu-item__content__chapter-block__section-list-item:hover {
+  text-decoration: underline;
+}
+
+.container-header__menu-item__content__chapter-block__section-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.container-header__menu-item__content__chapter-block__section {
+  width: 42.5%;
+  margin: 1em;
+}
+
+.container-header__menu-item__content__chapter-image__section-image {
+  width: 100%;
+  height: 5em;
+}
+
+.container-header__menu-item__content__chapter-image__section-link {
+  font-size: 0.9em;
+}
+.container-header__menu-item__content__chapter-image__section-link:hover {
+  text-decoration: underline;
+}
+
+.container-header__menu-item__content__chapter-image__section {
+  width: 100%;
+  padding-top: 1.5em;
+}
+
+.container-header__menu-item__content__chapter-image {
+  width: 30%;
+  padding: 5%;
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  padding-top: 2em;
+  background-color: #fff;
+}
 
 .container-header__menu-item__content__chapter {
-  position: relative;
-  top: 0;
+  top: 3.25em;
   left: 0;
-  padding-left: 32.5%;
+  padding-left: 30%;
   display: none;
   flex-flow: column wrap;
-  width: 130%;
-  height: 30em;
+  width: 100%;
+  height: 35em;
 }
 
 .container-header__menu-burger__label {
+  display: none;
   position: absolute;
   top: 0;
   right: 0;
   cursor: pointer;
+  width: 3em;
+  height: 3em;
+  background: url("../../public/images/close.svg") no-repeat center center;
+  background-size: 50% auto;
+  cursor: pointer;
+}
+
+.container-header__menu__link-burger {
+  display: none;
 }
 
 .container-header__menu-item {
+  position: relative;
   margin: 0;
   padding: 0;
 }
 
+.container-header__menu-burger {
+  display: none;
+  position: absolute;
+  top: 0.5em;
+  right: 0;
+  width: 3em;
+  height: 3em;
+  background: url("../../public/images/menu-burger.svg") no-repeat center center;
+  background-size: 70% auto;
+  cursor: pointer;
+}
+
 .container-header__menu {
-  position: relative;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
   width: 100%;
   color: #5f3697;
   background-color: #f5f5f5;
@@ -1247,16 +1373,7 @@ input [type=checkbox], input [type=radio] {
   display: inline-block;
   width: 100%;
   color: #003685;
-  padding: 0.5em 0 0.5em 2em;
-  /*background: url('../../public/images/right-arrow.svg') 4% center no-repeat;
-  background-size: 3% auto;*/
-}
-.section-content-block__link:before {
-  content: "";
-  font-family: "FontAwesome";
-  padding-right: 0.5em;
-  margin-left: -1.8em;
-  border: 1px solid red;
+  padding: 0.5em 0 0.5em 0;
 }
 .section-content-block__link:hover {
   text-decoration: underline;
@@ -1328,6 +1445,15 @@ input [type=checkbox], input [type=radio] {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
+}
+
+.section-content-block-wrap {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.section-content-block--wrap {
+  padding-left: 1.5em;
 }
 
 .news__section-name--padding {
@@ -1599,8 +1725,6 @@ input [type=checkbox], input [type=radio] {
 .container-content__column-navigation__article__list-item {
   margin-bottom: 0.5em;
   padding-left: 2em;
-  background: url("../../public/images/right-arrow.svg") no-repeat 5.5% 10%;
-  background-size: 4% auto;
 }
 
 .container-content__column-navigation__article__list {
@@ -1728,8 +1852,42 @@ input [type=checkbox], input [type=radio] {
   margin-top: 1em;
   width: 100%;
   height: 12em;
-  overflow: hiden;
-  border: 1px solid red;
+  overflow: hidden;
+}
+.container-content__column-navigation__slider .carousel {
+  width: 100%;
+  height: 100%;
+}
+.container-content__column-navigation__slider .carousel .carousel-item {
+  padding-top: 1em;
+}
+.container-content__column-navigation__slider .carousel .carousel-item .carousel-item__list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.container-content__column-navigation__slider .carousel .carousel-item .carousel-item__list .carousel-item__list-item {
+  width: 45%;
+}
+.container-content__column-navigation__slider .carousel .carousel-item .carousel-item__list .carousel-item__list-item .carousel-item__half {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.container-content__column-navigation__slider .carousel .carousel-item .carousel-item__list .carousel-item__list-item .carousel-item__half .carousel-item__half-link, .container-content__column-navigation__slider .carousel .carousel-item .carousel-item__list .carousel-item__list-item .carousel-item__half .carousel-item__half-name {
+  margin: 0;
+  padding: 0;
+}
+.container-content__column-navigation__slider .carousel .carousel-item .carousel-item__list .carousel-item__list-item .carousel-item__half .carousel-item__half-link .carousel-item__half-link__image, .container-content__column-navigation__slider .carousel .carousel-item .carousel-item__list .carousel-item__list-item .carousel-item__half .carousel-item__half-name .carousel-item__half-link__image {
+  width: 100%;
+  height: 100%;
+}
+.container-content__column-navigation__slider .carousel .carousel-item .carousel-item__list .carousel-item__list-item .carousel-item__half .carousel-item__half-name {
+  font-size: 0.7em;
+  font-weight: 700;
+  color: #000;
 }
 
 .container-content__column-navigation {
@@ -1755,23 +1913,15 @@ input [type=checkbox], input [type=radio] {
 .container-content__column-news__path__prev-link {
   display: inline-block;
   font-size: 0.85em;
+  color: #253276;
 }
 .container-content__column-news__path__prev-link:hover {
   text-decoration: underline;
 }
 
-.container-content__column-news__path__prev--background {
-  width: 1em;
-  height: 100%;
-  border: 1px solid red;
-  background: url("../../public/images/arrow-right_b.svg") no-repeat center left;
-  background-size: 100% auto;
-}
-
 .container-content__column-news__path__prev {
-  border: 1px solid red;
   display: inline-block;
-  padding-left: 1em;
+  color: #b5050e;
 }
 
 .container-content__column-news__path-list {
@@ -1779,7 +1929,6 @@ input [type=checkbox], input [type=radio] {
 }
 
 .container-content__column-news__path {
-  border: 1px solid red;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -1966,8 +2115,39 @@ input [type=checkbox], input [type=radio] {
   .container .container-header .container-header__logo-options {
     display: none;
   }
+  .container .container-header .container-header__menu-burger {
+    display: inline-block;
+  }
   .container .container-header .container-header__menu {
     display: none;
+    position: absolute;
+    top: 4em;
+    z-index: 30;
+    width: 100%;
+  }
+  .container .container-header .container-header__menu .container-header__menu-item {
+    display: flex;
+    flex-flow: column wrap;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  }
+  .container .container-header .container-header__menu .container-header__menu-item .container-header__menu-item__label, .container .container-header .container-header__menu .container-header__menu-item .container-header__menu-item__content-nav__link {
+    display: none;
+  }
+  .container .container-header .container-header__menu .container-header__menu-item .container-header__menu__link-burger {
+    display: inline-block;
+    width: 100%;
+    padding: 1.5em;
+    border-bottom: 0.1em solid #c1c1c1;
+  }
+  .container .container-header .container-header__menu .container-header__menu-item .container-header__menu__link-burger:hover {
+    text-decoration: underline;
+  }
+  .container .container-header #burger-menu:checked ~ .container-header__menu-burger {
+    background: url("../../public/images/close.svg") no-repeat center center;
+    background-size: 40% auto;
+  }
+  .container .container-header #burger-menu:checked ~ .container-header__menu {
+    display: inline-block;
   }
   .container .container-blocks {
     flex-flow: column wrap;
@@ -2050,6 +2230,7 @@ input [type=checkbox], input [type=radio] {
   }
   .container .container-news .container-news__section .container-news__section-content .section-content-others {
     margin-top: 2em;
+    font-size: 1.2em;
   }
   .container .container-content {
     flex-flow: column wrap;
@@ -2075,8 +2256,8 @@ input [type=checkbox], input [type=radio] {
     justify-content: space-between;
   }
   .container .container-content .container-content__column-news .container-content__column-news__article .container-content__column-news__article__link {
-    width: 9em;
-    height: calc(100% - 3em);
+    width: 35%;
+    height: calc(100% - 1em);
   }
   .container .container-content .container-content__column-news .container-content__column-news__article .container-content__column-news__article__link .container-content__column-news__article-image {
     width: 100%;

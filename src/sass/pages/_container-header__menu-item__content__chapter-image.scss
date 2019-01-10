@@ -1,0 +1,11 @@
+@import '_container-header__menu-item__content__chapter-image__section';
+
+.container-header__menu-item__content__chapter-image {
+	width: 30%;
+	padding: 5%;
+	height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    padding-top: 2em;
+    background-color: #fff;
+}

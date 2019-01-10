@@ -1,6 +1,7 @@
 .container-header__menu-item__label {
 	display: inline-block;
     padding: 1em 1em;
+    cursor: pointer;
       
     &:hover {
     	text-decoration: underline;
