@@ -45,3 +45,75 @@ function fun() {
 		getDev(i);
 	}
 }
+
+
+/*let people = +prompt('Enter the number of people', '');
+let tabel = +prompt('Enter the number of tabel', '');
+
+function group(people, tabel) {
+	if (tabel < people / 2) return 'tabel less than people'
+		else return 'it is fine';
+}
+
+console.log(group(people, tabel));*/
+
+/*let point = +prompt('Enter the point', '');
+console.log('You enter ' + point);
+
+function rage(point) {
+	switch (point){
+		case 10: 
+			console.log('In Russian equivalent is  5+');
+			console.log('In US equivalent is  A+'); 
+			break;
+		case 9: 
+			console.log('In Russian equivalent is  5');
+			console.log('In US equivalent is  A'); 
+			break;
+		case 8: 
+			console.log('In Russian equivalent is  4+');
+			console.log('In US equivalent is  A-'); 
+			break;
+		case 7: 
+			console.log('In Russian equivalent is  4');
+			console.log('In US equivalent is  B+'); 
+			break;
+		case 6: 
+			console.log('In Russian equivalent is  4-');
+			console.log('In US equivalent is  B'); 
+			break;
+		case 5: 
+			console.log('In Russian equivalent is  3+');
+			console.log('In US equivalent is  B-'); 
+			break;
+		case 4: 
+			console.log('In Russian equivalent is  3');
+			console.log('In US equivalent is  C+'); 
+			break;
+		case 3: 
+			console.log('In Russian equivalent is  3-');
+			console.log('In US equivalent is  C'); 
+			break;
+		case 2: 
+			console.log('In Russian equivalent is  2');
+			console.log('In US equivalent is  F+'); 
+			break;
+		case 1: 
+			console.log('In Russian equivalent is  1');
+			console.log('In US equivalent is  F'); 
+			break;
+		default: 
+			console.log('Wrong point');
+	}
+}
+
+console.log(rage(point));*/
+
+
+let numberZero = +prompt('Enter the number', '');
+
+function zero(numberZero){
+	for (var i = 0; i != numberZero ; i++) {
+		
+	}
+}
