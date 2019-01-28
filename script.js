@@ -110,6 +110,26 @@ console.log(ziro());
 console.log(' ');
 
 
+//Task 6
+
+console.log('Задание №6');
+function zeroToHundred() {
+	let numberSum = 0;
+	let numberOfPromptUser = 0;
+	do {
+		numberPromptUser = +prompt('Введите любое число ', '');
+		numberSum += numberPromptUser;
+		numberOfPromptUser++
+	} while ( numberSum < 100 );
+	
+	console.log(numberSum + ' сумма введенных чисел');
+	return numberOfPromptUser + ' количество введенных чисел';
+}
+
+console.log(zeroToHundred());
+console.log(' ');
+
+
 //Task 7
 
 console.log('Задание №7')
