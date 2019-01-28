@@ -13,17 +13,19 @@ console.log(' ');
 
 
 //Task 2
-/*console.log('Задание №2');
+console.log('Задание №2');
+let str = prompt('Enter the string', '');
+let n = 2;
 
-function repeat(str, n) {
-	var answer;
-	for (var i = 1; i <= n; i++) {
-		answer = answer + str;
-		return answer;
+function repeat(str) {
+	for (i = 0; i < n; i++) {
+		str += str;
+		return str;
 	}
 }
-console.log(repeat('Привет', 2));
-console.log('');*/
+
+console.log(repeat(str, n));
+console.log('');
 
 
 //Task 3
@@ -97,14 +99,15 @@ console.log(' ');
 
 //Task 5
 
-/*console.log('Задание №5');
-let numberZero = +prompt('Enter the number', '');
+console.log('Задание №5');
+function ziro() {
+	do {
+		numberZiro = +prompt('Введите любое число ', '');
+	} while ( !(numberZiro == 0) );
+}
 
-function zero(numberZero){
-	for (var i = 0; i != numberZero ; i++) {
-		
-	}
-}*/
+console.log(ziro());
+console.log(' ');
 
 
 //Task 7
