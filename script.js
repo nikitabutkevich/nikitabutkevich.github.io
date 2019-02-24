@@ -1,3 +1,27 @@
+<form name='sendEmailAddress' method='POST' action="mailto:address@domen.domen">
+		<input type="text" id="text" placeholder="Enter some text">
+		<input type="button" id='send' value='Send'>
+		<input type="button" id='clean' value='Clean'>
+	</form>
+	<br>
+	<form name='feedBackForm' method='POST' action="">
+		<label for="name">Name</label>
+		<input id="name" type="text" placeholder="Ivan">
+		<br>
+		<label for="email">E-mail</label>
+		<input id="email" type="email" placeholder="example@google.com">
+		<br>
+		<label for="phone">Phone</label>
+		<input id="phone" type="text" placeholder="+375292512285">
+		<br>
+		<label for="message">Message</label><br>
+            	<textarea name="message" id="message" cols="40" rows="6"></textarea>
+		<br>
+		<input id="send" type="button" value="Send">
+	</form>
+
+
+
 //Task 2
 var emailForm = document.forms.sendEmailAddress,
 	textMessage = emailForm.elements.text,
