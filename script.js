@@ -1,32 +1,34 @@
-//Task 1
-function cloneInput(){
-	var input = document.getElementById('body__input');
-	var button = document.getElementById('body__button');
+//Task 2
+var emailForm = document.forms.sendEmailAddress,
+	textMessage = emailForm.elements.text,
+	sendButton = emailForm.elements.send,
+	cleanButton = emailForm.elements.clean;
 
-	button.addEventListener('click', function(e){
-		var cloneInput = input.cloneNode();
-		document.body.appendChild(cloneInput);
-	});
+cleanButton.addEventListener('click', function(e){
+	textMessage.value = '';
+});
+
+sendButton.addEventListener('click', function(e){
+	emailForm.submit();
+});
+
+
+//Task 5
+function changeWord(){
+	var string = 'Математическое понятие функции выражает интуитивное представление о том, как одна величина полностью определяет значение другой величины. Так, значение переменной x {\displaystyle x} x однозначно определяет значение выражения x 2 {\displaystyle x^{2}} x^{2}, также значение месяца однозначно определяет значение следующего за ним месяца. Другой пример функции: каждому человеку можно однозначно поставить в соответствие его биологическую мать.';
+
+	var result = string.replace(/функция/ig, 'функция');
+	console.log(result);
 }
-cloneInput();
+changeWord();
 
-function table(){
-	var table = document.getElementById('table');
+
+//Task 6
+function correctString(){
+	var string = "9.15 am", 
+		regExp = /\d{1,}.\d{2}\s\D{2}/ig,
+		result = regExp.test(string);
 	
-	function bordered(){
-		table.className = "bordered";
-	}
-
-	function striped(){
-		table.className = "striped";
-	}
-
-	function highlight(){
-		table.className = "highlight";
-	}
-
-	table.addEventListener('click', bordered);
-	table.addEventListener('click', striped);
-	table.addEventListener('click', highlight);
+	console.log(result);
 }
-table();
+correctString();
