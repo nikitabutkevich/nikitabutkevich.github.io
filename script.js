@@ -56,3 +56,8 @@ function correctString(){
 	console.log(result);
 }
 correctString();
+
+
+regForName = /\D{1,}/i;
+regForEmail = /.{1,}@\D{1,}.\D{1,}/i;
+regForPhone = /\+\d{11}/i;
