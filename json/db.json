@@ -1,0 +1,204 @@
+{
+	"books": [
+		{
+			"id": 1,
+			"bookTitle": "Подсознание может всё!",
+			"authorName": "Джон Кехо",
+			"datePublish": 2019,
+			"edition": "Попурри",
+			"numberPages": 160,
+			"genre": "Научно-популярная литература",
+			"coverURL": "https://s1-goods.ozstatic.by/2000/200/264/10/10264200_0.jpg"
+		},
+		{
+			"id": 2,
+			"bookTitle": "Пиши, сокращай. Как создавать сильный текст",
+			"authorName": "Максим Ильяхов, Людмила Сарычева",
+			"datePublish": 2017,
+			"edition": "Альпина Паблишер",
+			"genre": "Маркетинг. Реклама",
+			"numberPages": 440,
+			"coverURL": "https://s4-goods.ozstatic.by/2000/756/534/10/10534756_0.jpg"
+		},
+		{
+			"id": 3,
+			"bookTitle": "Букварь",
+			"authorName": "Надежда Жукова",
+			"datePublish": 2016,
+			"edition": "Эксмо",
+			"genre": "Детские книги",
+			"numberPages": 96,
+			"coverURL": "https://s3-goods.ozstatic.by/2000/475/22/1/1022475_0.jpg"
+		},
+		{
+			"id": 4,
+			"bookTitle": "Чизкейк внутри. Сложные и необычные торты - легко!",
+			"authorName": "Виктория Мельник",
+			"datePublish": 2017,
+			"edition": "Эксмо",
+			"genre": "Кулинария. Напитки",
+			"numberPages": 112,
+			"coverURL": "https://s1-goods.ozstatic.by/2000/420/644/10/10644420_0.jpg"
+		},
+		{
+			"id": 5,
+			"bookTitle": "Психология влияния. Убеждай, воздействуй, защищайся",
+			"authorName": "Роберт Чалдини",
+			"datePublish": 2019,
+			"edition": "Питер",
+			"genre": "Бизнес-литература",
+			"numberPages": 336,
+			"coverURL": "https://s3-goods.ozstatic.by/2000/254/101/101254_0.jpg"
+		},
+		{
+			"id": 6,
+			"bookTitle": "Краткая история времени",
+			"authorName": "Стивен Хокинг",
+			"datePublish": 2018,
+			"edition": "АСТ",
+			"genre": "Нехудожественная литература",
+			"numberPages": 232,
+			"coverURL": "https://s2-goods.ozstatic.by/2000/453/631/10/10631453_0.jpg"
+		},
+		{
+			"id": 7,
+			"bookTitle": "Что скрывает кожа. 2 квадратных метра, которые диктуют, как нам жить",
+			"authorName": "Йаэль Адлер",
+			"datePublish": 2018,
+			"edition": "Эксмо",
+			"genre": "Нехудожественная литература",
+			"numberPages": 352,
+			"coverURL": "https://s1-goods.ozstatic.by/2000/250/591/10/10591250_0.jpg"
+		},
+		{
+			"id": 8,
+			"bookTitle": "Кто где живет",
+			"authorName": "Наталья Котятова",
+			"datePublish": 2017,
+			"edition": "Росмэн-Пресс",
+			"genre": "Детские книги",
+			"numberPages": 10,
+			"coverURL": "https://s5-goods.ozstatic.by/2000/419/625/10/10625419_0.jpg"
+		},
+		{
+			"id": 9,
+			"bookTitle": "Wine Folly. Вино. Практический путеводитель",
+			"authorName": "Мадлен Пакетт, Джастин Хэммек",
+			"datePublish": 2016,
+			"edition": "КоЛибри",
+			"genre": "Кулинария. Напитки",
+			"numberPages": 232,
+			"coverURL": "https://s2-goods.ozstatic.by/2000/2/516/10/10516002_0.jpg"
+		},
+		{
+			"id": 10,
+			"bookTitle": "Кладбище домашних животных",
+			"authorName": "Стивен Кинг",
+			"datePublish": 2016,
+			"edition": "АСТ",
+			"genre": "Художественная литература",
+			"numberPages": 480,
+			"coverURL": "https://s1-goods.ozstatic.by/2000/131/548/10/10548131_0.jpg"
+		},
+		{
+			"id": 11,
+			"bookTitle": "World of Warcraft. Перед бурей",
+			"authorName": "Кристи Голден",
+			"datePublish": 2018,
+			"edition": "АСТ",
+			"numberPages": 416,
+			"genre": "Художественная литература",
+			"coverURL": "https://s1-goods.ozstatic.by/2000/200/264/10/10264200_0.jpg"
+		},
+		{
+			"id": 12,
+			"bookTitle": "Пиши, сокращай. Как создавать сильный текст",
+			"authorName": "Максим Ильяхов, Людмила Сарычева",
+			"datePublish": 2017,
+			"edition": "Альпина Паблишер",
+			"genre": "Маркетинг. Реклама",
+			"numberPages": 440,
+			"coverURL": "https://s2-goods.ozstatic.by/2000/302/746/10/10746302_0.jpg"
+		},
+		{
+			"id": 13,
+			"bookTitle": "Самый богатый человек в Вавилоне",
+			"authorName": "Джордж Клейсон",
+			"datePublish": 2018,
+			"edition": "Попурри",
+			"genre": "Нехудожественная литература",
+			"numberPages": 160,
+			"coverURL": "https://s5-goods.ozstatic.by/2000/659/109/109659_0.jpg"
+		},
+		{
+			"id": 14,
+			"bookTitle": "Стив Джобс. Биография",
+			"authorName": "Уолтер Айзексон",
+			"datePublish": 2013,
+			"edition": "АСТ",
+			"genre": "Бизнес-литература",
+			"numberPages": 688,
+			"coverURL": "https://s2-goods.ozstatic.by/2000/62/212/10/10212062_0.jpg"
+		},
+		{
+			"id": 15,
+			"bookTitle": "Поп-арт маркетинг. Insta-грамотность и контент-стратегия",
+			"authorName": "Лилия Нилова",
+			"datePublish": 2017,
+			"edition": "АСТ",
+			"genre": "Маркетинг. Реклама",
+			"numberPages": 288,
+			"coverURL": "https://s4-goods.ozstatic.by/2000/396/659/10/10659396_0.jpg"
+		},
+		{
+			"id": 16,
+			"bookTitle": "Тайная опора. Привязанность в жизни ребенка",
+			"authorName": "Людмила Петрановская",
+			"datePublish": 2016,
+			"edition": "АСТ",
+			"genre": "Детские книги",
+			"numberPages": 288,
+			"coverURL": "https://s5-goods.ozstatic.by/2000/229/486/10/10486229_0.jpg"
+		},
+		{
+			"id": 17,
+			"bookTitle": "Животные жарких стран. Набор карточек для детей",
+			"authorName": "",
+			"datePublish": 2017,
+			"edition": "Айрис-пресс",
+			"genre": "Детские книги",
+			"numberPages": 17,
+			"coverURL": "https://s3-goods.ozstatic.by/2000/355/693/10/10693355_0.jpg"
+		},
+		{
+			"id": 18,
+			"bookTitle": "Иисус. Историческое расследование",
+			"authorName": "Юлия Латынина",
+			"datePublish": 2018,
+			"edition": "Эксмо",
+			"genre": "Нехудожественная литература",
+			"numberPages": 254,
+			"coverURL": "https://s3-goods.ozstatic.by/2000/544/779/10/10779544_0.jpg"
+		},
+		{
+			"id": 19,
+			"bookTitle": "Продавец обуви. История компании Nike, рассказанная ее основателем",
+			"authorName": "Фил Найт",
+			"datePublish": 2019,
+			"edition": "Эксмо",
+			"genre": "Бизнес-литература",
+			"numberPages": 512,
+			"coverURL": "https://s5-goods.ozstatic.by/2000/248/554/10/10554248_0.jpg"
+		},
+		{
+			"id": 20,
+			"bookTitle": "Мятная сказка",
+			"authorName": "Александр Полярный",
+			"datePublish": 2018,
+			"edition": "АСТ",
+			"genre": "Художественная литература",
+			"numberPages": 416,
+			"coverURL": "https://s3-goods.ozstatic.by/2000/4/672/10/10672004_0.jpg"
+		},
+	]
+}
