@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Book collection</title>
+	<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+	<header class="header">
+		<a class="logo" href="#" title="Книжная полка"></a>
+	</header>
+
+	<main>
+	<form class="find" action="">
+	  <input type="text" class='find-search' id='input-search' placeholder="Начни искать чтиво...">
+	</form>
+	<form class='filter' action="">
+	  <div>
+	    <label for="genre">Жанр</label>
+	    <select name="" id="filter-genre">
+	    	<option value="" selected>Выберите параметр</option>
+	    	<option value="Научно-популярная литература" >Научно-популярная литература</option>
+	    	<option value="Маркетинг. Реклама">Маркетинг. Реклама</option>
+	    	<option value="Детские книги" >Детские книги</option>
+	    	<option value="Кулинария. Напитки" >Кулинария. Напитки</option>
+	    </select>
+	  </div>
+	  <div>
+	    <label for="author">Автор</label>
+	    <select name="" id="filter-author">
+	    	<option value="" id="0" selected>Выберите параметр</option>
+	    	<option value="" class="author-name" id="1">Джон Кехо</option>
+	    	<option value="" class="author-name" id="2">Максим Ильяхов</option>
+	    	<option value="" class="author-name" id="3">Надежда Жукова</option>
+	    	<option value="" class="author-name" id="4">Роберт Чалдини</option>
+	    	<option value="" class="author-name" id="5">Виктория Мельник</option>
+	    	<option value="" class="author-name" id="6">Стивен Хокинг</option>
+	    	<option value="" class="author-name" id="7">Йаэль Адлер</option>
+	    	<option value="" class="author-name" id="8">Мадлен Пакетт</option>
+	    </select>    
+	  </div>
+	  <div>
+	    <label for="publisher">Издание</label>
+	    <select name="" id="filter-publisher">
+	    	<option value="" selected>Выберите параметр</option>
+	    	<option value="" >Попурри</option>
+	    	<option value="" >Альпина Паблишер</option>
+	    	<option value="" >Эксмо</option>
+	    	<option value="" >Питер</option>
+	    	<option value="" >АСТ</option>
+	    	<option value="" >Росмэн-Пресс</option>
+	    	<option value="" >КоЛибри</option>
+	    </select>    
+	  </div>
+	</form>
+
+	<div class='cards' id="cards">
+	</div>
+
+	</main>
+	
+	<footer></footer>
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="dist/main.js"></script>
+</body>
+</html>

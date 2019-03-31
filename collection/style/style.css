@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:500&subset=cyrillic,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
+* {
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.card-item-hide {
+  width: 30%;
+  height: 20rem;
+  display: none;
+  margin: 2rem 0;
+  border: 1px solid #fff;
+}
+
+.header {
+  display: flex;
+  flex-direction: corw;
+  justify-content: center;
+  margin: 2em 0 2.5rem 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  width: 20rem;
+  height: 5rem;
+  background: url('../image/logo.png') no-repeat center center;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+}
+
+.logo-name {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weigth: 700;
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+
+.logo-image {
+  display: inline-block;
+  width: 5em;
+  
+}
+
+
+
+.find {
+  display: flex;
+  flex-direction: corw;
+  justify-content: center;
+}
+
+.find-search {
+  display: inline-block;
+  width: 60%;
+  height: 2rem;
+  border: .15rem solid #00A6A6;
+  border-radius: 5px;
+  outline: none;
+  padding: 0 3%;
+  font-size: 15px;
+  margin-right: 1.5rem;
+}
+
+
+.filter {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter div {
+  margin: 1rem;
+}
+
+.filter label {
+  font-weight: 600;
+}
+
+.button {
+  display: inline-block;
+  background: #fff;
+  border: .15rem solid #00A6A6;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.card-item {
+  width: 30%;
+  height: 20rem;
+  display: flex;
+  margin: 2rem 0;
+  border: 1px solid #fff;
+}
+
+.card-item:hover {
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+.card-item__image{
+  width: 45%;
+  height: 100%;
+}
+.card-item__image img {
+  height: 90%;
+  width:90%;
+  padding: 5% 5%;
+}
+
+.card-item__info{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-item__info p{
+  height: 2rem;
+  padding: 0 5%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.card-item__info-name {
+  font-size: 22px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+}
+.card-item__info-genre {
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.card-item__info-date {
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.card-item__info-publisher {
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
