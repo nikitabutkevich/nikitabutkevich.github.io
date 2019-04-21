@@ -1,0 +1,17 @@
+.user-page__info__name {
+	width: 90%;
+	margin: 0rem 1.5rem 1rem 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: .1rem solid #4d7e29;
+
+	p {
+		font-weight: 700;
+		margin: .5rem;
+	}
+
+	span {
+		font-size: 10px;
+	}
+}

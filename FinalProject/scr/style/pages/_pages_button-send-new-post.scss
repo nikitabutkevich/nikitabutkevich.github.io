@@ -1,0 +1,16 @@
+.button-send-new-post {
+	border: .2rem solid #939393;
+	background: #f0f0ef;
+	width: 8rem;
+	height: 3rem;
+	margin: .5rem;
+	font-weight: 700;
+	transition: .5s all linear;
+
+	&:hover {
+		cursor: pointer;
+		border: .2rem solid #4d7e29;
+		color: #939393;
+		transition: .5s all linear;
+	}
+}

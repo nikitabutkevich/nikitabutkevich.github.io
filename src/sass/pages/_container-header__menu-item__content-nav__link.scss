@@ -1,5 +1,6 @@
 @import '_.container-header__menu-item__content-nav__link--border';
 @import '_background-list-item1';
+@import '_menu-aside__image';
 @import '_list-item1';
 @import '_list-item2';
 @import '_list-item3';
@@ -10,7 +11,7 @@
 .container-header__menu-item__content-nav__link {
 	display: none;
     width: 30%;
-    padding: 1.5em 0 1.5em 2em;
+    padding: 1.5em 0 1.5em 3.5em;
     border-bottom: .1em solid #c2c2c2;
     text-decoration: none;
     color: #253276;

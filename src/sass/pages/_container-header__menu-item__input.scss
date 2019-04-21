@@ -11,8 +11,8 @@
       
       &~.list-item1 {
          color: #fff;
-         background: url('../../public/images/triangel.svg') no-repeat 108% center, #253276;
-         background-size: 22.5% auto;
+         background: url('../../public/images/triangel.svg') no-repeat 108% center, url('../../public/images/capitol-building-w.svg') no-repeat 5% center, #253276;
+         background-size: 22.5% auto, 5% auto;
       }
       
       &~.content-politik {

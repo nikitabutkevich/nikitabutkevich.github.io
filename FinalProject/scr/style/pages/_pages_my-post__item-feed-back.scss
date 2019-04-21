@@ -1,0 +1,17 @@
+.my-post__item-feed-back {
+	border-top:  .1rem solid #969696;
+	margin-top: .75rem;
+	width: 90%;
+	height: 3rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: left;
+	padding-left: 1rem;
+
+	span {
+		border-bottom: .05rem solid black;
+		margin: .5rem;
+		font-size: 12px;
+	}
+}

@@ -1,0 +1,15 @@
+.list-friend__item {
+	margin: 1rem;
+	border: .2rem solid #939393;
+	transition: .5s all linear;
+	display: flex;
+	flex-direction: row no-wrap;
+
+	&:hover {
+		cursor: pointer;
+		background: #999;
+		border: .2rem solid #fff;
+		transition: .5s all linear;
+		color: #fff;
+	}
+}

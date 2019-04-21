@@ -1,0 +1,13 @@
+.section-content-block__link-oft {
+	color: #003685;
+	padding: .5em 0 .5em 0;
+	font-size: $font-size*0.9;
+	
+	&:hover {
+		text-decoration: underline;
+	}
+
+	&:last-child {
+		margin-bottom: 2em;
+	}
+}

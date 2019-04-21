@@ -1,0 +1,17 @@
+@font-face {
+      font-family: 'FontHeaderIcon';
+      src: url('../fonts/header-font-icon/fontello.ttf?38538675') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+@font-face {
+      font-family: 'FooterHeaderIcon';
+      src: url('../fonts/footer-font-icon/fontello.ttf?38538675') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+$font-icon-footer: 'FooterHeaderIcon';
+$font-project: Arial,sans-serif;
+$font-size: 1em;
