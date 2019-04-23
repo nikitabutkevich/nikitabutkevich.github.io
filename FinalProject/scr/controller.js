@@ -12,6 +12,9 @@ function Controller(){
 		helper = new Helper()
 		;
 	
+	model.getAccessToken();
+
+	$('#intro-window').hide();
 	$('.my-friends').hide();
 	$('#user-page').hide();
 	$('#friend-page').hide();
