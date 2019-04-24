@@ -1,4 +1,10 @@
 .warning-window__text {
 	font-size: 14px;
 	text-align: center;
+	padding: 0 1rem;
+
+	a {
+		color: red;
+		text-decoration: underline;
+	}
 }

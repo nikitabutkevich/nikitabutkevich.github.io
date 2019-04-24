@@ -147,6 +147,9 @@ input [type=checkbox], input [type=radio] {
   justify-content: center;
   align-items: center;
 }
+.user-page__info-details__blocks:hover {
+  cursor: pointer;
+}
 
 .user-page__info-detalis-numbers {
   font-weight: 600;
@@ -382,6 +385,35 @@ input [type=checkbox], input [type=radio] {
 .warning-window__text {
   font-size: 14px;
   text-align: center;
+  padding: 0 1rem;
+}
+.warning-window__text a {
+  color: red;
+  text-decoration: underline;
+}
+
+#warning-window__input {
+  width: 17rem;
+  height: 1rem;
+  padding: 1rem;
+  outline: none;
+  border: 0.1rem solid #4d7e29;
+}
+#warning-window__input:hover {
+  cursor: pointer;
+}
+
+#warning-window__button {
+  width: 7rem;
+  height: 2rem;
+  padding: 0.5rem;
+  outline: none;
+  border: 0.1rem solid #4d7e29;
+  background: #fff;
+  font-weight: 600;
+}
+#warning-window__button:hover {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */

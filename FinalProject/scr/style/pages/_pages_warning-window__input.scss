@@ -1,0 +1,11 @@
+#warning-window__input {
+	width: 17rem;
+	height: 1rem;
+	padding: 1rem;
+	outline: none;
+	border: .1rem solid #4d7e29;
+
+	&:hover {
+		cursor: pointer;
+	}
+}

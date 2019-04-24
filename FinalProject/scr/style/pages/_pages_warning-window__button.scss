@@ -1,0 +1,13 @@
+#warning-window__button {
+	width: 7rem;
+	height: 2rem;
+	padding: .5rem;
+	outline: none;
+	border: .1rem solid #4d7e29;
+	background: #fff;
+	font-weight: 600;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
