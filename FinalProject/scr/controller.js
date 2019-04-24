@@ -19,8 +19,7 @@ function Controller(){
 	model.getAccessToken();
 	model.getUserId();
 
-	if ( localStorage.getItem('tokenAccess') != '' && localStorage.getItem('tokenPost') != ''
-		 && localStorage.getItem('userId') != '' ) {
+	if ( localStorage.getItem('tokenAccess') != '' && localStorage.getItem('userId') != '' ) {
 		$('#enter-in-app').remove();
 		$('#intro-window').show();
 	} else {
@@ -93,7 +92,7 @@ function Controller(){
 
 	$(document).on('click', '.button-send-new-post', async (event) => {
 		var id = $(event.target).attr('name'),
-			token = localStorage.getItem('tokenPost'),
+			token = localStorage.getItem('tokenAccess'),
 			valueInputPost = $('#send-new-post').val(),
 			getFriendWall = await services.addNewPost(id, valueInputPost, token);
 			;
@@ -110,7 +109,7 @@ function Controller(){
 	$(document).on('click', '.user-post-delete', async (event) => {
 		var postId = $(event.target).attr('name'),
 			ownerId = $(event.target).attr('value'),
-			token = localStorage.getItem('tokenPost')
+			token = localStorage.getItem('tokenAccess')
 			;
 
 		services.deleteUserPost(ownerId, postId, token);
