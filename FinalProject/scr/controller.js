@@ -17,9 +17,11 @@ function Controller(){
 	$('#user-page').hide();
 
 	model.getAccessToken();
+	model.getPostToken();
 	model.getUserId();
 
-	if ( localStorage.getItem('token') != '' && localStorage.getItem('userId') != '' ) {
+	if ( localStorage.getItem('tokenAccess') != '' && localStorage.getItem('tokenPost') != ''
+		 && localStorage.getItem('userId') != '' ) {
 		$('#enter-in-app').remove();
 		$('#intro-window').show();
 	} else {
@@ -39,7 +41,7 @@ function Controller(){
 
 	$(document).on('click', '#my-page', async (event) => {
 		var userId = localStorage.getItem('userId'),
-			token = localStorage.getItem('token'),
+			token = localStorage.getItem('tokenAccess'),
 			getUserInfo = await services.getDataUserInfo(userId, token),
 			getUserWall = await services.getData('wall.get', 'count=10', token)
 			;
@@ -56,7 +58,7 @@ function Controller(){
 	});
 
 	$(document).on('click', '#my-friends', async (event) => {
-		var token = localStorage.getItem('token'),
+		var token = localStorage.getItem('tokenAccess'),
 			getFriends = await services.getData('friends.get', 'fields=bdate,city,photo_100,contacts,sex,city,photo_50,photo_200_orig,online', token)
 			;
 
@@ -70,7 +72,7 @@ function Controller(){
 
 	$(document).on('click', '.list-friend__item', async (event) => {
 		var id = $(event.target).attr('value'),
-			token = localStorage.getItem('token'),
+			token = localStorage.getItem('tokenAccess'),
 			getFriendData = await services.getDataUserInfo(id, token),
 			getFriendWall = await services.getData('wall.get', 'owner_id=' + id, token);
 			;
@@ -92,7 +94,7 @@ function Controller(){
 
 	$(document).on('click', '.button-send-new-post', async (event) => {
 		var id = $(event.target).attr('name'),
-			token = localStorage.getItem('token'),
+			token = localStorage.getItem('tokenPost'),
 			valueInputPost = $('#send-new-post').val(),
 			getFriendWall = await services.addNewPost(id, valueInputPost, token);
 			;
@@ -109,7 +111,7 @@ function Controller(){
 	$(document).on('click', '.user-post-delete', async (event) => {
 		var postId = $(event.target).attr('name'),
 			ownerId = $(event.target).attr('value'),
-			token = localStorage.getItem('token')
+			token = localStorage.getItem('tokenPost')
 			;
 
 		services.deleteUserPost(ownerId, postId, token);
@@ -117,7 +119,7 @@ function Controller(){
 
 	$(document).on('click', '#user-page__info-details__blocks-friends', async (event) => {
 		var userId = $(event.target).attr('name'),
-			token = localStorage.getItem('token'),
+			token = localStorage.getItem('tokenAccess'),
 			getFriends = await services.getFriends(userId, token)
 			;
 			console.log(getFriends);
