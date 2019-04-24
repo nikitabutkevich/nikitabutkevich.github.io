@@ -17,7 +17,6 @@ function Controller(){
 	$('#user-page').hide();
 
 	model.getAccessToken();
-	model.getPostToken();
 	model.getUserId();
 
 	if ( localStorage.getItem('tokenAccess') != '' && localStorage.getItem('tokenPost') != ''
