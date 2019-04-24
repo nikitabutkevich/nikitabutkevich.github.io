@@ -37,7 +37,7 @@ class Services {
 				alert(error);
 			},
 			success: function(data){
-				alert("Пост отправлен успешно!");
+				console.log(data);
 			}
 		});
 	}

@@ -20,7 +20,7 @@ function Controller(){
 	model.getUserId();
 
 	if ( localStorage.getItem('token') != '' && localStorage.getItem('userId') != '' ) {
-		$('#enter-in-app').hide();
+		$('#enter-in-app').remove();
 		$('#intro-window').show();
 	} else {
 		alert('Доступ не получен!');
