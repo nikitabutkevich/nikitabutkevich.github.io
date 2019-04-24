@@ -23,13 +23,13 @@ function Controller(){
 		model.getUserId();
 	});
 
-	/*if ( localStorage.getItem('tokenAccess') != '' && localStorage.getItem('userId') != '' ) {
+	if ( localStorage.getItem('tokenAccess') != '' && localStorage.getItem('userId') != '' ) {
 		$('#enter-in-app').remove();
 		$('#intro-window').show();
 		$('#warning-window-block').show();
 	} else {
-		alert('Доступ не получен!');
-	}*/
+		alert('Доступ не получен');
+	}
 
 	$(document).on('click', '#warning-window__button', (event) => {
 		model.getPostToken();
