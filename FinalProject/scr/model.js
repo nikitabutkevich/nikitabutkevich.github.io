@@ -7,6 +7,8 @@ class Model {
 			pageDataToken = pageURLData[1].split('&'),
 			accessToken = pageDataToken[0]
 			;
+
+		localStorage.setItem('token', accessToken);
 		console.log(accessToken);
 	}
 }

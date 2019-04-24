@@ -11,14 +11,15 @@ function Controller(){
 		view = new View(),
 		helper = new Helper()
 		;
-		
-	model.getAccessToken();
 
 	$('#intro-window').hide();
-
+	$('.my-friends').hide();
+	$('#user-page').hide();
+	
 	$(document).on('click', '.enter-app-button', (e) => {
 		$('#enter-in-app').hide();
 		$('#intro-window').show();
+		model.getAccessToken();
 	}); 
 
 	$('.my-friends').hide();
