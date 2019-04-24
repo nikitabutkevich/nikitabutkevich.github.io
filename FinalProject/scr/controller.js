@@ -11,7 +11,8 @@ function Controller(){
 		view = new View(),
 		helper = new Helper()
 		;
-
+		
+	model.getAccessToken();
 
 	$('#intro-window').hide();
 
