@@ -39,9 +39,9 @@ function Controller(){
 
 	$(document).on('click', '#my-page', async (event) => {
 		var userId = localStorage.getItem('userId'),
+			token = localStorage.getItem('token'),
 			getUserInfo = await services.getDataUserInfo(userId, token),
-			getUserWall = await services.getData('wall.get', 'count=10', token),
-			token = localStorage.getItem('token')
+			getUserWall = await services.getData('wall.get', 'count=10', token)
 			;
 		console.log(getUserInfo);
 		if ( getUserWall === 'nothing' ){
