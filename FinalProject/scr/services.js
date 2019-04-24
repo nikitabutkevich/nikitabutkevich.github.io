@@ -1,36 +1,36 @@
 //services 
 
 class Services {
-	async getData(method, param){
+	async getData(method, param, token){
 		let data = await $.ajax({
-			url: 'https://api.vk.com/method/' + method + '?&' + param + '&v=5.52&access_token=12b60a9606b8befbd244a420b6a1bf6b00e3d2bc0a830a4c94a9f127335f0fee40805745ada55c20b47a2',
+			url: 'https://api.vk.com/method/' + method + '?&' + param + '&v=5.52&access_token=' + token,
 			method: "GET",
 			dataType: "JSONP"
 		});
 		return data.response ? data.response.items : alert('Данные не получены!');
 	}
 
-	async getFriends(param){
+	async getFriends(param, token){
 		let data = await $.ajax({
-			url: 'https://api.vk.com/method/friends.get?&user_id=' + param + '&fields=bdate,city,photo_100,contacts,sex,city,photo_50,photo_200_orig,online&v=5.52&access_token=12b60a9606b8befbd244a420b6a1bf6b00e3d2bc0a830a4c94a9f127335f0fee40805745ada55c20b47a2',
+			url: 'https://api.vk.com/method/friends.get?&user_id=' + param + '&fields=bdate,city,photo_100,contacts,sex,city,photo_50,photo_200_orig,online&v=5.52&access_token=' + token,
 			method: "GET",
 			dataType: "JSONP"
 		});
 		return data.response ? data.response.items : alert('Данные не получены!');
 	}
 
-	async getDataUserInfo(param, userId){
+	async getDataUserInfo(param, userId, token){
 		let data = await $.ajax({
-			url: 'https://api.vk.com/method/users.get?&' + param + userId + '&fields=online,followers_count,photo_200_orig,bdate,city,counters&v=5.52&access_token=12b60a9606b8befbd244a420b6a1bf6b00e3d2bc0a830a4c94a9f127335f0fee40805745ada55c20b47a2',
+			url: 'https://api.vk.com/method/users.get?&' + param + userId + '&fields=online,followers_count,photo_200_orig,bdate,city,counters&v=5.52&access_token=' + token,
 			method: "GET",
 			dataType: "JSONP"
 		});
 		return data.response ? data.response[0] : alert('Данные не получены!');
 	}
 
-	addNewPost (id, messages) {
+	addNewPost (id, messages, token) {
 		 $.ajax({
-			url: 'https://api.vk.com/method/wall.post?&owner_id=' + id + '&message=' + messages + '&v=5.52&access_token=318c0b84191670d17cd080dead674901f149192f80e792d59c49bc807297e9662debc160e785045974f0f',
+			url: 'https://api.vk.com/method/wall.post?&owner_id=' + id + '&message=' + messages + '&v=5.52&access_token=' + token,
 			method: "GET",
 			dataType: "JSONP",
 			error: function(error){
@@ -42,9 +42,9 @@ class Services {
 		});
 	}
 
-	deleteUserPost(owner, post) {
+	deleteUserPost(owner, post, token) {
 		 $.ajax({
-			url: 'https://api.vk.com/method/wall.delete?&owner_id=' + owner + '&post_id=' + post + '&v=5.52&access_token=318c0b84191670d17cd080dead674901f149192f80e792d59c49bc807297e9662debc160e785045974f0f',
+			url: 'https://api.vk.com/method/wall.delete?&owner_id=' + owner + '&post_id=' + post + '&v=5.52&access_token=' + token,
 			method: "GET",
 			dataType: "JSONP",
 			error: function(error){
