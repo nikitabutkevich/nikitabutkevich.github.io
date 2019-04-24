@@ -18,24 +18,23 @@ function Controller(){
 	$('#user-page').hide();
 	$('#warning-window-block').hide();
 
-	model.getAccessToken();
-	model.getUserId();
+	$(document).on('click', '.enter-app-button', (event) => {
+		model.getAccessToken();
+		model.getUserId();
+	});
 
-	if ( localStorage.getItem('tokenAccess') != '' && localStorage.getItem('userId') != '' ) {
+	/*if ( localStorage.getItem('tokenAccess') != '' && localStorage.getItem('userId') != '' ) {
 		$('#enter-in-app').remove();
 		$('#intro-window').show();
 		$('#warning-window-block').show();
 	} else {
 		alert('Доступ не получен!');
-	}
+	}*/
 
-	$('#warning-window__button').on('click', () => {
-		var valInput = $('.intro-window').val();
-
-		localStorage.setItem('tokenPost', valInput);
+	$(document).on('click', '#warning-window__button', (event) => {
+		model.getPostToken();
 		tokenPost = localStorage.getItem('tokenPost');
-
-		$('#warning-window-block').remve();
+		$('#warning-window-block').hide();
 	});
 
 	$('#my-page').on('click', () => {
