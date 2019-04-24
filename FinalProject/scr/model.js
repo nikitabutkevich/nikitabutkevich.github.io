@@ -12,6 +12,8 @@ class Model {
 	}
 
 	getPostToken(){
+		window.location.href = 'https://oauth.vk.com/authorize?client_id=6953753&display=page&redirect_uri=https://nikitabutkevich.github.io/FinalProject&scope=friends,users,wall&response_type=token&v=5.52';
+		
 		var pageURL = window.location.href,
 			pageURLData = pageURL.split('access_token='),
 			pageDataToken = pageURLData[1].split('&'),

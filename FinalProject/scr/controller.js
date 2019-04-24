@@ -6,6 +6,7 @@ import Helper from './helper.js';
 import Services from './services.js';
 
 function Controller(){
+	var tokenPost;
 	const model = new Model(),
 		services = new Services(),
 		view = new View(),
@@ -15,6 +16,7 @@ function Controller(){
 	$('#intro-window').hide();
 	$('.my-friends').hide();
 	$('#user-page').hide();
+	$('#warning-window-block').hide();
 
 	model.getAccessToken();
 	model.getUserId();
@@ -22,9 +24,19 @@ function Controller(){
 	if ( localStorage.getItem('tokenAccess') != '' && localStorage.getItem('userId') != '' ) {
 		$('#enter-in-app').remove();
 		$('#intro-window').show();
+		$('#warning-window-block').show();
 	} else {
 		alert('Доступ не получен!');
 	}
+
+	$('#warning-window__button').on('click', () => {
+		var valInput = $('.intro-window').val();
+
+		localStorage.setItem('tokenPost', valInput);
+		tokenPost = localStorage.getItem('tokenPost');
+
+		$('#warning-window-block').remve();
+	});
 
 	$('#my-page').on('click', () => {
 		$('.intro-window').hide();

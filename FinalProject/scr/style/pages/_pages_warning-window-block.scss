@@ -1,0 +1,10 @@
+#warning-window-block {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background: rgba(9, 9, 9, .5);
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
