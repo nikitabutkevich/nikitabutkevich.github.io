@@ -9,7 +9,15 @@ class Model {
 			;
 
 		localStorage.setItem('token', accessToken);
-		console.log(accessToken);
+	}
+
+	getUserId(){
+		var pageURL = window.location.href,
+			pageURLData = pageURL.split('user_id='),
+			userId = pageURLData[1]
+			;
+
+		localStorage.setItem('userId', userId);
 	}
 }
 

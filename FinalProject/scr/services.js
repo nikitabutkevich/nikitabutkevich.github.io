@@ -19,9 +19,9 @@ class Services {
 		return data.response ? data.response.items : alert('Данные не получены!');
 	}
 
-	async getDataUserInfo(param, userId, token){
+	async getDataUserInfo(userId, token){
 		let data = await $.ajax({
-			url: 'https://api.vk.com/method/users.get?&' + param + userId + '&fields=online,followers_count,photo_200_orig,bdate,city,counters&v=5.52&access_token=' + token,
+			url: 'https://api.vk.com/method/users.get?&user_ids=' + userId + '&fields=online,followers_count,photo_200_orig,bdate,city,counters&v=5.52&access_token=' + token,
 			method: "GET",
 			dataType: "JSONP"
 		});

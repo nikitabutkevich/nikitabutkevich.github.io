@@ -17,8 +17,9 @@ function Controller(){
 	$('#user-page').hide();
 
 	model.getAccessToken();
+	model.getUserId();
 
-	if ( localStorage.getItem('token') != '' ) {
+	if ( localStorage.getItem('token') != '' && localStorage.getItem('userId') != '' ) {
 		$('#enter-in-app').hide();
 		$('#intro-window').show();
 	} else {
@@ -37,7 +38,8 @@ function Controller(){
 	});
 
 	$(document).on('click', '#my-page', async (event) => {
-		var getUserInfo = await services.getDataUserInfo(token),
+		var userId = localStorage.getItem('userId'),
+			getUserInfo = await services.getDataUserInfo(userId, token),
 			getUserWall = await services.getData('wall.get', 'count=10', token),
 			token = localStorage.getItem('token')
 			;
@@ -69,14 +71,14 @@ function Controller(){
 	$(document).on('click', '.list-friend__item', async (event) => {
 		var id = $(event.target).attr('value'),
 			token = localStorage.getItem('token'),
-			getFriendData = await services.getDataUserInfo('user_ids=', id, token),
+			getFriendData = await services.getDataUserInfo(id, token),
 			getFriendWall = await services.getData('wall.get', 'owner_id=' + id, token);
 			;
 
 		$('.my-friends').hide();
 		
 		if ( getFriendData === 'nothing' || getFriendWall === 'nothing' ) {
-			getFriendData = await services.getDataUserInfo('user_ids=', id, token),
+			getFriendData = await services.getDataUserInfo(id, token);
 			getFriendWall = await services.getData('wall.get', 'owner_id=' + id, token);
 			view.fillInfoToMyPage(getFriendData);
 			view.writeWall(getFriendWall);
