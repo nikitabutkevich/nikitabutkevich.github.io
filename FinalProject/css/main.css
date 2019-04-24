@@ -329,4 +329,25 @@ input [type=checkbox], input [type=radio] {
   border: 0.2rem solid #4d7e29;
 }
 
+.user-post-delete {
+  border: 0;
+  background: #f1f1f1;
+  width: 1.5rem;
+  height: 1.5rem;
+  text-align: center;
+  outline: none;
+  margin: 0.5rem;
+}
+.user-post-delete:hover {
+  cursor: pointer;
+}
+
+.my-post-item_header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 /*# sourceMappingURL=main.css.map */

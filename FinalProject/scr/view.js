@@ -7,11 +7,13 @@ class View {
 			onlineStatus = document.getElementById('user-page-online'),
 			dataBday = document.getElementById('user-page-bdate'),
 			friendsNumber = document.getElementById('user-page-friends'),
-			photoNumber = document.getElementById('user-page-photo'),
+			photoNumber = document.getElementById('user-photo'),
 			videoNumber = document.getElementById('user-page-video'),
-			buttonSendPost = document.getElementById('user-button-send-post')
+			buttonSendPost = document.getElementById('user-button-send-post'),
+			infoBlock = document.getElementById('user-page__info-details__blocks-friends')
 			;
 
+		infoBlock.setAttribute('name', data.id);
 		userName.innerText = data.first_name + ' ' + data.last_name;
 		userPhoto.setAttribute('src', data.photo_200_orig);
 		onlineStatus.innerText = this.userOnline(data.online);
@@ -20,30 +22,12 @@ class View {
 		photoNumber.innerText = data.counters.photos;
 		videoNumber.innerText = data.counters.videos;
 		buttonSendPost.setAttribute('name', data.id);
-	}
 
-	fillInfoToFriendPage(data){
-		var userName = document.getElementById('friend-page-name'),
-			userPhoto = document.getElementById('friend-page-photo'),
-			onlineStatus = document.getElementById('friend-page-online'),
-			dataBday = document.getElementById('friend-page-bdate'),
-			friendsNumber = document.getElementById('friend-page-friends'),
-			photoNumber = document.getElementById('friend-page-photo'),
-			videoNumber = document.getElementById('friend-page-video'),
-			buttonSendPost = document.getElementById('freind-button-send-post')
-			;
-
-		userName.innerText = data.first_name + ' ' + data.last_name;
-		userPhoto.setAttribute('src', data.photo_200_orig);
-		onlineStatus.innerText = this.userOnline(data.online);
-		dataBday.innerText = data.bdate;
-		friendsNumber.innerText = data.counters.friends;
-		photoNumber.innerText = data.counters.photos;
-		videoNumber.innerText = data.counters.videos;
-		//buttonSendPost.setAttribute('name', data.id);
 	}
 
 	writeListFriends(dataArray){
+		$('.list-friend__item').remove();
+
 		dataArray.forEach((elem) => {
 			var list = document.getElementById('list-friends'),
 				item = document.createElement('div'),
@@ -63,7 +47,7 @@ class View {
 			onlineStatus.setAttribute('value', elem.id);
 			itemName.setAttribute('class', 'list-friend__item-name');
 
-			cityName.innerText = 'г. ' + elem.city.title;
+			//cityName.innerText = 'г. ' + elem.city.title;
 
 			image.setAttribute('src', elem.photo_50);
 			image.setAttribute('class', 'list-friend__item-photo');
@@ -94,6 +78,8 @@ class View {
 	}
 
 	writeWall(dataWall){
+		$('.my-post__item').remove();
+
 		dataWall.forEach((item) => {
 			if ( 'attachments' in item ){
 				this.attachmentPost(item);
@@ -126,9 +112,17 @@ class View {
 			postAttachment = document.createElement('div'),
 			postFeedBack = document.createElement('div'),
 			postImage = document.createElement('img'),
-			postText = document.createElement('p')
+			postText = document.createElement('p'),
+			deletePost = document.createElement('button')
 			;
 		
+		deletePost.innerText = "x";
+		deletePost.setAttribute('name', item.id);
+		deletePost.setAttribute('value', item.owner_id);
+		deletePost.setAttribute('class', 'user-post-delete');
+		deletePost.setAttribute('title', 'Удалить');
+
+
 		friendPost.setAttribute('class', 'my-post__item');
 		postFeedBack.setAttribute('class', 'my-post__item-feed-back');
 		postAttachment.setAttribute('class', 'my-post__item-attachments');	
@@ -141,12 +135,12 @@ class View {
 		postImage.setAttribute('src', link);
 		
 		//postText.innerText = item.copy_history.text;
-
+		friendPost.appendChild(deletePost);
 		friendPost.appendChild(postText);
 		postAttachment.appendChild(postImage);
 		postFeedBack.appendChild(postLikes);
 		postFeedBack.appendChild(postComment);
-		postFeedBack.appendChild(postRepost);	
+		postFeedBack.appendChild(postRepost);
 		friendPost.appendChild(postAttachment);
 		friendPost.appendChild(postFeedBack);
 		wall.appendChild(friendPost);
@@ -165,8 +159,20 @@ class View {
 			postComment = document.createElement('span'),
 			postRepost = document.createElement('span'),
 			postFeedBack = document.createElement('div'),
-			postText = document.createElement('p')
+			headerBlock = document.createElement('div'),
+			postText = document.createElement('p'),
+			deletePost = document.createElement('button')
 			;
+		
+
+
+		deletePost.innerText = "x";
+		deletePost.setAttribute('name', item.id);
+		deletePost.setAttribute('value', item.owner_id);
+		deletePost.setAttribute('class', 'user-post-delete');
+		deletePost.setAttribute('title', 'Удалить');
+		headerBlock.setAttribute('class', 'my-post-item_header');
+		headerBlock.appendChild(deletePost);
 		
 		friendPost.setAttribute('class', 'my-post__item');
 		postFeedBack.setAttribute('class', 'my-post__item-feed-back');
@@ -176,9 +182,9 @@ class View {
 		postComment.innerText = ' Commnet ' + item.comments.count;
 		postRepost.innerText = ' Repost ' + item.reposts.count;
 		
-		
 		postText.innerText = item.text;
 
+		friendPost.appendChild(headerBlock);
 		friendPost.appendChild(postText);
 		postFeedBack.appendChild(postLikes);
 		postFeedBack.appendChild(postComment);

@@ -1,0 +1,13 @@
+.user-post-delete {
+	border: 0;
+	background: #f1f1f1;
+	width: 1.5rem;
+	height: 1.5rem;
+	text-align: center;
+	outline: none;
+	margin: .5rem;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
