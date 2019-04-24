@@ -351,11 +351,15 @@ input [type=checkbox], input [type=radio] {
 }
 
 .warning-window {
-  width: 20rem;
-  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 25rem;
+  height: 15rem;
   border: 0.2rem solid #4d7e29;
   z-index: 2;
-  background: #111;
+  background: #999;
 }
 
 #warning-window-block {
@@ -367,6 +371,17 @@ input [type=checkbox], input [type=radio] {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.warning-window__head-text {
+  color: red;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.warning-window__text {
+  font-size: 14px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

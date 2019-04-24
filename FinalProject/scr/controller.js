@@ -103,13 +103,12 @@ function Controller(){
 
 	$(document).on('click', '.button-send-new-post', async (event) => {
 		var id = $(event.target).attr('name'),
-			token = localStorage.getItem('tokenAccess'),
 			valueInputPost = $('#send-new-post').val(),
-			getFriendWall = await services.addNewPost(id, valueInputPost, token);
+			getFriendWall = await services.addNewPost(id, valueInputPost, tokenPost);
 			;
 		
 		if ( getFriendWall === 'nothing' ) {
-			getFriendWall = await services.addNewPost(id, valueInputPost, token);
+			getFriendWall = await services.addNewPost(id, valueInputPost, tokenPost);
 			view.writeFriendWall(getFriendWall);
 		} else {
 			view.writeFriendWall(getFriendWall);
@@ -119,11 +118,10 @@ function Controller(){
 	
 	$(document).on('click', '.user-post-delete', async (event) => {
 		var postId = $(event.target).attr('name'),
-			ownerId = $(event.target).attr('value'),
-			token = localStorage.getItem('tokenAccess')
+			ownerId = $(event.target).attr('value')
 			;
 
-		services.deleteUserPost(ownerId, postId, token);
+		services.deleteUserPost(ownerId, postId, tokenPost);
 	});
 
 	$(document).on('click', '#user-page__info-details__blocks-friends', async (event) => {
