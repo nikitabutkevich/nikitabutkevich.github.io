@@ -19,6 +19,7 @@ function Controller(){
 	$('#user-page').hide();
 
 	if ( localStorage.getItem('token') != '' ) {
+		$('#enter-in-app').hide();
 		$('#intro-window').show();
 	} else {
 		alert('Доступ не получен!');
