@@ -11,12 +11,6 @@ class Model {
 		localStorage.setItem('tokenAccess', accessToken);
 	}
 
-	getPostToken(){
-		var valInput = $('#warning-window__input').val();
-
-		localStorage.setItem('tokenPost', valInput);
-	}
-
 	getUserId(){
 		var pageURL = window.location.href,
 			pageURLData = pageURL.split('user_id='),
