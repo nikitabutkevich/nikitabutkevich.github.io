@@ -21,7 +21,8 @@ function Controller(){
 		model.getAccessToken();
 		model.getUserId();
 		
-		$('#enter-in-app').remove();
+		$('#enter-in-app').hide();
+		$('#intro-window').show();
 	});
 
 	$('#my-page').on('click', () => {
