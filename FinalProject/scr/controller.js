@@ -17,7 +17,7 @@ function Controller(){
 	$('#user-page').css('display', 'none');
 
 	function showWindow() {
-		var timeToken = helper.checkAvalibaleTime();
+		var timeToken = helper.avalibaleTime();
 
 		if ( timeToken ) {
 			$('#intro-window').css('display', 'flex');

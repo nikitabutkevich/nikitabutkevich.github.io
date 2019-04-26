@@ -21,7 +21,7 @@ class Helper {
 	}
 
 	getLifeTimeToken(){
-		var nowTime = new Date().getTime(),
+		var date = new Date().getTime(),
 			pageURL = window.location.href,
 			pageURLData = pageURL.split('expires_in='),
 			pageDataTime = pageURLData[1].split('&'),
@@ -32,14 +32,16 @@ class Helper {
 		localStorage.setItem('timeToken', timeValue);
 	}
 
-	checkAvalibaleTime() {
-		const now = new Date.getItem(),
-			timeToken = localStorage.getItem('timeToken');
-
-		return timeToken > now;
+	avalibaleTime(){
+		checkAvalibaleTime();
 	}
+}
 
-	
+function checkAvalibaleTime() {
+	const now = new Date().getTime();
+	const timeToken = localStorage.getItem('timeToken');
+
+	return timeToken > now;
 }
 
 export default Helper;
