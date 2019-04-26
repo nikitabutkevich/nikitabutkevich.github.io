@@ -32,8 +32,9 @@ function Controller(){
 		helper.getAccessToken();
 		helper.getUserId();
 		helper.getLifeTimeToken();
-
-		showWindow();
+		
+		$('#enter-in-app').css('display', 'none');
+		$('#intro-window').css('display', 'flex');
 	});
 
 	var tokenAccess = localStorage.getItem('tokenAccess'),
