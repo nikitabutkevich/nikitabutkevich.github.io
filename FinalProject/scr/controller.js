@@ -28,11 +28,11 @@ function Controller(){
 		}
 	}
 
-	$(document).on('click', '.enter-app-button', (event) => {
+	$('.enter-app-button').on('click', () => {
 		helper.getAccessToken();
 		helper.getUserId();
 		helper.getLifeTimeToken();
-		
+
 		$('#enter-in-app').css('display', 'none');
 		$('#intro-window').css('display', 'flex');
 	});
