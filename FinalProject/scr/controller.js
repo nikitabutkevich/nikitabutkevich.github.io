@@ -17,10 +17,6 @@ function Controller(){
 	$('#user-page').css('display', 'none');
 
 	function showWindow() {
-		helper.getAccessToken();
-		helper.getUserId();
-		helper.getLifeTimeToken();
-
 		var timeToken = helper.checkAvalibaleTime();
 
 		if ( timeToken ) {
@@ -32,9 +28,13 @@ function Controller(){
 		}
 	}
 
-	showWindow();
+	$(document).on('click', '.enter-app-button', (event) => {
+		helper.getAccessToken();
+		helper.getUserId();
+		helper.getLifeTimeToken();
+	});
 
-	
+	showWindow();
 
 	var tokenAccess = localStorage.getItem('tokenAccess'),
 		tokenPost = localStorage.getItem('tokenPost'),
