@@ -29,12 +29,11 @@ function Controller(){
 	}
 
 	$('.enter-app-button').on('click', () => {
-		helper.getAccessToken();
-		helper.getUserId();
-		helper.getLifeTimeToken();
-
-		$('#enter-in-app').css('display', 'none');
-		$('#intro-window').css('display', 'flex');
+		document.addEventListener('DOMContentLoaded', () => {
+			helper.getAccessToken();
+			helper.getUserId();
+			helper.getLifeTimeToken();
+		});
 	});
 
 	var tokenAccess = localStorage.getItem('tokenAccess'),
