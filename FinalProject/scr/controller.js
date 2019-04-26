@@ -29,12 +29,10 @@ function Controller(){
 	}
 
 	$(document).on('click', '.enter-app-button', (event) => {
-		
+		helper.getAccessToken();
+		helper.getUserId();
+		helper.getLifeTimeToken();
 	});
-	
-	helper.getAccessToken();
-	helper.getUserId();
-	helper.getLifeTimeToken();
 
 	showWindow();
 
