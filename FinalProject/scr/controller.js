@@ -29,12 +29,13 @@ function Controller(){
 	}
 
 	$('.enter-app-button').on('click', () => {
-		document.addEventListener('DOMContentLoaded', () => {
-			helper.getAccessToken();
-			helper.getUserId();
-			helper.getLifeTimeToken();
-		});
+		$('#intro-window').css('display', 'flex');
+		$('#enter-in-app').css('display', 'none');
 	});
+	
+	helper.getAccessToken();
+	helper.getUserId();
+	helper.getLifeTimeToken();
 
 	var tokenAccess = localStorage.getItem('tokenAccess'),
 		tokenPost = localStorage.getItem('tokenPost'),
