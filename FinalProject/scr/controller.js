@@ -32,9 +32,9 @@ function Controller(){
 		}
 	}
 
-	$(document).on('click', '.enter-app-button', (event) => {
-		showWindow();
-	});
+	showWindow();
+
+	
 
 	var tokenAccess = localStorage.getItem('tokenAccess'),
 		tokenPost = localStorage.getItem('tokenPost'),
