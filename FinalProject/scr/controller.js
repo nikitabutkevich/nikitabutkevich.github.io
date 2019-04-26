@@ -6,24 +6,40 @@ import Helper from './helper.js';
 import Services from './services.js';
 
 function Controller(){
-	var tokenAccess = localStorage.getItem('tokenAccess');;
 	const model = new Model(),
 		services = new Services(),
 		view = new View(),
 		helper = new Helper()
 		;
 
-	$('#intro-window').hide();
-	$('.my-friends').hide();
-	$('#user-page').hide();
+	$('#intro-window').css('display', 'none');
+	$('.my-friends').css('display', 'none');
+	$('#user-page').css('display', 'none');
+
+	function showWindow() {
+		helper.getAccessToken();
+		helper.getUserId();
+		helper.getLifeTimeToken();
+
+		var timeToken = helper.checkAvalibaleTime();
+
+		if ( timeToken ) {
+			$('#intro-window').css('display', 'flex');
+			$('#enter-in-app').css('display', 'none');
+		} else {
+			$('#intro-window').css('display', 'none');
+			$('#enter-in-app').css('display', 'flex');
+		}
+	}
 
 	$(document).on('click', '.enter-app-button', (event) => {
-		model.getAccessToken();
-		model.getUserId();
-		
-		$('#enter-in-app').remove();
-		$('#intro-window').show();
+		showWindow();
 	});
+
+	var tokenAccess = localStorage.getItem('tokenAccess'),
+		tokenPost = localStorage.getItem('tokenPost'),
+		userId = localStorage.getItem('userId')
+		;
 
 	$('#my-page').on('click', () => {
 		$('.intro-window').hide();
@@ -37,10 +53,10 @@ function Controller(){
 	});
 
 	$(document).on('click', '#my-page', async (event) => {
-		var userId = localStorage.getItem('userId'),
-			getUserInfo = await services.getDataUserInfo(userId, token),
+		var getUserInfo = await services.getDataUserInfo(userId, token),
 			getUserWall = await services.getData('wall.get', 'count=10', tokenAccess)
 			;
+
 		console.log(getUserInfo);
 		if ( getUserWall === 'nothing' ){
 			getUserWall = await services.getData('wall.get', 'count=10', tokenAccess);
@@ -54,7 +70,7 @@ function Controller(){
 	});
 
 	$(document).on('click', '#my-friends', async (event) => {
-		var 	getFriends = await services.getData('friends.get', 'fields=bdate,city,photo_100,contacts,sex,city,photo_50,photo_200_orig,online', tokenAccess)
+		var getFriends = await services.getData('friends.get', 'fields=bdate,city,photo_100,contacts,sex,city,photo_50,photo_200_orig,online', tokenAccess)
 			;
 
 		if ( getFriends === 'nothing' ) {
@@ -89,11 +105,11 @@ function Controller(){
 	$(document).on('click', '.button-send-new-post', async (event) => {
 		var id = $(event.target).attr('name'),
 			valueInputPost = $('#send-new-post').val(),
-			getFriendWall = await services.addNewPost(id, valueInputPost, tokenAccess);
+			getFriendWall = await services.addNewPost(id, valueInputPost, tokenPost);
 			;
 		
 		if ( getFriendWall === 'nothing' ) {
-			getFriendWall = await services.addNewPost(id, valueInputPost, tokenAccess);
+			getFriendWall = await services.addNewPost(id, valueInputPost, tokenPost);
 			view.writeFriendWall(getFriendWall);
 		} else {
 			view.writeFriendWall(getFriendWall);
@@ -106,16 +122,16 @@ function Controller(){
 			ownerId = $(event.target).attr('value')
 			;
 
-		services.deleteUserPost(ownerId, postId, tokenAccess);
+		services.deleteUserPost(ownerId, postId, tokenPost);
 	});
 
 	$(document).on('click', '#user-page__info-details__blocks-friends', async (event) => {
-		var userId = $(event.target).attr('name'),
-			getFriends = await services.getFriends(userId, tokenAccess)
+		var userFriendId = $(event.target).attr('name'),
+			getFriends = await services.getFriends(userFriendId, tokenAccess)
 			;
 			console.log(getFriends);
 		if ( getFriends === 'nothing' ) {
-			getFriends = await services.getFriends(userId, tokenAccess);
+			getFriends = await services.getFriends(userFriendId, tokenAccess);
 			view.writeListFriends(getFriends);
 		} else {
 			view.writeListFriends(getFriends);

@@ -55,9 +55,6 @@ class View {
 			name.setAttribute('target', '_blank');
 			name.innerText = elem.first_name + ' ' + elem.last_name + ' ';
 			onlineStatus.innerText = this.userOnline(elem.online);
-			
-			//button.setAttribute('class', 'showFriendWall');
-			//button.setAttribute('value', '' + elem.id);
 
 			item.appendChild(image);
 
@@ -163,8 +160,6 @@ class View {
 			postText = document.createElement('p'),
 			deletePost = document.createElement('button')
 			;
-		
-
 
 		deletePost.innerText = "x";
 		deletePost.setAttribute('name', item.id);
