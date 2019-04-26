@@ -32,9 +32,9 @@ function Controller(){
 		helper.getAccessToken();
 		helper.getUserId();
 		helper.getLifeTimeToken();
-	});
 
-	showWindow();
+		showWindow();
+	});
 
 	var tokenAccess = localStorage.getItem('tokenAccess'),
 		tokenPost = localStorage.getItem('tokenPost'),
