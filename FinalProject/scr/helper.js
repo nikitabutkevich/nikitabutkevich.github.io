@@ -25,7 +25,7 @@ class Helper {
 			pageURL = window.location.href,
 			pageURLData = pageURL.split('expires_in='),
 			pageDataTime = pageURLData[1].split('&'),
-			timeValueSecond = +pageDataTime[1],
+			timeValueSecond = +pageDataTime[0],
 			timeValue = ( timeValueSecond * 1000 ) + date
 			;
 
