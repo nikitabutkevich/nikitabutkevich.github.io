@@ -27,17 +27,20 @@ function Controller(){
 			$('#enter-in-app').css('display', 'flex');
 		}
 	}
-
-	$('.enter-app-button').on('click', () => {
-		$('#intro-window').css('display', 'flex');
-		$('#enter-in-app').css('display', 'none');
-	});
 	
 	helper.getAccessToken();
 	helper.getUserId();
 	helper.getLifeTimeToken();
 
-	showWindow();
+	window.addEventListener('load', () =>{
+		if ( localStorage.getItem('authorization') === 'yes' ) {
+			$('#intro-window').css('display', 'flex');
+			$('#enter-in-app').css('display', 'none');
+		} else {
+			$('#intro-window').css('display', 'none');
+			$('#enter-in-app').css('display', 'flex');
+		}
+	});
 
 	var tokenAccess = localStorage.getItem('tokenAccess'),
 		tokenPost = localStorage.getItem('tokenPost'),

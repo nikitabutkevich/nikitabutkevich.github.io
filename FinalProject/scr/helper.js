@@ -18,6 +18,8 @@ class Helper {
 			;
 
 		localStorage.setItem('userId', userId);
+
+			localStorage.getItem('userId') != '' ? localStorage.setItem('authorization', 'yes') : localStorage.setItem('authorization', 'yes');
 	}
 
 	getLifeTimeToken(){
