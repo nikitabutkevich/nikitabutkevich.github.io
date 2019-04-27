@@ -23,10 +23,10 @@ function Controller(){
 	window.addEventListener('load', () =>{
 		if ( localStorage.getItem('authorization') === 'yes' ) {
 			$('#intro-window').css('style', 'display: flex;');
-			$('#enter-in-app').css('style', 'display: none;');
+			$('#enter-in-app').hide();
 		} else {
 			$('#intro-window').css('style', 'display: none;');
-			$('#enter-in-app').css('style', 'display: flex;');
+			$('#enter-in-app').show();
 		}
 	});
 
