@@ -47,7 +47,7 @@ function Controller(){
 	});
 
 	$(document).on('click', '#my-page', async (event) => {
-		var getUserInfo = await services.getDataUserInfo(userId, token),
+		var getUserInfo = await services.getDataUserInfo(userId, tokenAccess),
 			getUserWall = await services.getData('wall.get', 'count=10', tokenAccess)
 			;
 
