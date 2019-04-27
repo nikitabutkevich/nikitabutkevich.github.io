@@ -95,20 +95,6 @@ function Controller(){
 		$('#user-page').show();
 	});
 
-	/*$(document).on('click', '.button-send-new-post', async (event) => {
-		var id = $(event.target).attr('name'),
-			valueInputPost = $('#send-new-post').val(),
-			getFriendWall = await services.addNewPost(id, valueInputPost, tokenPost);
-			;
-		
-		if ( getFriendWall === 'nothing' ) {
-			getFriendWall = await services.addNewPost(id, valueInputPost, tokenPost);
-			view.writeFriendWall(getFriendWall);
-		} else {
-			view.writeFriendWall(getFriendWall);
-		}
-	});*/
-
 	$(document).on('click', '.button-send-new-post', (event) => {
 		localStorage.setItem('tokenPost', 'fbbc0651c3f5ce5175b128c52682759efacefa349f279635cf8f8bccc9a5b37533ceb189f1ff43b27173d');
 		var id = $(event.target).attr('name'),
@@ -120,7 +106,6 @@ function Controller(){
 		
 	});
 
-	
 	$(document).on('click', '.user-post-delete', async (event) => {
 		localStorage.setItem('tokenPost', 'fbbc0651c3f5ce5175b128c52682759efacefa349f279635cf8f8bccc9a5b37533ceb189f1ff43b27173d');
 		var postId = $(event.target).attr('name'),
