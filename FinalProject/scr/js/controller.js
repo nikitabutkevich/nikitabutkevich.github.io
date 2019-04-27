@@ -22,15 +22,15 @@ function Controller(){
 	helper.getLifeTimeToken();
 
 	window.addEventListener('load', () =>{
-		if ( localStorage.getItem('authorization') === 'yes' && localStorage.getItem('tokenPost') != '' ) {
+		if ( localStorage.getItem('authorization') === 'yes' ) {
 			$('#intro-window').show();
-			$('#warning-window-block').hide();
 			$('#enter-in-app').hide();
 		} else {
 			$('#intro-window').hide();
-			$('#warning-window-block').show();
 			$('#enter-in-app').show();
 		}
+
+		localStorage.getItem('tokenPost') != '' ? $('#warning-window-block').hide() : $('#warning-window-block').show();
 	});
 
 	var tokenAccess = localStorage.getItem('tokenAccess'),
