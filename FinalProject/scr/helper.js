@@ -11,17 +11,6 @@ class Helper {
 		localStorage.setItem('tokenAccess', accessToken);
 	}
 
-	getUserId(){
-		var pageURL = window.location.href,
-			pageURLData = pageURL.split('user_id='),
-			userId = pageURLData[1]
-			;
-
-		localStorage.setItem('userId', userId);
-
-			localStorage.getItem('userId') != '' ? localStorage.setItem('authorization', 'yes') : localStorage.setItem('authorization', 'yes');
-	}
-
 	getLifeTimeToken(){
 		var date = new Date().getTime(),
 			pageURL = window.location.href,
@@ -34,8 +23,17 @@ class Helper {
 		localStorage.setItem('timeToken', timeValue);
 	}
 
-	avalibaleTime(){
-		checkAvalibaleTime();
+	getUserId(){
+		var pageURL = window.location.href,
+			pageURLData = pageURL.split('user_id='),
+			userId = pageURLData[1]
+			;
+
+		localStorage.setItem('userId', userId);
+	}
+
+	authorizationUser(){
+		localStorage.getItem('userId') != '' && checkAvalibaleTime() ? localStorage.setItem('authorization', 'yes') : localStorage.setItem('authorization', 'yes');
 	}
 }
 

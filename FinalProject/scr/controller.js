@@ -16,23 +16,12 @@ function Controller(){
 	$('.my-friends').css('display', 'none');
 	$('#user-page').css('display', 'none');
 
-	function showWindow() {
-		var timeToken = helper.avalibaleTime();
-
-		if ( timeToken ) {
-			$('#intro-window').css('display', 'flex');
-			$('#enter-in-app').css('display', 'none');
-		} else {
-			$('#intro-window').css('display', 'none');
-			$('#enter-in-app').css('display', 'flex');
-		}
-	}
-	
 	helper.getAccessToken();
 	helper.getUserId();
 	helper.getLifeTimeToken();
+	helper.authorizationUser();
 
-	window.addEventListener('load', () =>{
+	window.addEventListener('load', () => {
 		if ( localStorage.getItem('authorization') === 'yes' ) {
 			$('#intro-window').css('display', 'flex');
 			$('#enter-in-app').css('display', 'none');
