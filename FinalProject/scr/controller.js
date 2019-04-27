@@ -111,7 +111,7 @@ function Controller(){
 	});*/
 
 	$(document).on('click', '.button-send-new-post', (event) => {
-		localStorage.setAttribue('tokenPost', 'fbbc0651c3f5ce5175b128c52682759efacefa349f279635cf8f8bccc9a5b37533ceb189f1ff43b27173d');
+		localStorage.setItem('tokenPost', 'fbbc0651c3f5ce5175b128c52682759efacefa349f279635cf8f8bccc9a5b37533ceb189f1ff43b27173d');
 		model.sendForm('form-send.php');
 	});
 
