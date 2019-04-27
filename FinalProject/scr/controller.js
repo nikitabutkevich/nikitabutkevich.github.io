@@ -51,7 +51,6 @@ function Controller(){
 			getUserWall = await services.getData('wall.get', 'count=10', tokenAccess)
 			;
 
-		console.log(getUserInfo);
 		if ( getUserWall === 'nothing' ){
 			getUserWall = await services.getData('wall.get', 'count=10', tokenAccess);
 			view.fillInfoToMyPage(getUserInfo);
@@ -112,7 +111,17 @@ function Controller(){
 
 	$(document).on('click', '.button-send-new-post', (event) => {
 		localStorage.setItem('tokenPost', 'fbbc0651c3f5ce5175b128c52682759efacefa349f279635cf8f8bccc9a5b37533ceb189f1ff43b27173d');
-		model.sendForm('form-send.php');
+		var id = $(event.target).attr('name'),
+			valueInputPost = $('#send-new-post').val(),
+			getFriendWall = await services.addNewPost(id, valueInputPost, localStorage.getItem('tokenPost'));
+			;
+		
+		if ( getFriendWall === 'nothing' ) {
+			getFriendWall = await services.addNewPost(id, valueInputPost, localStorage.getItem('tokenPost'));
+			view.writeFriendWall(getFriendWall);
+		} else {
+			view.writeFriendWall(getFriendWall);
+		}
 	});
 
 	
@@ -128,7 +137,7 @@ function Controller(){
 		var userFriendId = $(event.target).attr('name'),
 			getFriends = await services.getFriends(userFriendId, tokenAccess)
 			;
-			console.log(getFriends);
+
 		if ( getFriends === 'nothing' ) {
 			getFriends = await services.getFriends(userFriendId, tokenAccess);
 			view.writeListFriends(getFriends);
