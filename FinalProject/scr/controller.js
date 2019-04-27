@@ -19,9 +19,8 @@ function Controller(){
 	helper.getAccessToken();
 	helper.getUserId();
 	helper.getLifeTimeToken();
-	helper.authorizationUser();
 
-	window.addEventListener('load', () => {
+	window.addEventListener('load', () =>{
 		if ( localStorage.getItem('authorization') === 'yes' ) {
 			$('#intro-window').css('display', 'flex');
 			$('#enter-in-app').css('display', 'none');
