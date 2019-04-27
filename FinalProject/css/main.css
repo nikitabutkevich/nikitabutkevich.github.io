@@ -416,4 +416,31 @@ input [type=checkbox], input [type=radio] {
   cursor: pointer;
 }
 
+#back-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  transition: all 0.1s linear;
+  width: 7rem;
+  color: rgba(0, 0, 0, 0.1);
+  background: rgba(141, 186, 105, 0.05);
+}
+#back-page:hover {
+  cursor: pointer;
+  color: black;
+  background: rgba(141, 186, 105, 0.2);
+}
+
+.back-page__name {
+  transform: rotate(-90deg);
+  position: absolute;
+  font-weight: 700;
+  font-size: 19px;
+  transition: all 0.3s linear;
+}
+
 /*# sourceMappingURL=main.css.map */

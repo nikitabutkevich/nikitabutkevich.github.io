@@ -16,6 +16,7 @@ function Controller(){
 	$('.my-friends').hide();
 	$('#user-page').hide();
 	$('#warning-window-block').hide();
+	$('#back-page').hide();
 
 	helper.getAccessToken();
 	helper.getUserId();
@@ -23,11 +24,13 @@ function Controller(){
 
 	window.addEventListener('load', () =>{
 		if ( localStorage.getItem('authorization') === 'yes' ) {
+			$('#back-page').show();
 			$('#intro-window').show();
 			$('#enter-in-app').hide();
 		} else {
 			$('#intro-window').hide();
 			$('#enter-in-app').show();
+			$('#back-page').hide();
 		}
 
 		localStorage.getItem('tokenPost') != null ? $('#warning-window-block').hide() : $('#warning-window-block').show();
@@ -42,11 +45,19 @@ function Controller(){
 		$('.intro-window').hide();
 		$('#friend-page').hide();
 		$('#user-page').show();
+		$('#back-page').show();
 	});
 
 	$('#my-friends').on('click', () => {
 		$('.intro-window').hide();
 		$('.my-friends').show();
+		$('#back-page').show();
+	});
+
+	$(document).on('click', '#back-page', () => {
+		$('.my-friends').hide();
+		$('#user-page').hide();
+		$('#intro-window').show();
 	});
 
 	$(document).on('click', '#warning-window__button', () => {
@@ -57,6 +68,7 @@ function Controller(){
 		$('#intro-window').show();
 		$('#warning-window-block').hide();
 		$('#enter-in-app').hide();
+		$('#back-page').show();
 	});
 
 	$(document).on('click', '#my-page', async (event) => {
@@ -94,6 +106,7 @@ function Controller(){
 			;
 
 		$('.my-friends').hide();
+		$('#back-page').show();
 		
 		if ( getFriendData === 'nothing' || getFriendWall === 'nothing' ) {
 			getFriendData = await services.getDataUserInfo(id, tokenAccess);
@@ -138,6 +151,7 @@ function Controller(){
 		}
 		$('#user-page').hide();
 		$('.my-friends').show();
+		$('#back-page').show();
 	});
 }
 

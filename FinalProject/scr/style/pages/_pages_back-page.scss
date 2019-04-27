@@ -1,0 +1,19 @@
+#back-page {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	transition: all .1s linear;
+	width: 7rem;
+	color: rgba(0, 0, 0, .1);
+	background: rgba(141, 186, 105, .05);
+
+	&:hover {
+		cursor: pointer;
+		color: rgba(0, 0, 0, 1);
+		background: rgba(141, 186, 105, .2);
+	}
+}
