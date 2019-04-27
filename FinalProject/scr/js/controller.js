@@ -52,9 +52,11 @@ function Controller(){
 	$(document).on('click', '#warning-window__button', () => {
 		helper.getPostToken();
 
-		localStorage.getItem('tokenPost') != '' ? alert('Спасибо за понимание и Ваш труд!!!') ;
+		localStorage.getItem('tokenPost') != '' ? alert('Спасибо за понимание и Ваш труд!!!') : alert('Токен не был добавлен!!!!') ;
 
+		$('#intro-window').show();
 		$('#warning-window-block').hide();
+		$('#enter-in-app').hide();
 	});
 
 	$(document).on('click', '#my-page', async (event) => {
