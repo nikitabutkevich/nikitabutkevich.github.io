@@ -9,7 +9,6 @@ class Helper {
 			;
 
 		localStorage.setItem('tokenAccess', accessToken);
-		localStorage.setItem('tokenPost', '');
 	}
 
 	getUserId(){
