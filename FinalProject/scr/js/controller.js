@@ -15,17 +15,20 @@ function Controller(){
 	$('#intro-window').hide();
 	$('.my-friends').hide();
 	$('#user-page').hide();
+	$('#warning-window-block').hide();
 
 	helper.getAccessToken();
 	helper.getUserId();
 	helper.getLifeTimeToken();
 
 	window.addEventListener('load', () =>{
-		if ( localStorage.getItem('authorization') === 'yes' ) {
+		if ( localStorage.getItem('authorization') === 'yes' && localStorage.getItem('tokenPost') != '' ) {
 			$('#intro-window').show();
+			$('#warning-window-block').hide()
 			$('#enter-in-app').hide();
 		} else {
 			$('#intro-window').hide();
+			$('#warning-window-block').show()
 			$('#enter-in-app').show();
 		}
 	});
