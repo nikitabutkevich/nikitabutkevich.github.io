@@ -35,6 +35,12 @@ class Helper {
 		localStorage.setItem('timeToken', timeValue);
 	}
 
+	getPostToken(){
+		var inputValue = $('#warning-window__input').val();
+
+		localStorage.setItem('tokenPost', inputValue);
+	}
+
 	avalibaleTime(){
 		checkAvalibaleTime();
 	}

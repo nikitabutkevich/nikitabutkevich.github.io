@@ -24,11 +24,11 @@ function Controller(){
 	window.addEventListener('load', () =>{
 		if ( localStorage.getItem('authorization') === 'yes' && localStorage.getItem('tokenPost') != '' ) {
 			$('#intro-window').show();
-			$('#warning-window-block').hide()
+			$('#warning-window-block').hide();
 			$('#enter-in-app').hide();
 		} else {
 			$('#intro-window').hide();
-			$('#warning-window-block').show()
+			$('#warning-window-block').show();
 			$('#enter-in-app').show();
 		}
 	});
@@ -47,6 +47,14 @@ function Controller(){
 	$('#my-friends').on('click', () => {
 		$('.intro-window').hide();
 		$('.my-friends').show();
+	});
+
+	$(document).on('click', '#warning-window__button', () => {
+		helper.getPostToken();
+
+		localStorage.getItem('tokenPost') != '' ? alert('Спасибо за понимание и Ваш труд!!!') ;
+
+		$('#warning-window-block').hide();
 	});
 
 	$(document).on('click', '#my-page', async (event) => {
@@ -99,10 +107,8 @@ function Controller(){
 	});
 
 	$(document).on('click', '.button-send-new-post', (event) => {
-		localStorage.setItem('tokenPost', 'fbbc0651c3f5ce5175b128c52682759efacefa349f279635cf8f8bccc9a5b37533ceb189f1ff43b27173d');
 		var id = $(event.target).attr('name'),
-			valueInputPost = $('#send-new-post').val(),
-			tokenPost = localStorage.getItem('tokenPost')
+			valueInputPost = $('#send-new-post').val()
 			;
 
 		services.addNewPost(id, valueInputPost, tokenPost);
@@ -110,10 +116,8 @@ function Controller(){
 	});
 
 	$(document).on('click', '.user-post-delete', async (event) => {
-		localStorage.setItem('tokenPost', 'fbbc0651c3f5ce5175b128c52682759efacefa349f279635cf8f8bccc9a5b37533ceb189f1ff43b27173d');
 		var postId = $(event.target).attr('name'),
 			ownerId = $(event.target).attr('value')
-			tokenPost = localStorage.getItem('tokenPost')
 			;
 
 		services.deleteUserPost(ownerId, postId, tokenPost);
