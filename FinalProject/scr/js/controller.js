@@ -30,7 +30,7 @@ function Controller(){
 			$('#enter-in-app').show();
 		}
 
-		localStorage.getItem('tokenPost') != '' ? $('#warning-window-block').hide() : $('#warning-window-block').show();
+		localStorage.getItem('tokenPost') != null ? $('#warning-window-block').hide() : $('#warning-window-block').show();
 	});
 
 	var tokenAccess = localStorage.getItem('tokenAccess'),
