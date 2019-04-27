@@ -420,7 +420,7 @@ input [type=checkbox], input [type=radio] {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   height: 100%;
