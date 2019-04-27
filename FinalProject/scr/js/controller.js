@@ -12,6 +12,16 @@ function Controller(){
 		helper = new Helper()
 		;
 
+	$(window).on('load', () => {
+    	setTimeout( removeLoader, 2000 );
+  	});
+
+  	function removeLoader(){
+    	$( "#loading" ).fadeOut(500, function() {
+      		$( "#loading" ).remove();
+  		});  
+	}
+
 	$('#intro-window').hide();
 	$('.my-friends').hide();
 	$('#user-page').hide();
