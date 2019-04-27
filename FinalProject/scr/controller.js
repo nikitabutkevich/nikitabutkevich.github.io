@@ -22,11 +22,11 @@ function Controller(){
 
 	window.addEventListener('load', () =>{
 		if ( localStorage.getItem('authorization') === 'yes' ) {
-			$('#intro-window').show();
-			$('#enter-in-app').remove();
+			$('#intro-window').css('style', 'display: flex;');
+			$('#enter-in-app').css('style', 'display: none;');
 		} else {
-			$('#intro-window').hide();
-			$('#enter-in-app').show();
+			$('#intro-window').css('style', 'display: none;');
+			$('#enter-in-app').css('style', 'display: flex;');
 		}
 	});
 
@@ -36,14 +36,14 @@ function Controller(){
 		;
 
 	$('#my-page').on('click', () => {
-		$('.intro-window').hide();
-		$('#friend-page').hide();
-		$('#user-page').show();
+		$('.intro-window').css('style', 'display: none;');
+		$('#friend-page').css('style', 'display: none;');
+		$('#user-page').css('style', 'display: flex;');
 	});
 
 	$('#my-friends').on('click', () => {
-		$('.intro-window').hide();
-		$('.my-friends').show();
+		$('.intro-window').css('style', 'display: none;');
+		$('.my-friends').css('style', 'display: flex;');
 	});
 
 	$(document).on('click', '#my-page', async (event) => {
@@ -93,7 +93,7 @@ function Controller(){
 			view.writeWall(getFriendWall);
 		}
 
-		$('#user-page').show();
+		$('#user-page').css('style', 'display: flex;');
 	});
 
 	$(document).on('click', '.button-send-new-post', async (event) => {
@@ -130,8 +130,8 @@ function Controller(){
 		} else {
 			view.writeListFriends(getFriends);
 		}
-		$('#user-page').hide();
-		$('.my-friends').show();
+		$('#user-page').css('style', 'display: none;');
+		$('.my-friends').css('style', 'display: flex;');
 	});
 }
 
