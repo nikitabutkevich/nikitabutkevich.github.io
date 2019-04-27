@@ -23,7 +23,7 @@ function Controller(){
 	window.addEventListener('load', () =>{
 		if ( localStorage.getItem('authorization') === 'yes' ) {
 			$('#intro-window').show();
-			$('#enter-in-app').hide();
+			$('#enter-in-app').remove();
 		} else {
 			$('#intro-window').hide();
 			$('#enter-in-app').show();
