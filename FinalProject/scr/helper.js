@@ -26,7 +26,7 @@ class Helper {
 			pageURLData = pageURL.split('expires_in='),
 			pageDataTime = pageURLData[1].split('&'),
 			timeValueSecond = +pageDataTime[1],
-			timeValue = ( timeValueSecond * 1000 ) + nowTime
+			timeValue = ( timeValueSecond * 1000 ) + date
 			;
 
 		localStorage.setItem('timeToken', timeValue);

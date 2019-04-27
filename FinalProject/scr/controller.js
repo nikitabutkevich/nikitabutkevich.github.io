@@ -37,6 +37,8 @@ function Controller(){
 	helper.getUserId();
 	helper.getLifeTimeToken();
 
+	showWindow();
+
 	var tokenAccess = localStorage.getItem('tokenAccess'),
 		tokenPost = localStorage.getItem('tokenPost'),
 		userId = localStorage.getItem('userId')
