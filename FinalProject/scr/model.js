@@ -8,10 +8,10 @@ class Model {
 			dataType: 'JSONP',
 			data: $("#form-add-post").serialize(),
 			success: (response) => {
-				alert(response);
+				console.log(response);
 			},
 			error: (response) => {
-				alert(response);
+				console.log(response);
 			}
 		});
 	}
