@@ -21,12 +21,12 @@ function Controller(){
 	helper.getLifeTimeToken();
 
 	window.addEventListener('load', () =>{
-		if ( localStorage.getItem('authorization') === 'yes' ) {
-			$('#intro-window').css('display', 'flex');
-			$('#enter-in-app').css('display', 'none');
+		if ( localStorage.getItem('authorization') === 'yes' && helper.avalibaleTime() === true ) {
+			$('#intro-window').show();
+			$('#enter-in-app').hide();
 		} else {
-			$('#intro-window').css('display', 'none');
-			$('#enter-in-app').css('display', 'flex');
+			$('#intro-window').hide();
+			$('#enter-in-app').show();
 		}
 	});
 
