@@ -21,7 +21,7 @@ function Controller(){
 	helper.getLifeTimeToken();
 
 	window.addEventListener('load', () =>{
-		if ( localStorage.getItem('authorization') === 'yes' && helper.avalibaleTime() === true ) {
+		if ( localStorage.getItem('authorization') === 'yes' ) {
 			$('#intro-window').show();
 			$('#enter-in-app').hide();
 		} else {
