@@ -12,9 +12,9 @@ function Controller(){
 		helper = new Helper()
 		;
 
-	$('#intro-window').css('display', 'none');
-	$('.my-friends').css('display', 'none');
-	$('#user-page').css('display', 'none');
+	$('#intro-window').hide();
+	$('.my-friends').hide();
+	$('#user-page').hide();
 
 	helper.getAccessToken();
 	helper.getUserId();
@@ -22,10 +22,10 @@ function Controller(){
 
 	window.addEventListener('load', () =>{
 		if ( localStorage.getItem('authorization') === 'yes' ) {
-			$('#intro-window').css('style', 'display: flex;');
+			$('#intro-window').show();
 			$('#enter-in-app').hide();
 		} else {
-			$('#intro-window').css('style', 'display: none;');
+			$('#intro-window').hide();
 			$('#enter-in-app').show();
 		}
 	});
@@ -36,14 +36,14 @@ function Controller(){
 		;
 
 	$('#my-page').on('click', () => {
-		$('.intro-window').css('style', 'display: none;');
-		$('#friend-page').css('style', 'display: none;');
-		$('#user-page').css('style', 'display: flex;');
+		$('.intro-window').hide();
+		$('#friend-page').hide();
+		$('#user-page').show();
 	});
 
 	$('#my-friends').on('click', () => {
-		$('.intro-window').css('style', 'display: none;');
-		$('.my-friends').css('style', 'display: flex;');
+		$('.intro-window').hide();
+		$('.my-friends').show();
 	});
 
 	$(document).on('click', '#my-page', async (event) => {
@@ -93,7 +93,7 @@ function Controller(){
 			view.writeWall(getFriendWall);
 		}
 
-		$('#user-page').css('style', 'display: flex;');
+		$('#user-page').show();
 	});
 
 	$(document).on('click', '.button-send-new-post', async (event) => {
@@ -130,8 +130,8 @@ function Controller(){
 		} else {
 			view.writeListFriends(getFriends);
 		}
-		$('#user-page').css('style', 'display: none;');
-		$('.my-friends').css('style', 'display: flex;');
+		$('#user-page').hide();
+		$('.my-friends').show();
 	});
 }
 
