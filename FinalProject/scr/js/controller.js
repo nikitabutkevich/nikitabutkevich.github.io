@@ -170,7 +170,8 @@ function Controller(){
 		var userId = $(event.target).attr('name'),
 			getPhotos = await services.getData('photos.get', 'owner_id=' + userId + '&album_id=profile', tokenAccess)
 			;
-		console.log(getPhotos.length);
+			
+		$('#user-photos-list').empty()
 		
 		if ( getPhotos.length === 0 ) {
 			view.userDontHavePhotos();
