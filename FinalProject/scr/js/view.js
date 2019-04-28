@@ -115,6 +115,7 @@ class View {
 			;
 
 		deleteImg.setAttribute('src', '././image/cancel.svg');
+		deleteImg.setAttribute('class', 'delete-image');
 		deletePost.appendChild(deleteImg);
 		deletePost.setAttribute('name', item.id);
 		deletePost.setAttribute('value', item.owner_id);
