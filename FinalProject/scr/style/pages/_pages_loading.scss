@@ -10,4 +10,254 @@
 	background-color: #F1F1F1;
 	z-index: 99;
 	text-align: center;
+
+	.cssload-loading *{
+	-khtml-box-sizing: border-box;
+	box-sizing: border-box;
+		-o-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;	
+	}
+	
+	.cssload-loading {
+		position: absolute;
+		left: 50%;
+		margin: -34px 0 0 -55px;
+		width: 117px;
+		height: 68px;
+		*zoom: 1;
+	}
+
+	.cssload-loading:before,
+	.cssload-loading:after {
+		display: table;
+		content: "";
+	}
+
+	.cssload-loading:after {
+		clear: both;
+	}
+
+	.cssload-loading .cssload-finger {
+		float: left;
+		margin: 0 2px 0 0;
+		width: 19px;
+		height: 100%;
+	}
+	
+	.cssload-loading .cssload-finger-1 {
+		animation: cssload-finger-1-animation 1.5s infinite ease-out;
+			-o-animation: cssload-finger-1-animation 1.5s infinite ease-out;
+			-ms-animation: cssload-finger-1-animation 1.5s infinite ease-out;
+			-webkit-animation: cssload-finger-1-animation 1.5s infinite ease-out;
+			-moz-animation: cssload-finger-1-animation 1.5s infinite ease-out;
+	}
+
+	.cssload-loading .cssload-finger-1 span {
+		animation: cssload-finger-1-animation-span 1.5s infinite ease-out;
+			-o-animation: cssload-finger-1-animation-span 1.5s infinite ease-out;
+			-ms-animation: cssload-finger-1-animation-span 1.5s infinite ease-out;
+			-webkit-animation: cssload-finger-1-animation-span 1.5s infinite ease-out;
+			-moz-animation: cssload-finger-1-animation-span 1.5s infinite ease-out;
+	}
+
+	.cssload-loading .cssload-finger-1 i {
+		animation: cssload-finger-1-animation-i 1.5s infinite ease-out;
+			-o-animation: cssload-finger-1-animation-i 1.5s infinite ease-out;
+			-ms-animation: cssload-finger-1-animation-i 1.5s infinite ease-out;
+			-webkit-animation: cssload-finger-1-animation-i 1.5s infinite ease-out;
+			-moz-animation: cssload-finger-1-animation-i 1.5s infinite ease-out;
+	}
+
+	.cssload-loading .cssload-finger-2 {
+		animation: cssload-finger-2-animation 1.5s infinite ease-out;
+			-o-animation: cssload-finger-2-animation 1.5s infinite ease-out;
+			-ms-animation: cssload-finger-2-animation 1.5s infinite ease-out;
+			-webkit-animation: cssload-finger-2-animation 1.5s infinite ease-out;
+			-moz-animation: cssload-finger-2-animation 1.5s infinite ease-out;
+	}
+
+	.cssload-loading .cssload-finger-2 span {
+		animation: cssload-finger-2-animation-span 1.5s infinite ease-out;
+			-o-animation: cssload-finger-2-animation-span 1.5s infinite ease-out;
+			-ms-animation: cssload-finger-2-animation-span 1.5s infinite ease-out;
+			-webkit-animation: cssload-finger-2-animation-span 1.5s infinite ease-out;
+			-moz-animation: cssload-finger-2-animation-span 1.5s infinite ease-out;
+	}
+
+	.cssload-loading .cssload-finger-2 i {
+		animation: cssload-finger-2-animation-i 1.5s infinite ease-out;
+			-o-animation: cssload-finger-2-animation-i 1.5s infinite ease-out;
+			-ms-animation: cssload-finger-2-animation-i 1.5s infinite ease-out;
+			-webkit-animation: cssload-finger-2-animation-i 1.5s infinite ease-out;
+			-moz-animation: cssload-finger-2-animation-i 1.5s infinite ease-out;
+	}
+
+	.cssload-loading .cssload-finger-3 {
+		animation: cssload-finger-3-animation 1.5s infinite ease-out;
+			-o-animation: cssload-finger-3-animation 1.5s infinite ease-out;
+			-ms-animation: cssload-finger-3-animation 1.5s infinite ease-out;
+			-webkit-animation: cssload-finger-3-animation 1.5s infinite ease-out;
+			-moz-animation: cssload-finger-3-animation 1.5s infinite ease-out;
+	}
+
+	.cssload-loading .cssload-finger-3 span {
+		animation: cssload-finger-3-animation-span 1.5s infinite ease-out;
+			-o-animation: cssload-finger-3-animation-span 1.5s infinite ease-out;
+			-ms-animation: cssload-finger-3-animation-span 1.5s infinite ease-out;
+			-webkit-animation: cssload-finger-3-animation-span 1.5s infinite ease-out;
+			-moz-animation: cssload-finger-3-animation-span 1.5s infinite ease-out;
+	}
+
+	.cssload-loading .cssload-finger-3 i {
+		animation: cssload-finger-3-animation-i 1.5s infinite ease-out;
+			-o-animation: cssload-finger-3-animation-i 1.5s infinite ease-out;
+			-ms-animation: cssload-finger-3-animation-i 1.5s infinite ease-out;
+			-webkit-animation: cssload-finger-3-animation-i 1.5s infinite ease-out;
+			-moz-animation: cssload-finger-3-animation-i 1.5s infinite ease-out;
+	}
+
+	.cssload-loading .cssload-finger-4 {
+		animation: cssload-finger-4-animation 1.5s infinite ease-out;
+			-o-animation: cssload-finger-4-animation 1.5s infinite ease-out;
+			-ms-animation: cssload-finger-4-animation 1.5s infinite ease-out;
+			-webkit-animation: cssload-finger-4-animation 1.5s infinite ease-out;
+			-moz-animation: cssload-finger-4-animation 1.5s infinite ease-out;
+	}
+
+	.cssload-loading .cssload-finger-4 span {
+		animation: cssload-finger-4-animation-span 1.5s infinite ease-out;
+			-o-animation: cssload-finger-4-animation-span 1.5s infinite ease-out;
+			-ms-animation: cssload-finger-4-animation-span 1.5s infinite ease-out;
+			-webkit-animation: cssload-finger-4-animation-span 1.5s infinite ease-out;
+			-moz-animation: cssload-finger-4-animation-span 1.5s infinite ease-out;
+	}
+
+	.cssload-loading .cssload-finger-4 i {
+		animation: cssload-finger-4-animation-i 1.5s infinite ease-out;
+			-o-animation: cssload-finger-4-animation-i 1.5s infinite ease-out;
+			-ms-animation: cssload-finger-4-animation-i 1.5s infinite ease-out;
+			-webkit-animation: cssload-finger-4-animation-i 1.5s infinite ease-out;
+			-moz-animation: cssload-finger-4-animation-i 1.5s infinite ease-out;
+	}
+
+	.cssload-loading .cssload-finger-item {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		border-radius: 6px 6px 8px 8px;
+			-o-border-radius: 6px 6px 8px 8px;
+			-ms-border-radius: 6px 6px 8px 8px;
+			-webkit-border-radius: 6px 6px 8px 8px;
+			-moz-border-radius: 6px 6px 8px 8px;
+		background-clip: padding-box;
+			-o-background-clip: padding-box;
+			-ms-background-clip: padding-box;
+			-webkit-background-clip: padding-box;
+			-moz-background-clip: padding-box;
+		background: rgb(77,126,41);
+	}
+
+	.cssload-loading .cssload-finger-item span {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: auto;
+		padding: 5px 5px 0 5px;
+	}
+
+	.cssload-loading .cssload-finger-item span:before,
+	.cssload-loading .cssload-finger-item span:after {
+		content: '';
+		position: relative;
+		display: block;
+		margin: 0 0 2px 0;
+		width: 100%;
+		height: 2px;
+		background: rgb(255,255,255);
+	}
+
+	.cssload-loading .cssload-finger-item i {
+		position: absolute;
+		left: 3px;
+		bottom: 3px;
+		width: 14px;
+		height: 14px;
+		border-radius: 10px 10px 7px 7px;
+			-o-border-radius: 10px 10px 7px 7px;
+			-ms-border-radius: 10px 10px 7px 7px;
+			-webkit-border-radius: 10px 10px 7px 7px;
+			-moz-border-radius: 10px 10px 7px 7px;
+		background-clip: padding-box;
+			-o-background-clip: padding-box;
+			-ms-background-clip: padding-box;
+			-webkit-background-clip: padding-box;
+			-moz-background-clip: padding-box;
+		background: rgb(255,255,255);
+	}
+
+	.cssload-loading .cssload-last-finger {
+		position: relative;
+		float: left;
+		width: 23px;
+		height: 100%;
+		overflow: hidden;
+	}
+
+	.cssload-loading .cssload-last-finger-item {
+		position: absolute;
+		right: 0;
+		top: 31px;
+		width: 110%;
+		height: 19px;
+		border-radius: 0 5px 14px 0;
+			-o-border-radius: 0 5px 14px 0;
+			-ms-border-radius: 0 5px 14px 0;
+			-webkit-border-radius: 0 5px 14px 0;
+			-moz-border-radius: 0 5px 14px 0;
+		background-clip: padding-box;
+			-o-background-clip: padding-box;
+			-ms-background-clip: padding-box;
+			-webkit-background-clip: padding-box;
+			-moz-background-clip: padding-box;
+		background: rgb(77,126,41);
+		animation: cssload-finger-5-animation 1.5s infinite linear;
+			-o-animation: cssload-finger-5-animation 1.5s infinite linear;
+			-ms-animation: cssload-finger-5-animation 1.5s infinite linear;
+			-webkit-animation: cssload-finger-5-animation 1.5s infinite linear;
+			-moz-animation: cssload-finger-5-animation 1.5s infinite linear;
+	}
+
+	.cssload-loading .cssload-last-finger-item i {
+		position: absolute;
+		left: 0;
+		top: -8px;
+		width: 21px;
+		height: 8px;
+		background: rgb(77,126,41);
+		overflow: hidden;
+	}
+
+	.cssload-loading .cssload-last-finger-item i:after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 33px;
+		height: 19px;
+		border-radius: 0 0 15px 15px;
+			-o-border-radius: 0 0 15px 15px;
+			-ms-border-radius: 0 0 15px 15px;
+			-webkit-border-radius: 0 0 15px 15px;
+			-moz-border-radius: 0 0 15px 15px;
+		background-clip: padding-box;
+			-o-background-clip: padding-box;
+			-ms-background-clip: padding-box;
+			-webkit-background-clip: padding-box;
+			-moz-background-clip: padding-box;
+		background: rgb(255,255,255);
+	}
+
 }

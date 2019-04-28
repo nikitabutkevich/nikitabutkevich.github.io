@@ -110,10 +110,13 @@ class View {
 			postFeedBack = document.createElement('div'),
 			postImage = document.createElement('img'),
 			postText = document.createElement('p'),
-			deletePost = document.createElement('button')
+			deletePost = document.createElement('button'),
+			deleteImg = document.createElement('img')
 			;
 		
-		deletePost.innerText = "x";
+
+		deleteImg.setAttribute('src', '../../image/cancel.svg');
+		deletePost.appendChild(deleteImg);
 		deletePost.setAttribute('name', item.id);
 		deletePost.setAttribute('value', item.owner_id);
 		deletePost.setAttribute('class', 'user-post-delete');
