@@ -1,0 +1,127 @@
+@media screen and (max-width: 965px) {
+	#enter-in-app {
+		.enter-app-name {
+			font-size: 17px;
+			font-weight: 700;
+		}
+		.enter-app-button {
+			width: 14rem;
+			padding: 1rem;
+			font-size: 16px;
+			border: .15rem solid #4d7e29;
+		}
+	}
+
+	.intro-window {
+		flex-direction: column;
+
+		#my-page {
+			width: 55%;
+    		height: 25%;
+		}
+
+		#my-friends {
+			width: 55%;
+    		height: 25%;
+		}
+	}
+
+	#warning-window-block {
+		
+		.warning-window {
+			width: 25rem;
+			height: 25rem;
+			border: .25rem solid #4d7e29;
+			z-index: 2;
+			background: #999;
+
+			.warning-window__head-text {
+				font-weight: 600;
+				font-size: 21px;
+			}
+
+			#warning-window__input {
+				width: 17rem;
+				height: 3rem;
+			}
+
+			.warning-window__text {
+				font-size: 17px;
+			}
+
+			#warning-window__button {
+				width: 10rem;
+				height: 3rem;
+			}
+		}
+	}
+
+	#back-page {
+		top: 92.5vh;
+		height: 3rem;
+		width: 100%;
+
+		.back-page__name {
+			transform: rotate(0);
+			font-size: 15px;
+		}
+	}
+
+	.user-page {
+		
+		.user-page__info {
+			width: 100%;
+			height: 50%;
+
+			.user-page__info__image {
+				width: 30%;
+				height: 30%;
+			}
+
+			.user-page__info-details {
+				flex-wrap: wrap;
+				padding: 1rem;
+				width: 70%;
+				justify-content: space-around;
+
+				.user-page__info-details__blocks {
+					width: 30%;
+					height: 4rem;
+					margin: .5rem;
+					
+					.user-page__info-detalis-numbers {
+						font-size: 16px;
+					}
+						
+					.user-page__info-detalis-span {
+						font-size: 11px;
+					}
+				}
+			}
+		}
+
+		.user-page__wall {
+			width: 90%;
+
+			.my-post__item-attachments {
+				width: 90%;
+
+				img {
+					width: 100%;
+    				height: 50%;
+				}
+			}
+		}
+	}
+
+	.my-friends{
+		
+		.page-my-friends__header {
+			width: 90%;
+		}
+
+		#list-friends {
+			width: 90%;
+		}
+	}
+}

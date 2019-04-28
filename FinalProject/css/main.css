@@ -46,6 +46,9 @@ input [type=checkbox], input [type=radio] {
   align-items: center;
   border-radius: 5px;
 }
+#my-page:hover {
+  cursor: pointer;
+}
 
 #my-friends {
   width: 25%;
@@ -57,11 +60,15 @@ input [type=checkbox], input [type=radio] {
   align-items: center;
   border-radius: 5px;
 }
+#my-friends:hover {
+  cursor: pointer;
+}
 
 .intro-window {
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -72,7 +79,7 @@ input [type=checkbox], input [type=radio] {
   height: 60%;
   color: #f1f1f1;
   display: flex;
-  flex-flow: column wpar;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   transform: scale(1);
@@ -87,6 +94,10 @@ input [type=checkbox], input [type=radio] {
 .my-image {
   width: 50%;
   height: 50%;
+}
+
+.my-text {
+  margin-top: 1rem;
 }
 
 .user-page {
@@ -133,6 +144,7 @@ input [type=checkbox], input [type=radio] {
   width: 90%;
   border: 0.1rem solid #4d7e29;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -265,7 +277,7 @@ input [type=checkbox], input [type=radio] {
   border: 0.2rem solid #939393;
   transition: 0.5s all linear;
   display: flex;
-  flex-direction: row no-wrap;
+  align-items: center;
 }
 .list-friend__item:hover {
   cursor: pointer;
@@ -277,7 +289,6 @@ input [type=checkbox], input [type=radio] {
 
 #list-friends {
   width: 45%;
-  height: 3rem;
   margin-top: 0.75rem;
   border-top: 0.1rem solid #4d7e29;
 }
@@ -291,7 +302,6 @@ input [type=checkbox], input [type=radio] {
 
 .list-friend__item-name {
   margin: 0.5rem;
-  padding: 0.5rem 0 0 0;
   font-weight: 700;
   width: 100%;
 }
@@ -314,9 +324,9 @@ input [type=checkbox], input [type=radio] {
 }
 
 .enter-app-name {
-  margin: 2rem;
+  margin-bottom: 1rem;
   border-bottom: 0.1rem solid #4d7e29;
-  padding: 1rem;
+  padding: 0 2rem 1rem 2rem;
   font-size: 22px;
   font-weight: 700;
 }
@@ -326,10 +336,11 @@ input [type=checkbox], input [type=radio] {
   text-align: center;
   font-weight: 700;
   display: inline-block;
-  width: 7rem;
+  width: 10rem;
   padding: 1rem;
   font-size: 18px;
   border: 0.2rem solid #4d7e29;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .user-post-delete {
@@ -381,7 +392,7 @@ input [type=checkbox], input [type=radio] {
 }
 
 .warning-window__head-text {
-  color: red;
+  color: #fff;
   font-weight: 700;
   font-size: 20px;
 }
@@ -3127,6 +3138,106 @@ input [type=checkbox], input [type=radio] {
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     transform: rotate(0deg);
+  }
+}
+@media screen and (max-width: 965px) {
+  #enter-in-app .enter-app-name {
+    font-size: 17px;
+    font-weight: 700;
+  }
+  #enter-in-app .enter-app-button {
+    width: 14rem;
+    padding: 1rem;
+    font-size: 16px;
+    border: 0.15rem solid #4d7e29;
+  }
+
+  .intro-window {
+    flex-direction: column;
+  }
+  .intro-window #my-page {
+    width: 55%;
+    height: 25%;
+  }
+  .intro-window #my-friends {
+    width: 55%;
+    height: 25%;
+  }
+
+  #warning-window-block .warning-window {
+    width: 25rem;
+    height: 25rem;
+    border: 0.25rem solid #4d7e29;
+    z-index: 2;
+    background: #999;
+  }
+  #warning-window-block .warning-window .warning-window__head-text {
+    font-weight: 600;
+    font-size: 21px;
+  }
+  #warning-window-block .warning-window #warning-window__input {
+    width: 17rem;
+    height: 3rem;
+  }
+  #warning-window-block .warning-window .warning-window__text {
+    font-size: 17px;
+  }
+  #warning-window-block .warning-window #warning-window__button {
+    width: 10rem;
+    height: 3rem;
+  }
+
+  #back-page {
+    top: 92.5vh;
+    height: 3rem;
+    width: 100%;
+  }
+  #back-page .back-page__name {
+    transform: rotate(0);
+    font-size: 15px;
+  }
+
+  .user-page .user-page__info {
+    width: 100%;
+    height: 50%;
+  }
+  .user-page .user-page__info .user-page__info__image {
+    width: 30%;
+    height: 30%;
+  }
+  .user-page .user-page__info .user-page__info-details {
+    flex-wrap: wrap;
+    padding: 1rem;
+    width: 70%;
+    justify-content: space-around;
+  }
+  .user-page .user-page__info .user-page__info-details .user-page__info-details__blocks {
+    width: 30%;
+    height: 4rem;
+    margin: 0.5rem;
+  }
+  .user-page .user-page__info .user-page__info-details .user-page__info-details__blocks .user-page__info-detalis-numbers {
+    font-size: 16px;
+  }
+  .user-page .user-page__info .user-page__info-details .user-page__info-details__blocks .user-page__info-detalis-span {
+    font-size: 11px;
+  }
+  .user-page .user-page__wall {
+    width: 90%;
+  }
+  .user-page .user-page__wall .my-post__item-attachments {
+    width: 90%;
+  }
+  .user-page .user-page__wall .my-post__item-attachments img {
+    width: 100%;
+    height: 50%;
+  }
+
+  .my-friends .page-my-friends__header {
+    width: 90%;
+  }
+  .my-friends #list-friends {
+    width: 90%;
   }
 }
 
