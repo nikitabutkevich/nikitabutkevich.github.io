@@ -47,7 +47,7 @@ class View {
 			onlineStatus.setAttribute('value', elem.id);
 			itemName.setAttribute('class', 'list-friend__item-name');
 
-			//cityName.innerText = 'г. ' + elem.city.title;
+			cityName.innerText = 'г. ' + elem.city.title;
 
 			image.setAttribute('src', elem.photo_50);
 			image.setAttribute('class', 'list-friend__item-photo');
