@@ -351,6 +351,8 @@ input [type=checkbox], input [type=radio] {
   text-align: center;
   outline: none;
   margin: 0.5rem;
+  background: url("././image/cancel.svg") no-repeat center center;
+  background-size: 100% auto;
 }
 .user-post-delete:hover {
   cursor: pointer;
