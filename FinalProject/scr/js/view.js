@@ -10,7 +10,7 @@ class View {
 			photoNumber = document.getElementById('user-photo'),
 			videoNumber = document.getElementById('user-page-video'),
 			buttonSendPost = document.getElementById('user-button-send-post'),
-			infoFriends = document.getElementById('user-page__info-details__blocks-friends')
+			infoFriends = document.getElementById('user-page__info-details__blocks-friends'),
 			infoPhotos = document.getElementById('user-page__info-details__blocks-ph')
 			;
 
