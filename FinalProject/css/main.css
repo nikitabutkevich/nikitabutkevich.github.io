@@ -3125,5 +3125,9 @@ input [type=checkbox], input [type=radio] {
     transform: rotate(0deg);
   }
 }
+.delete-image {
+  width: 1rem;
+  height: 1rem;
+}
 
 /*# sourceMappingURL=main.css.map */
