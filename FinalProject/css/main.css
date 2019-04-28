@@ -3126,6 +3126,7 @@ input [type=checkbox], input [type=radio] {
   }
 }
 .delete-image {
+  display: inline-block;
   width: 1rem;
   height: 1rem;
 }
