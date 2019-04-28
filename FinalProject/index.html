@@ -69,26 +69,26 @@
 
 	<div class="user-page" id="user-page">
 		<div class="user-page__info">
-			<img src="image/cancel.svg" alt="" class="user-page__info__image" id="user-page-photo">
+			<img src="" alt="" class="user-page__info__image" id="user-page-photo">
 			<div class="user-page__info__name">
-				<p id="user-page-name">Ybrbnf Butkd</p>
-				<span id="user-page-online">Online</span>
+				<p id="user-page-name"></p>
+				<span id="user-page-online"></span>
 			</div>
 			<div class="user-page__info-details">
 				<div class="user-page__info-details__blocks">
-					<span class="user-page__info-detalis-numbers"  id="user-page-bdate">4</span>
+					<span class="user-page__info-detalis-numbers"  id="user-page-bdate"></span>
 					<span class="user-page__info-detalis-span">Дата рождения</span>
 				</div>
-				<div class="user-page__info-details__blocks" id="user-page__info-details__blocks-friends">
-					<span class="user-page__info-detalis-numbers"  id="user-page-friends">4</span>
+				<div class="user-page__info-details__blocks" title="Друзья" id="user-page__info-details__blocks-friends">
+					<span class="user-page__info-detalis-numbers"  id="user-page-friends"></span>
 					<span class="user-page__info-detalis-span">Друзья</span>
 				</div>
-				<div class="user-page__info-details__blocks">
-					<span class="user-page__info-detalis-numbers"  id="user-photo">4</span>
+				<div class="user-page__info-details__blocks" title="Фото" id="user-page__info-details__blocks-photos">
+					<span class="user-page__info-detalis-numbers"  id="user-photo"></span>
 					<span class="user-page__info-detalis-span">Фото</span>
 				</div>
 				<div class="user-page__info-details__blocks">
-					<span class="user-page__info-detalis-numbers"  id="user-page-video">4</span>
+					<span class="user-page__info-detalis-numbers"  id="user-page-video"></span>
 					<span class="user-page__info-detalis-span">Видео</span>
 				</div>
 			</div>
@@ -108,9 +108,16 @@
 
 	<div class="my-friends">
 		<div class="page-my-friends__header">
-			<p id="page-my-freinds__header-name">Мои друзья</p>
+			<p id="page-my-freinds__header-name">Друзья</p>
 		</div>
 		<div id="list-friends"></div>
+	</div>
+
+	<div id="user-photos">
+		<div class="page-my-friends__header">
+			<p id="page-my-freinds__header-name">Фотографии</p>
+		</div>
+		<div id="user-photos-list"></div>
 	</div>
 	
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.0.js"></script>

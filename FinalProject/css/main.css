@@ -159,7 +159,10 @@ input [type=checkbox], input [type=radio] {
   justify-content: center;
   align-items: center;
 }
-.user-page__info-details__blocks:hover {
+.user-page__info-details__blocks:nth-child(2) {
+  cursor: pointer;
+}
+.user-page__info-details__blocks:nth-child(3) {
   cursor: pointer;
 }
 
@@ -3142,6 +3145,31 @@ input [type=checkbox], input [type=radio] {
     transform: rotate(0deg);
   }
 }
+#user-photos {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+#user-photos-list {
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.user-photos-list__block {
+  width: 20rem;
+}
+.user-photos-list__block img {
+  width: 100%;
+  height: 100%;
+}
+
 @media screen and (max-width: 965px) {
   #enter-in-app .enter-app-name {
     font-size: 17px;

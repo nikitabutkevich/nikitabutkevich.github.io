@@ -24,13 +24,15 @@ function Controller(){
 
 	$('#intro-window').hide();
 	$('.my-friends').hide();
-	$('#user-page').hide();
+	$('#user-page').show();
+	$('#user-photos').hide();
+	$('#enter-in-app').hide(); //удалить из этого места!!
 	$('#warning-window-block').hide();
 	$('#back-page').hide();
 
-	helper.getAccessToken();
+	/*helper.getAccessToken();
 	helper.getUserId();
-	helper.getLifeTimeToken();
+	helper.getLifeTimeToken();*/
 
 	window.addEventListener('load', () =>{
 		if ( localStorage.getItem('authorization') === 'yes' ) {
@@ -161,6 +163,24 @@ function Controller(){
 		}
 		$('#user-page').hide();
 		$('.my-friends').show();
+		$('#back-page').show();
+	});
+
+	$(document).on('click', '#user-page__info-details__blocks-photos', async (event) => {
+		var userId = $(event.target).attr('name'),
+			getPhotos = await services.getData('photos.get', 'owner_id=13376656&album_id=profile', 'dce9ff424bb709df4a7dac9fd6d12b94f7a78efb8123504f2cdca682932ab3517f5f7ca98276c2cbc534a')
+			;
+		console.log(getPhotos);
+		
+		if ( getPhotos === 'nothing' ) {
+			getPhotos = await services.getData('photos.get', 'owner_id=' + userId, tokenAccess);
+			view.userPhotos(getFriends);
+		} else {
+			view.userPhotos(getPhotos);
+		}
+
+		$('#user-page').hide();
+		$('#user-photos').show();
 		$('#back-page').show();
 	});
 }

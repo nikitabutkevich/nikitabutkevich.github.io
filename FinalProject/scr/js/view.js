@@ -10,10 +10,12 @@ class View {
 			photoNumber = document.getElementById('user-photo'),
 			videoNumber = document.getElementById('user-page-video'),
 			buttonSendPost = document.getElementById('user-button-send-post'),
-			infoBlock = document.getElementById('user-page__info-details__blocks-friends')
+			infoFriends = document.getElementById('user-page__info-details__blocks-friends')
+			infoPhotos = document.getElementById('user-page__info-details__blocks-photos')
 			;
 
-		infoBlock.setAttribute('name', data.id);
+		infoFriends.setAttribute('name', data.id);
+		infoPhotos.setAttribute('name', data.id);
 		userName.innerText = data.first_name + ' ' + data.last_name;
 		userPhoto.setAttribute('src', data.photo_200_orig);
 		onlineStatus.innerText = this.userOnline(data.online);
@@ -184,6 +186,20 @@ class View {
 		postFeedBack.appendChild(postRepost);	
 		friendPost.appendChild(postFeedBack);
 		wall.appendChild(friendPost);
+	}
+
+	userPhotos(data){
+		data.forEach( (item) => {
+			var photoBlock = document.getElementById('user-photos-list'),
+				div = document.createElement('div'),
+				image = document.createElement('img')
+				;
+
+			image.setAttribute('src', item.photo_604);
+			div.setAttribute('class', 'user-photos-list__block');
+			div.appendChild(image);
+			photoBlock.appendChild(div);
+		}); 
 	}
 }
 
