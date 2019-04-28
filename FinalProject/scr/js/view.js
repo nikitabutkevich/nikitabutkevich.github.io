@@ -137,8 +137,8 @@ class View {
 		
 		postImage.setAttribute('src', link);
 		
-		postText.innerText = item.copy_history.text;
-		friendPost.appendChild(deletePost);
+		//postText.innerText = item.copy_history.text;
+		friendPost.appendChild(headerBlock);
 		friendPost.appendChild(postText);
 		postAttachment.appendChild(postImage);
 		postFeedBack.appendChild(postLikes);
