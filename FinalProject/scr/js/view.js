@@ -47,8 +47,6 @@ class View {
 			onlineStatus.setAttribute('value', elem.id);
 			itemName.setAttribute('class', 'list-friend__item-name');
 
-			cityName.innerText = 'г. ' + elem.city.title;
-
 			image.setAttribute('src', elem.photo_50);
 			image.setAttribute('class', 'list-friend__item-photo');
 			
@@ -133,7 +131,6 @@ class View {
 		
 		postImage.setAttribute('src', link);
 		
-		//postText.innerText = item.copy_history.text;
 		friendPost.appendChild(headerBlock);
 		friendPost.appendChild(postText);
 		postAttachment.appendChild(postImage);

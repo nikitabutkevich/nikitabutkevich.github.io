@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+	mode: 'production',	
 	entry: './scr/js/index.js',
 	output: {
 		path: path.resolve(__dirname, 'dist'),
