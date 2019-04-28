@@ -68,6 +68,7 @@ function Controller(){
 	$(document).on('click', '#back-page', () => {
 		$('.my-friends').hide();
 		$('#user-page').hide();
+		$('#user-photos').hide();
 		$('#intro-window').show();
 	});
 
