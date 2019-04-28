@@ -24,15 +24,14 @@ function Controller(){
 
 	$('#intro-window').hide();
 	$('.my-friends').hide();
-	$('#user-page').show();
+	$('#user-page').hide();
 	$('#user-photos').hide();
-	$('#enter-in-app').hide(); //удалить из этого места!!
 	$('#warning-window-block').hide();
 	$('#back-page').hide();
 
-	/*helper.getAccessToken();
+	helper.getAccessToken();
 	helper.getUserId();
-	helper.getLifeTimeToken();*/
+	helper.getLifeTimeToken();
 
 	window.addEventListener('load', () =>{
 		if ( localStorage.getItem('authorization') === 'yes' ) {
@@ -166,13 +165,15 @@ function Controller(){
 		$('#back-page').show();
 	});
 
-	$(document).on('click', '#user-page__info-details__blocks-photos', async (event) => {
+	$(document).on('click', '#user-page__info-details__blocks-ph', async (event) => {
 		var userId = $(event.target).attr('name'),
-			getPhotos = await services.getData('photos.get', 'owner_id=13376656&album_id=profile', 'dce9ff424bb709df4a7dac9fd6d12b94f7a78efb8123504f2cdca682932ab3517f5f7ca98276c2cbc534a')
+			getPhotos = await services.getData('photos.get', 'owner_id=' + userId + '&album_id=profile', tokenAccess)
 			;
-		console.log(getPhotos);
+		console.log(getPhotos.length);
 		
-		if ( getPhotos === 'nothing' ) {
+		if ( getPhotos.length === 0 ) {
+			view.userDontHavePhotos();
+		} else if ( getPhotos === 'nothing' ) {
 			getPhotos = await services.getData('photos.get', 'owner_id=' + userId, tokenAccess);
 			view.userPhotos(getFriends);
 		} else {

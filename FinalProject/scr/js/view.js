@@ -11,7 +11,7 @@ class View {
 			videoNumber = document.getElementById('user-page-video'),
 			buttonSendPost = document.getElementById('user-button-send-post'),
 			infoFriends = document.getElementById('user-page__info-details__blocks-friends')
-			infoPhotos = document.getElementById('user-page__info-details__blocks-photos')
+			infoPhotos = document.getElementById('user-page__info-details__blocks-ph')
 			;
 
 		infoFriends.setAttribute('name', data.id);
@@ -200,6 +200,15 @@ class View {
 			div.appendChild(image);
 			photoBlock.appendChild(div);
 		}); 
+	}
+
+	userDontHavePhotos(){
+		var photoBlock = document.getElementById('user-photos-list'),
+			text = document.createElement('p')
+			;
+
+		text.innerText = 'У данного пользователя нет фото ;(';
+		photoBlock.appendChild(text);
 	}
 }
 
