@@ -108,7 +108,8 @@ class View {
 			postRepost = document.createElement('span'),
 			postAttachment = document.createElement('div'),
 			postFeedBack = document.createElement('div'),
-			postImage = document.createElement('img'),
+			postImage = document.createElement('img'),	
+			headerBlock = document.createElement('div'),
 			postText = document.createElement('p'),
 			deletePost = document.createElement('button'),
 			deleteImg = document.createElement('img')
@@ -121,6 +122,8 @@ class View {
 		deletePost.setAttribute('value', item.owner_id);
 		deletePost.setAttribute('class', 'user-post-delete');
 		deletePost.setAttribute('title', 'Удалить');
+		headerBlock.setAttribute('class', 'my-post-item_header');
+		headerBlock.appendChild(deletePost);
 
 
 		friendPost.setAttribute('class', 'my-post__item');
