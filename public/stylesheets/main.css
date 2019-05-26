@@ -385,7 +385,7 @@ input [type=checkbox], input [type=radio] {
 
 .container-header__menu-item__label {
   display: inline-block;
-  padding: 1em 1em;
+  padding: 1em 1.6em;
   cursor: pointer;
 }
 .container-header__menu-item__label:hover {
@@ -410,8 +410,6 @@ input [type=checkbox], input [type=radio] {
   position: absolute;
   left: 0;
   top: 3.2em;
-  background-image: "../../public/images/capitol-building.svg" no-repeat 5% center;
-  background-size: 5% auto;
 }
 
 .list-item2 {
@@ -2191,6 +2189,7 @@ input [type=checkbox], input [type=radio] {
   .container .container-blocks .block-slider {
     max-width: 625px;
     min-width: 95%;
+    padding: 1em 2em 0.5em 0em;
   }
   .container .container-blocks .block-service {
     display: none;
@@ -2198,13 +2197,40 @@ input [type=checkbox], input [type=radio] {
   .container .container-blocks .block-news {
     max-width: 625px;
     min-width: 95%;
+    padding: 0;
+  }
+  .container .container-blocks .block-news .block-news__content {
+    width: 290%;
+  }
+  .container .container-blocks .block-news .block-news__content .block-news__content__block {
+    position: static;
+    margin-left: 2%;
+    width: 45%;
   }
   .container .container-blocks .block-immobiliensuche {
     width: 400px;
+    padding: 0 2.5em 0 1em;
+  }
+  .container .container-blocks .input-prev:checked ~ .block-news__content {
+    transform: translateX(0%);
+  }
+  .container .container-blocks .input-prev:checked ~ .block-news__head__navigation-button__prev {
+    background: url("../../public/images/arrow-left_l.svg") no-repeat center center;
+    background-size: 100% auto;
+  }
+  .container .container-blocks .input-next:checked ~ .block-news__content {
+    transform: translateX(-33.5%);
+  }
+  .container .container-blocks .input-next:checked ~ .block-news__head__navigation-button__next {
+    background: url("../../public/images/arrow-right_b.svg") no-repeat center center;
+    background-size: 100% auto;
   }
   .container .container-news {
     width: 100%;
     overflow: hidden;
+  }
+  .container .container-news .separator__image {
+    padding: 0 0.5em;
   }
   .container .container-news .container-news__section {
     display: flex;
@@ -2238,6 +2264,12 @@ input [type=checkbox], input [type=radio] {
   }
   .container .container-news .container-news__section .container-news__section-content .nth-child {
     margin: 0;
+  }
+  .container .container-news .container-news__section .container-news__section-content .section-content-block--wrap {
+    padding-left: 0em;
+  }
+  .container .container-news .container-news__section .container-news__section-content .wrap2 {
+    padding-left: 1.8em;
   }
   .container .container-news .container-news__section .container-news__section-content .section-content-block {
     width: 100%;

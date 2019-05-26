@@ -75,6 +75,7 @@
 			.block-slider {
 				max-width: 625px;
 				min-width: 95%;
+				padding: 1em 2em .5em 0em;
 			}
 
 			.block-service {
@@ -84,10 +85,44 @@
 			.block-news {
 				max-width: 625px;
 				min-width: 95%;
+				padding: 0;
+			
+				.block-news__content {
+					width: 290%;
+
+					.block-news__content__block {
+					    position: static;
+					    margin-left: 2%;
+					    width: 45%;
+					}
+				}
 			}
 
 			.block-immobiliensuche {
 				width: 400px;
+				padding: 0 2.5em 0 1em;
+			}
+
+			.input-prev:checked {
+				&~.block-news__content {
+					transform: translateX(0%);
+				}
+
+				&~.block-news__head__navigation-button__prev {
+					background: url('../../public/images/arrow-left_l.svg') no-repeat center center;
+					background-size: 100% auto;	
+				}
+			}
+
+			.input-next:checked {
+				&~.block-news__content {
+					transform: translateX(-33.5%);
+				}
+
+				&~.block-news__head__navigation-button__next {
+					background: url('../../public/images/arrow-right_b.svg') no-repeat center center;
+					background-size: 100% auto;
+				}
 			}
 		}
 	
@@ -95,6 +130,10 @@
 		.container-news {
 			width: 100%;
 			overflow: hidden;
+
+			.separator__image {
+				padding: 0 .5em;
+			}
 			
 			.container-news__section {
 				display: flex;
@@ -133,6 +172,14 @@
 
 					.nth-child {
 						margin: 0;
+					}
+
+					.section-content-block--wrap {
+						padding-left: 0em;
+					}
+					
+					.wrap2 {
+						padding-left: 1.8em;
 					}
 
 					.section-content-block {
