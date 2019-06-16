@@ -31,7 +31,7 @@ input [type=checkbox], input [type=radio] {
 }
 
 .block-header {
-  background: url("../../images/man-with-photo.jpg") no-repeat center center;
+  background: url("../images/man-with-photo.jpg") no-repeat center center;
   background-size: 100% auto;
   width: 100%;
   height: 100vh;
@@ -121,7 +121,7 @@ input [type=checkbox], input [type=radio] {
   color: #efefef;
   font-size: 1.7rem;
   font-weight: 500;
-  background: url("../../images/circular-shape.svg") no-repeat left center;
+  background: url("../images/circular-shape.svg") no-repeat left center;
   background-size: 13.5% auto;
 }
 
@@ -164,7 +164,7 @@ input [type=checkbox], input [type=radio] {
   justify-content: center;
   color: #ffffff;
   font-family: "Merriweather", serif;
-  background: url("../../images/dialog.svg") no-repeat 95% 45%;
+  background: url("../images/dialog.svg") no-repeat 95% 45%;
   background-size: 25% auto;
 }
 
@@ -242,12 +242,12 @@ input [type=checkbox], input [type=radio] {
   height: 3rem;
   border: 0.1rem solid #67bf95;
   border-radius: 50px;
-  background: url("../../images/pencil-green.svg") no-repeat center center;
+  background: url("../images/pencil-green.svg") no-repeat center center;
   background-size: 50% auto;
 }
 .block-document__content-media__email:hover {
   cursor: pointer;
-  background: #67bf95 url("../../images/pencil-white.svg") no-repeat center center;
+  background: #67bf95 url("../images/pencil-white.svg") no-repeat center center;
   background-size: 50% auto;
 }
 
@@ -257,12 +257,12 @@ input [type=checkbox], input [type=radio] {
   height: 3rem;
   border: 0.1rem solid #67bf95;
   border-radius: 50px;
-  background: url("../../images/facebook-logo-green.svg") no-repeat center center;
+  background: url("../images/facebook-logo-green.svg") no-repeat center center;
   background-size: 50% auto;
 }
 .block-document__content-media__facebook:hover {
   cursor: pointer;
-  background: #67bf95 url("../../images/facebook-logo-white.svg") no-repeat center center;
+  background: #67bf95 url("../images/facebook-logo-white.svg") no-repeat center center;
   background-size: 50% auto;
 }
 
@@ -298,12 +298,12 @@ input [type=checkbox], input [type=radio] {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../../images/right-arrow.svg") no-repeat center center;
+  background: url("../images/right-arrow.svg") no-repeat center center;
   background-size: 30% auto;
 }
 .block-slider__next:hover {
   cursor: pointer;
-  background: rgba(0, 0, 0, 0.2) url("../../images/right-arrow-light.svg") no-repeat center center;
+  background: rgba(0, 0, 0, 0.2) url("../images/right-arrow-light.svg") no-repeat center center;
   background-size: 30% auto;
 }
 
@@ -313,12 +313,12 @@ input [type=checkbox], input [type=radio] {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../../images/left-arrow.svg") no-repeat center center;
+  background: url("../images/left-arrow.svg") no-repeat center center;
   background-size: 30% auto;
 }
 .block-slider__prev:hover {
   cursor: pointer;
-  background: rgba(0, 0, 0, 0.2) url("../../images/left-arrow-light.svg") no-repeat center center;
+  background: rgba(0, 0, 0, 0.2) url("../images/left-arrow-light.svg") no-repeat center center;
   background-size: 30% auto;
 }
 
@@ -583,7 +583,7 @@ input [type=checkbox], input [type=radio] {
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  background: #2f3338 url("../../images/twitter-footer.svg") no-repeat center center;
+  background: #2f3338 url("../images/twitter-footer.svg") no-repeat center center;
   background-size: 50% auto;
   border-radius: 50%;
   border: 0.1rem solid #454648;
@@ -598,7 +598,7 @@ input [type=checkbox], input [type=radio] {
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  background: #2f3338 url("../../images/facebook-footer.svg") no-repeat center center;
+  background: #2f3338 url("../images/facebook-footer.svg") no-repeat center center;
   background-size: 50% auto;
   border-radius: 50%;
   border: 0.1rem solid #454648;
@@ -699,7 +699,7 @@ input [type=checkbox], input [type=radio] {
   right: 0;
   width: 1rem;
   height: 1rem;
-  background: url("../../images/close.svg") no-repeat center center;
+  background: url("../images/close.svg") no-repeat center center;
   background-size: 100% auto;
   border: 0;
   margin: 0.75rem;
