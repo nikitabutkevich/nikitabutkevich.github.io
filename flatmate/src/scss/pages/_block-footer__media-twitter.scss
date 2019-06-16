@@ -1,0 +1,15 @@
+.block-footer__media-twitter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem; 
+	background: $bg-media-footer url('../../images/twitter-footer.svg') no-repeat center center;
+	background-size: 50% auto;
+	border-radius: 50%;
+	border: .1rem solid $border-media-footer;
+	margin-right: 3rem;
+
+	&:hover {
+		cursor: pointer;
+	}
+}

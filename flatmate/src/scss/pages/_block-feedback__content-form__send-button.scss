@@ -1,0 +1,14 @@
+.block-feedback__content-form__send-button {
+	border: .1rem solid $button-feedback;
+	background: $button-feedback;
+	border-radius: 5px;
+	padding: .8rem 2rem;
+	color: $color-white;
+	font-size: $font-size;
+	font-family: $font-header;
+	font-weight: 600;
+
+	&:hover{
+		cursor: pointer;
+	}
+}

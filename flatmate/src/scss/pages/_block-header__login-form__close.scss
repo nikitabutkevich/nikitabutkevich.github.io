@@ -1,0 +1,16 @@
+.block-header__login-form__close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 1rem;
+	height: 1rem;
+	background: url('../../images/close.svg') no-repeat center center;
+	background-size: 100% auto;
+	border: 0;
+	margin: .75rem;
+	outline: none;
+
+	&:hover {
+		cursor: pointer;
+	}
+}

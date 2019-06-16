@@ -1,0 +1,18 @@
+.block-footer__title {
+	width: 50%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-family: $font-header;
+
+	:nth-child(2) {
+		color: $color-white;
+		font-size: $font-size*1.1;
+	}
+
+	:nth-child(3) {
+		font-size: $font-size*.8;
+		padding-left: .3rem;
+		color: $color-footer;
+	}
+}

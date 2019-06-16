@@ -1,0 +1,12 @@
+.block-header__content-menu__login-text {
+	color: $color-login-button-text;
+	font-size: $font-size*.9;
+	font-weight: 300;
+	font-style: italic;
+	cursor: pointer;
+	margin-right: 1rem;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}

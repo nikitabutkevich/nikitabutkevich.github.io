@@ -1,0 +1,50 @@
+@import '_fonts';
+@import '_reset';
+
+$color-green: #52ad81;
+$color-info-button: #67bf95;
+$color-white: #ffffff;
+$color-pre-white: #f6f6f7;
+$color-logo-name: #efefef;
+$color-login-button: #384559;
+$color-login-button-text: #cad1db;
+$color-document-text: #37414e;
+
+$bg-price-free: #4b596c;
+$bg-price-free-item: #e9eef3;
+$color-price-free-item: #6d737b;
+
+$bg-price-pro: #58ad52;
+$bg-price-pro-item: #deebde;
+$color-price-pro-item: #768275;
+
+$bg-price-ent: #52a1ad;
+$bg-price-ent-item: #dee9ec;
+$color-price-ent-item: #6d737b;
+
+$bg-tagline: #e9eaed;
+
+$bg-feedback: rgba(45, 49, 54, 1);
+$color-feedback: #d7d7d7;
+$red-border-feedback: #743538;
+$grey-border-feedback: #4c4f53;
+$button-feedback: #be393b;
+$bg-input-feedback: #2f3338;
+
+$bg-footer: #2a2d33;
+$color-footer: #8d8d8d;
+$bg-media-footer: #2f3338;
+$border-media-footer: #454648;
+
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: $font-size;
+	line-height: 1.25;
+}
+
+input [type="checkbox"], input [type="radio"] {
+	display: none;
+}

@@ -1,0 +1,11 @@
+.block-header__content-info {
+	width: 100%;
+	height: 85%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: $color-white;
+	font-family: $font-text;
+	background: url('../../images/dialog.svg') no-repeat 95% 45%;
+	background-size: 25% auto;
+}

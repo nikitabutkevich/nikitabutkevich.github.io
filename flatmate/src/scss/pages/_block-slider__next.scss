@@ -1,0 +1,15 @@
+.block-slider__next {
+	height: 100%;
+	width: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url('../../images/right-arrow.svg') no-repeat center center;
+	background-size: 30% auto;
+
+	&:hover {
+		cursor: pointer;
+		background: rgba(0, 0, 0, .2) url('../../images/right-arrow-light.svg') no-repeat center center;
+		background-size: 30% auto;
+	}
+}

@@ -1,0 +1,9 @@
+.block-feedback__content-form__user-message {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+
+	:nth-child(2) {
+		height: 100%;
+	}
+}

@@ -1,0 +1,15 @@
+.block-feedback__content-form__input {
+	background: $bg-input-feedback;
+	padding: 1rem .5rem;
+	border: .1rem solid $grey-border-feedback;
+	color: $color-feedback;
+	font-family: $font-header;
+	font-size: $font-size;
+	outline: none;
+	border-radius: 5px;
+	resize: none;
+
+	&:focus {
+		border: .1rem solid $red-border-feedback;
+	}
+}

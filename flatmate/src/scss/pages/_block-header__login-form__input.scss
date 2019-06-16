@@ -1,0 +1,10 @@
+.block-header__login-form__input {
+	border: .1rem solid $red-border-feedback;
+	padding: .5rem;
+	font-size: $font-size;
+	font-family: $font-header;
+	outline: none;
+	background: $bg-input-feedback;
+	color: $color-pre-white;
+	border-radius: 5px;
+}

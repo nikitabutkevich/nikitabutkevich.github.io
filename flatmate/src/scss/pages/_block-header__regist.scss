@@ -1,0 +1,12 @@
+.block-header__regist {
+	width: 100%;
+	height: 100vh;
+	z-index: 10;
+	background: rgba(45, 49, 54, .95);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+}

@@ -1,0 +1,10 @@
+.block-header__login-form {
+	border: .1rem solid $red-border-feedback;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem;
+	border-radius: 5px;
+	background:	$bg-feedback;
+	position: relative;
+}

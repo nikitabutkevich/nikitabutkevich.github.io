@@ -1,0 +1,15 @@
+.block-document__content-media__email {
+	margin-bottom: 1rem;
+	width: 3rem;
+	height: 3rem;
+	border: .1rem solid $color-info-button;
+	border-radius: 50px;
+	background: url('../../images/pencil-green.svg') no-repeat center center;
+	background-size: 50% auto;
+
+	&:hover {
+		cursor: pointer;
+		background: $color-info-button url('../../images/pencil-white.svg') no-repeat center center;
+		background-size: 50% auto;
+	}
+}

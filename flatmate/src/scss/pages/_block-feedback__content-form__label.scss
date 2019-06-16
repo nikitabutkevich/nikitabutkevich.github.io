@@ -1,0 +1,10 @@
+.block-feedback__content-form__label {
+	color: $color-feedback;
+	font-size: $font-size;
+	font-family: $font-header;
+	padding: .75rem 0;
+
+	span {
+		color: $button-feedback;
+	}
+}

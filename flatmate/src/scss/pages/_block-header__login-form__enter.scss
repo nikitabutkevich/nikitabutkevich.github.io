@@ -1,0 +1,15 @@
+.block-header__login-form__enter {
+	padding: 1rem 3rem;
+	margin-top: 2rem;
+	background: $button-feedback;
+	color: $color-pre-white;
+	font-size: $font-size;
+	font-family: $font-header;
+	font-weight: 600;
+	border: 0;
+	border-radius: 5px;
+
+	&:hover {
+		cursor: pointer;
+	}
+}

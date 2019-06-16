@@ -1,0 +1,224 @@
+@media screen and (max-width: 1200px){
+	.block-header {
+	    background: rgba(70, 85, 104, 1);
+
+	    .block-header__content {
+		    width: 95%;
+		    height: 100%;
+		    display: flex;
+		    flex-direction: column;
+
+		    .block-header__content-menu {
+			    height: 20%;
+
+			    .block-header__content-menu__logo {
+				    width: 50%;
+				    height: 100%;
+				    padding-left: 6rem;
+				    font-size: 1.9rem;
+				    font-weight: 500;
+				    background-size: 30% auto;
+				}
+
+				.block-header__content-menu__login-text {
+					display: none;
+				}
+
+				.block-header__content-menu__login-button {
+				    padding: 1.2rem;
+				}
+			}
+
+			.block-header__content-info {
+			    height: 80%;
+			    align-items: center;
+			    background: none;
+			    text-align: center;
+
+			    .block-header__content-info__name {
+				    font-size: $font-size*2;
+				}
+
+				.block-header__content-info__text {
+				    width: 80%;
+				    font-size: $font-size;
+				}
+			}
+		}
+	}
+
+	.block-document {
+	    background: #f6f6f7;
+	    width: 100%;
+	    display: flex;
+	    justify-content: center;
+
+	    .block-document__content {
+		    width: 95%;
+		    display: flex;
+		    flex-direction: column;
+		    align-items: center;
+		    margin: 0;
+		    padding: 2rem 0;
+
+		    .block-document__content-image {
+		    	display: none;
+		    }
+
+		    .block-document__content-media {
+			    width: 100%;
+			    display: flex;
+			    flex-direction: row;
+			    justify-content: space-around;
+			    align-items: center;
+
+			    .block-document__content-media__email {
+				    margin-bottom: 0;
+				    width: 4rem;
+				    height: 4rem;
+				}
+
+				.block-document__content-media__facebook {
+				    margin-top: 0;
+				    width: 4rem;
+				    height: 4rem;
+				}
+			}
+		}
+	}
+
+	.block-price__content {
+	    width: 95%;
+
+	    .block-price__head {
+		    padding: 0;
+		    text-align: center;
+		}
+
+		.block-price__head-text {
+		    font-size: $font-size;
+		    font-weight: 300;
+		    line-height: 1.5rem;
+		    width: 100%;
+		}
+
+		.block-price__level {
+		    margin-top: 2rem;
+		    padding-bottom: 2rem;
+		}
+	}
+
+	.block-tagline__text {
+	    width: 95%;
+	    font-size: 1.4rem;
+	}
+
+	.block-feedback__content {
+	    width: 95%;
+	    margin-bottom: 3rem;
+
+	    .block-feedback__content-logo {
+		    margin: 3rem;
+		    padding: 1.5rem;
+		}
+
+		.block-feedback__content-form {
+		    width: 100%;
+		    display: flex;
+		    flex-direction: column;
+
+		    .block-feedback__content-form__user-info {
+			    width: 100%;
+			    flex-direction: column;
+			    justify-content: center;
+			    align-items: center;
+
+			    :nth-child(2) {
+				    margin-bottom: 0;
+				}
+			}
+
+			.block-feedback__content-form__user-message {
+			    width: 100%;
+			    align-items: center;
+
+			    .block-feedback__content-form__input {
+				    width: 80%;
+				    height: 10rem;
+				}
+			}
+
+			.block-feedback__content-form__send {
+			    justify-content: center;
+				
+				.block-feedback__content-form__send-button {
+				    padding: 1rem 4rem;
+				    font-size: 1rem;
+				    font-family: "Open Sans", sans-serif;
+				    font-weight: 600;
+				}
+			}
+		}
+	}
+
+	.block-slider {
+	    height: 27.5rem;
+	    display: grid;
+	    grid-template-columns: 50% 50%;
+	    grid-template-rows: 85% 15%;
+	    grid-template-areas: "content content"
+					"prev next"
+	    ;
+
+	    .block-slider__prev {
+		    height: 100%;
+		    width: 100%;
+		    grid-area: prev;
+    		background-size: 15% auto;
+		}
+
+		.block-slider__next {
+		    height: 100%;
+		    width: 100%;
+		    grid-area: next;
+		    background-size: 15% auto;    
+		}
+
+		.block-slider__content {
+		    height: 100%;
+		    width: 100%;
+		    grid-area: content;
+
+		    .block-slider__content-head {
+			    padding: 1rem;
+			}
+
+			.block-slider__content-image {
+			    width: 15rem;
+			    height: 15rem;
+			}
+		}
+	}
+
+	.block-footer {
+	    height: 7rem;
+
+	    .block-footer__content {
+		    width: 95%;
+		    height: 100%;
+		    display: flex;
+		    flex-direction: column;
+		    justify-content: space-around;
+
+		    .block-footer__title {
+			    width: 100%;
+			    justify-content: center;
+			}
+
+			.block-footer__media {
+			    width: 100%;
+			    justify-content: center;
+			}
+		}
+	}
+}

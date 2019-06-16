@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flate Mate</title>
+	<link rel="stylesheet" href="src/style/main.css">
+</head>
+<body>
+	<div id="loading"></div>
+
+	<header class="block-header">
+		<div class="block-header-opacity">
+			<div class="block-header__content">
+				<div class="block-header__content-menu">
+					<div class="block-header__content-menu__logo">
+						<p class="block-header__content-menu__logo-name">Flat Mate</p>
+					</div>
+					<div class="block-header__content-menu__login">
+						<p class="block-header__content-menu__login-text" id="regist-button" onclick="regButton();">Have an Account?</p>
+						<button class="block-header__content-menu__login-button" id="login-button" onclick="loginButton();">LOGIN</button>
+					</div>
+				</div>
+				<div class="block-header__content-info">
+					<p class="block-header__content-info__name">Lorem ipsum dolor sit amet</p>
+					<p class="block-header__content-info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<button class="block-header__content-info-button">Read More</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="block-header__login" id="login-form">
+			<form action="" class="block-header__login-form">
+				<h1 class="block-header__login-form__title">Enter</h1>
+
+				<label class="block-header__login-form__label">Login | E-mail</label>
+				<input type="text" class="block-header__login-form__input">
+
+				<label class="block-header__login-form__label">Password</label>
+				<input type="password" class="block-header__login-form__input">
+
+				<input type='button' class="block-header__login-form__enter" value="Enter">
+
+				<input type='button' class="block-header__login-form__close" id="block-header__login-form__close" onclick="buttonClose();">
+			</form>
+		</div>
+
+		<div class="block-header__regist" id="regist-form">
+			<form action="" class="block-header__login-form">
+				<h1 class="block-header__login-form__title">Registration</h1>
+
+				<label class="block-header__login-form__label">Your E-mail</label>
+				<input type="text" class="block-header__login-form__input">
+
+				<label class="block-header__login-form__label">Login</label>
+				<input type="text" class="block-header__login-form__input">
+
+				<label class="block-header__login-form__label">Enter password</label>
+				<input type="password" class="block-header__login-form__input">
+
+				<input type='button' class="block-header__login-form__enter" value="Registration">
+
+				<input type='button' class="block-header__login-form__close" id="block-header__login-form__close" onclick="buttonClose();">
+			</form>
+		</div>
+	</header>
+
+	<div class="block-document">
+		<div class="block-document__content">
+			<img src="images/document.svg" alt="Document" class="block-document__content-image">
+			<div class="block-document__content-subject">
+				<p class="block-document__content-subject__title">Lorem ipsum dolor sit amet</p>
+				<p class="block-document__content-subject__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+			<div class="block-document__content-media">
+				<div class="block-document__content-media__email"></div>
+				<div class="block-document__content-media__facebook"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="block-slider">
+		<div class="block-slider__prev" onclick="plusSlides(-1)"></div>
+		<div class="block-slider__content" id="slide1">
+			<p class="block-slider__content-head">
+				<span class="block-slider__content-head__name">The Modern Era od Web Designing</span><br>
+				<span class="block-slider__content-head__text">We make wireframe ultra fast, leak proof</span>
+			</p>
+			<img alt='Browser first' src="images/browser.svg" class="block-slider__content-image" >
+		</div>
+
+		<div class="block-slider__content" id="slide2">
+			<p class="block-slider__content-head">
+				<span class="block-slider__content-head__name">We make fresh and new designes</span><br>
+				<span class="block-slider__content-head__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+			</p>
+			<img alt='Browser second' src="images/browser-second.svg" class="block-slider__content-image" >
+		</div>
+
+		<div class="block-slider__content" id="slide3">
+			<p class="block-slider__content-head">
+				<span class="block-slider__content-head__name">Fast, simply and creavite pages</span><br>
+			</p>
+			<img alt='Browser third' src="images/browser-third.svg" class="block-slider__content-image" >
+		</div>
+		<div class="block-slider__next" onclick="plusSlides(1)"></div>
+	</div>
+
+	<div class="block-price">
+		<div class="block-price__content">
+			<div class="block-price__head">
+				<p class="block-price__head-name">A wireframe is th primitive skeleton of your website.</p>
+				<p class="block-price__head-text">Pick a plan from below to get stated! Already 20000+ websites and webprojects have been successfully wireframed with HotGloo.</p>
+			</div>
+			<div class="block-price__level">
+				<div class="block-price__level-item">
+					<div class="block-price__level-item__num block-price__level-free__name">Free</div>
+					<div class="block-price__level-item__num block-price__level-free__price">$0/Month</div>
+					<div class="block-price__level-item__num block-price__level-free__obj">1 Project</div>
+					<div class="block-price__level-item__num block-price__level-free__obj">5 Members</div>
+					<div class="block-price__level-item__num block-price__level-free__obj">5 GB</div>
+					<button class="block-price__level-button block-price__level-free__name">Sign Up</button>
+				</div>
+				<div class="block-price__level-item">
+					<div class="block-price__level-item__num block-price__level-pro__name">Professional</div>
+					<div class="block-price__level-item__num block-price__level-pro__price">$50/Month</div>
+					<div class="block-price__level-item__num block-price__level-pro__obj">20 Project</div>
+					<div class="block-price__level-item__num block-price__level-pro__obj">50 Members</div>
+					<div class="block-price__level-item__num block-price__level-pro__obj">100 GB</div>
+					<button class="block-price__level-button block-price__level-pro__name">Buy Now</button>
+				</div>
+				<div class="block-price__level-item">
+					<div class="block-price__level-item__num block-price__level-ent__name">Enterprise</div>
+					<div class="block-price__level-item__num block-price__level-ent__price">$90/Month</div>
+					<div class="block-price__level-item__num block-price__level-ent__obj">Unlimited</div>
+					<div class="block-price__level-item__num block-price__level-ent__obj">Unlimited</div>
+					<div class="block-price__level-item__num block-price__level-ent__obj">500 GB</div>
+					<button class="block-price__level-button block-price__level-ent__name">Buy Now</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="block-tagline">
+		<div class="block-tagline__text">A wireframe is th primitive skeleton of your website.</div>
+	</div>
+
+	<div class="block-feedback">
+		<div class="block-feedback__content">
+			<div class="block-feedback__content-logo">
+				<img src="images/email.svg" alt="" class="block-feedback__content-logo__image">
+			</div>
+			<form action="" class="block-feedback__content-form">
+				<div class="block-feedback__content-form__user-info">
+					<label for="name" class="block-feedback__content-form__label">Name<span>*</span></label>
+					<input required type="text" id="name" class="block-feedback__content-form__input">
+					<label for="email" class="block-feedback__content-form__label">E-mail<span>*</span></label>
+					<input required type="text" id="email" class="block-feedback__content-form__input">
+				</div>
+				<div class="block-feedback__content-form__user-message">
+					<label for="message" class="block-feedback__content-form__label">Message<span>*</span></label>
+					<textarea required name="message" id="message" class="block-feedback__content-form__input"></textarea>
+				</div>
+				<div class="block-feedback__content-form__send">
+					<button class="block-feedback__content-form__send-button">SEND</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<footer class="block-footer">
+		<div class="block-footer__content">
+			<div class="block-footer__title">
+				<img src="images/circular-shape.svg" alt="Circle Logo" class="block-footer__title-image">
+				<span>Flate Mate | </span>
+				<span> Designed by ... </span>
+			</div>
+			<div class="block-footer__media">
+				<div class="block-footer__media-twitter"></div>
+				<div class="block-footer__media-facebook"></div>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.0.js"></script>
+	<script type="text/javascript" src="src/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+.block-price__level-button {
+	margin-top: 4rem;
+    width: 100%;
+    border: 0;
+    padding: 1.5rem;
+    color: $color-white;
+    font-family: $font-header;
+    font-size: $font-size;
+    font-weight: 600;
+    outline: none;
+
+    &:hover {
+    	cursor: pointer;
+    }
+}
