@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/main.css">
 </head>
@@ -31,7 +32,15 @@
 		</nav>
 
 		<div class="block-head__mobile">
-			<button class="block-head__mobile__burger"><img src="images/burder.png" alt="Menu" class=""></button>
+			<button class="block-head__mobile__burger" onclick="showMenu();"><img src="images/burder.png" alt="Menu" class=""></button>
+
+			<nav class="block-head-mobile__menu">
+				<button class="block-make-up-school__course-programm__info__close menu-button-close" onclick="hideMenu();"></button>
+				<p class="block-head__menu__name">MENU</p>
+				<a href="" class="block-head__menu__link" title="Перейти к услугам">УСЛУГИ</a>
+				<a href="" class="block-head__menu__link mobile-menu-item-border" title="Перейти к MAKE-UP школе">MAKE-UP ШКОЛА</a>
+				<a href="" class="block-head__menu__link" title="Перейти к контактом">КОНТАКТЫ</a>
+			</nav>
 
 			<div class="block-head__mobile__lang">
 				<a href="" class="block-head__menu__link-language" title="Выбрать латвийский язык">
@@ -183,7 +192,6 @@
 				</div>
 			</div>
 		</div>
-
 	</div>
 
 	<div class="block-haircut-services">

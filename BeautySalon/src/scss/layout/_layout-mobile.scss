@@ -1,4 +1,7 @@
-@media screen and (max-width: 700px){
+@media screen and (max-width: 700px) {
+	body {
+    	width: auto;
+	}
 
 	.block-head {
 		width: 100%;
@@ -20,7 +23,7 @@
 
 	.block-sign-up {
 	    background: url('../images/bg-sign-up-mobile.png') no-repeat center center;
-	    background-size: 100% auto;
+	    background-size: 165%;
 	    display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -52,7 +55,7 @@
 
 			.block-sign-up__cotent__info__location {
 			    flex-direction: column;
-			    width: 50%;
+			    width: 60%;
 
 			    .block-sign-up__cotent__info__location__image {
 				    padding: 2rem 0 0 0;
@@ -61,7 +64,7 @@
 
 				.block-sign-up__cotent__info__location__address {
 				    padding: 0;
-				    font-size: $font-size*1.5;
+				    font-size: 24pt;
 				    font-family: $font-DINPro-Cond-Reg;
 				    font-weight: 800;
 				}			
@@ -71,6 +74,10 @@
 			    margin: 7rem 0 2rem 0;	
 			}
 		}
+	}
+
+	.block-make-up-school__content__info__name {
+	    font-size: 18pt;
 	}
 
 	.block-haircut-services, .block-services__content {
@@ -105,7 +112,7 @@
 			}
 
 			.block-gift-card__content__info__name {
-			    font-size: $font-size*2;
+			    font-size: 24pt;
 			}
 
 			.block-gift-card__content__info__logo {
@@ -113,9 +120,9 @@
 			}
 
 			.block-gift-card__content__info__text {
-			    width: 95%;
+			    width: 85%;
 			    text-align: center;
-			    font-size: $font-size*.95;
+			    font-size: 14pt;
 			    padding-top: 20px;
 			}
 		}
@@ -127,7 +134,7 @@
 	}
 
 	.block-services__head__name__ru-name {
-		font-size: 30pt;
+		font-size: 24pt;
 	}
 
 	.block-services__head__name__en-name {
@@ -140,6 +147,7 @@
 
 	.block-make-up-school__content__info__text {
 	    width: 85%;
+	    font-size: 14pt;
 	}
 
 	.block-make-up-school__content__skills {
@@ -153,22 +161,35 @@
 
 	.block-make-up-school__content__skills__item {
 	    width: 50%;
+	    padding: .5rem 0;
+	}
+
+	.block-make-up-school__content__skills__item__image {
+		width: 150px;
+		height: 150px;
 	}
 
 	.block-make-up-school__course-programm__button {
-	    padding: 35px 65px;
+	    padding: 25px 65px;
+	    margin-top: 35px;
 	}
 
 	.block-make-up-school__content__skills__item__name {
-	    width: 85%;
+	    width: 100%;
+	    font-size: 18pt;
 	}
 
 	.block-make-up-school__start__name {
-	    font-size: 30pt;
+	    font-size: 24pt;
 	}
 
 	.block-make-up-school__start {
 	    width: 100%;
+	}
+
+	.block-make-up-school__start__schedule span {
+	    margin: 2rem;
+	    font-size: 18pt;
 	}
 
 	.block-make-up-school__start__date__line {
@@ -176,11 +197,11 @@
 	}
 
 	.block-make-up-school__start__date__number sup {
-	    font-size: 25pt;
+	    font-size: 24pt;
 	}
 
 	.block-make-up-school__start__date__number {
-	    font-size: 124pt;
+	    font-size: 120pt;
 	}
 
 	.br-mobile {
@@ -190,6 +211,7 @@
 	.block-make-up-school__start__schedule {
 	    text-align: center;
 	    margin-top: 2rem;
+	    font-size: 18pt;
 	}
 
 	.block-make-up-school__start__text {
@@ -257,7 +279,8 @@
 
 	.block-about-us__content__block-first__text {
 	    text-transform: none;
-	    text-align: center;
+	    text-align: left;
+	    font-size: 14pt;
 	    width: 85%;
 	}
 
@@ -267,6 +290,15 @@
 
 	.block-about-us__content__block-first__characters {
 		display: none;
+	}
+
+	.block-about-us__content__block-first__characters-side__item__text {
+		font-size: 10pt;
+	}
+
+	.block-about-us__content__block-first__characters-side__item__image {
+		width: 70px;
+		height: 70px;
 	}
 
 	.block-contacts__info {
@@ -287,15 +319,15 @@
 	}
 
 	.block-contacts__info__name {
-	    font-size: 26pt;
+	    font-size: 24pt;
 	}
 
 	.time-work-text {
-	    margin-top: 15px;
+	    margin-top: 14px;
 	}
 
 	.block-contacts__info__address {
-	    width: 55%;
+	    width: 65%;
 	    text-align: center;
 	    margin-top: 40px;
 	}
@@ -319,9 +351,26 @@
 	.block-footer__address {
 	    margin-right: 0;
 	    margin-top: 25px;
+	    font-size: 14pt;
 	}
 
 	.block-footer__phone-number {
 	    margin: 5px 0;
+	}
+
+	.block-sign-up__logo {
+		display: flex;
+	}
+
+	.block-services-mobile__content {
+		display: flex;
+	}
+
+	.block-gift-card__content__info__image {
+		display: block;
+	}
+
+	.block-about-us__button-rules {
+		display: block;
 	}
 }
