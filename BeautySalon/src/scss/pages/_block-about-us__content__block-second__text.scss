@@ -1,0 +1,12 @@
+.block-about-us__content__block-second__text {
+	font-size: $font-size*.8;
+	font-family: $font-DIN-Pro-Light;
+	padding: 18px 0;
+	
+	span {
+		font-size: $font-size*.8;
+		font-family: $font-DINPro-Cond-Bold;
+		color: $color-prog-button;
+		text-transform: uppercase;
+	}
+}

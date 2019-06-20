@@ -1,0 +1,12 @@
+.block-about-us__head__name {
+	height: 100%;
+	z-index: 2;
+	position: absolute;
+	top: 0;
+	left: calc(55% - 225px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0 2rem;
+}

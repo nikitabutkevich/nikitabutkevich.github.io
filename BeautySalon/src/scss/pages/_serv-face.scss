@@ -1,0 +1,12 @@
+.serv-face {
+	position: relative;
+
+	&:before {
+		content: "";
+	    position: absolute;
+	    height: 400px;
+	    width: 380px;
+	    background: url('../images/face-serc.png') no-repeat 10% center;
+	    background-size: 70% auto;
+	} 
+}

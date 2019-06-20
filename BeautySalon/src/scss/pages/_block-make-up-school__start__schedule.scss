@@ -1,0 +1,11 @@
+.block-make-up-school__start__schedule {
+	text-transform: uppercase;
+	font-size: $font-size*1.3;
+	font-family: $font-DIN-Pro-Light;
+	margin-top: .75rem;
+	span {
+		margin-right: 2rem;
+		font-size: $font-size*1.3;
+		font-family: $font-DINPro-Cond-Bold;
+	}
+}

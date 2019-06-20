@@ -1,0 +1,327 @@
+@media screen and (max-width: 700px){
+
+	.block-head {
+		width: 100%;
+		padding: 1rem;
+
+		.block-head__logo, .block-head__phone__number, .block-head__menu{
+			display: none;
+		}
+
+		.block-head__menu__link-language {
+		    margin: 0;
+		    padding-top: .3rem;
+		}
+
+		.block-head__mobile {
+			display: flex;
+		}
+	}
+
+	.block-sign-up {
+	    background: url('../images/bg-sign-up-mobile.png') no-repeat center center;
+	    background-size: 100% auto;
+	    display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+	    .block-sign-up__cotent {
+		    width: 100%;
+		    height: 100%;
+		    padding: 0;
+		    position: unset;
+		    display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+
+		    .block-sign-up__cotent__info {
+			    position: unset;
+			    top: 0; 
+			    left: 0; 
+			    width: 100%; 
+			    height: 50%;
+			    justify-content: center;
+			    align-items: center;
+			}
+
+			.block-sign-up__cotent__info__name {
+			    font-size: $font-size*2;
+			}
+
+			.block-sign-up__cotent__info__location {
+			    flex-direction: column;
+			    width: 50%;
+
+			    .block-sign-up__cotent__info__location__image {
+				    padding: 2rem 0 0 0;
+				    height: 4rem;
+				}
+
+				.block-sign-up__cotent__info__location__address {
+				    padding: 0;
+				    font-size: $font-size*1.5;
+				    font-family: $font-DINPro-Cond-Reg;
+				    font-weight: 800;
+				}			
+			}
+		
+			.block-sign-up__cotent__info__button {
+			    margin: 7rem 0 2rem 0;	
+			}
+		}
+	}
+
+	.block-haircut-services, .block-services__content {
+		display: none;
+	}
+
+	.block-services {
+	    padding: 0;
+
+	    .text-serv-hair {
+		    width: auto;
+		    text-align: right;
+		}
+	}
+
+	.block-gift-card {
+	    background: none;
+
+	    .block-gift-card__content {
+		    width: 100%;
+		    padding: 0; 
+		    margin-bottom: 0; 
+
+			.block-gift-card__content__info {
+				width: 100%;
+				padding-top: 0;
+    			margin-left: 0;
+    			display: flex;
+    			flex-direction: column;
+    			justify-content: center;
+    			align-items: center;
+			}
+
+			.block-gift-card__content__info__name {
+			    font-size: $font-size*2;
+			}
+
+			.block-gift-card__content__info__logo {
+				display: none;
+			}
+
+			.block-gift-card__content__info__text {
+			    width: 95%;
+			    text-align: center;
+			    font-size: $font-size*.95;
+			    padding-top: 20px;
+			}
+		}
+	}
+
+	.block-make-up-school {
+	    background: none;
+	    background-size: none;
+	}
+
+	.block-services__head__name__ru-name {
+		font-size: 30pt;
+	}
+
+	.block-services__head__name__en-name {
+		font-size: 28pt;
+	}
+
+	.block-make-up-school__content {
+	    width: 100%;
+	}
+
+	.block-make-up-school__content__info__text {
+	    width: 85%;
+	}
+
+	.block-make-up-school__content__skills {
+	    flex-wrap: wrap;
+	    display: flex;
+	    flex-direction: row;
+	    justify-content: space-around;
+	    align-items: center;
+	    margin-top: 2.5rem;
+	}
+
+	.block-make-up-school__content__skills__item {
+	    width: 50%;
+	}
+
+	.block-make-up-school__course-programm__button {
+	    padding: 35px 65px;
+	}
+
+	.block-make-up-school__content__skills__item__name {
+	    width: 85%;
+	}
+
+	.block-make-up-school__start__name {
+	    font-size: 30pt;
+	}
+
+	.block-make-up-school__start {
+	    width: 100%;
+	}
+
+	.block-make-up-school__start__date__line {
+	    display: none;
+	}
+
+	.block-make-up-school__start__date__number sup {
+	    font-size: 25pt;
+	}
+
+	.block-make-up-school__start__date__number {
+	    font-size: 124pt;
+	}
+
+	.br-mobile {
+		display: block;
+	}
+
+	.block-make-up-school__start__schedule {
+	    text-align: center;
+	    margin-top: 2rem;
+	}
+
+	.block-make-up-school__start__text {
+	    width: 79%;
+	    margin-top: 45px;
+	}
+
+	.block-make-up-school__start__button {
+	    margin-top: 25px;
+	    margin-bottom: 35px;
+	    padding: 30px 70px;
+	}
+
+	.block-about-us {
+	    width: 100%;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+	    background: none;
+	    background-size: none;
+	}
+
+	.block-about-us__line {
+	    width: 50%;
+	}
+
+	.block-about-us__head {
+	    justify-content: center;
+	    position: unset;
+	}
+
+	.block-about-us__head__name {
+	    height: 100%;
+	    z-index: 2;
+	    position: unset;
+	    top: 0;
+	    left: 0;
+	   	padding: 0;
+	   	width: 70%;
+	}
+
+	.block-about-us__content {
+	    width: 100%;
+	    margin-bottom: 25px;
+	}
+
+	.block-about-us__content__block-second {
+		display: none;
+	}
+
+	.block-about-us__content__block-first {
+	    width: 100%;
+	    padding-right: 0; 
+	    border-right: 0; 
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+	}
+
+	.block-about-us__content__block-first__image {
+		width: 70%;
+	}
+
+	.block-about-us__content__block-first__text {
+	    text-transform: none;
+	    text-align: center;
+	    width: 85%;
+	}
+
+	.block-about-us-mobile__content__block-first__characters {
+		display: flex;
+	}
+
+	.block-about-us__content__block-first__characters {
+		display: none;
+	}
+
+	.block-contacts__info {
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+	    width: 100%;
+	}
+
+	.block-contacts__info__time-work {
+	    display: flex;
+	    flex-direction: column;
+	    width: 100%;
+	    text-align: center;
+	    justify-content: center;
+	    align-items: center;
+	}
+
+	.block-contacts__info__name {
+	    font-size: 26pt;
+	}
+
+	.time-work-text {
+	    margin-top: 15px;
+	}
+
+	.block-contacts__info__address {
+	    width: 55%;
+	    text-align: center;
+	    margin-top: 40px;
+	}
+
+	.address-text {
+	    margin-top: 15px;
+	}
+
+	.block-footer__content {
+		display: none;
+	}
+
+	.block-footer-mobile__content {
+		display: flex;
+	}
+
+	.block-footer__social-media {
+	    margin-left: 0;
+	}
+
+	.block-footer__address {
+	    margin-right: 0;
+	    margin-top: 25px;
+	}
+
+	.block-footer__phone-number {
+	    margin: 5px 0;
+	}
+}

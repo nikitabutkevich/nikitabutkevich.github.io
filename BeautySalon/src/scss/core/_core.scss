@@ -1,0 +1,19 @@
+@import '_fonts';
+@import '_reset';
+
+$color-buttom-link-menu: #f77a9e;
+$bg-button: #f77a9e;
+$color-prog-button: #ff6699;
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: $font-size;
+	line-height: 1.25;
+}
+
+input [type="checkbox"], input [type="radio"] {
+	display: none;
+}

@@ -1,0 +1,11 @@
+.block-head__mobile__phone {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+
+	.block-head__mobile__phone__number {
+		width: 100%;
+		height: 100%;
+	}
+}

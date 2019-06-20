@@ -1,0 +1,11 @@
+.block-make-up-school__course-programm__info__button {
+	display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 90%;
+    margin: 1rem 0;
+
+    &:hover {
+    	cursor: pointer;
+    }
+}

@@ -1,0 +1,14 @@
+.block-make-up-school__course-programm__button {
+	border: 3px solid $color-prog-button;
+	border-radius: 50px;
+	color: $color-prog-button;
+	font-size: $font-size;
+	text-transform: uppercase;
+	padding: 30px 50px;
+	background: #fff;
+	font-weight: 600;
+
+	&:hover {
+		cursor: pointer;
+	}
+}

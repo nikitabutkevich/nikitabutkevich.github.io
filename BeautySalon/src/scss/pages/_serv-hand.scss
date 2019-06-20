@@ -1,0 +1,13 @@
+.serv-hand {
+	position: relative;
+
+	&:before {
+		content: "";
+	    position: absolute;
+	    height: 450px;
+	    width: 380px;
+	    background: url('../images/nail-serv.png') no-repeat center center;
+	    background-size: 55% auto;
+	    z-index: 3;
+	}
+}

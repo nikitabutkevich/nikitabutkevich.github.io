@@ -1,0 +1,9 @@
+.block-head__menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	:nth-child(2) {
+		margin: 0 12px;
+	}
+}

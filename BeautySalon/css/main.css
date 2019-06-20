@@ -1,0 +1,1535 @@
+@font-face {
+  font-family: "DIN Pro Cond";
+  src: url("../fonts/DINPro/DINPro-CondensedMedium.eot");
+  src: local("DIN Pro Condensed Medium"), local("DINPro-CondensedMedium"), url("../fonts/DINPro/DINPro-CondensedMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/DINPro/DINPro-CondensedMedium.woff") format("woff"), url("../fonts/DINPro/DINPro-CondensedMedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DIN Pro Cond Bold";
+  src: url("../fonts/DINPro/DINPro-CondensedBold.eot");
+  src: local("DIN Pro Condensed Bold"), local("DINPro-CondensedBold"), url("../fonts/DINPro/DINPro-CondensedBold.eot?#iefix") format("embedded-opentype"), url("../fonts/DINPro/DINPro-CondensedBold.woff") format("woff"), url("../fonts/DINPro/DINPro-CondensedBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DIN Pro Cond Reg";
+  src: url("../fonts/DINPro/DINPro-CondensedRegular.eot");
+  src: local("DIN Pro Condensed Regular"), local("DINPro-CondensedRegular"), url("../fonts/DINPro/DINPro-CondensedRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/DINPro/DINPro-CondensedRegular.woff") format("woff"), url("../fonts/DINPro/DINPro-CondensedRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Vaughan-HandstylishFont";
+  src: url("../fonts/Vaughan-HandstylishFont (Demo) 2.otf") format("opentype");
+}
+@font-face {
+  font-family: "DIN Pro Light";
+  src: url("../fonts/DINPro/DINPro-Light.eot");
+  src: local("DIN Pro Light"), local("DINPro-Light"), url("../fonts/DINPro/DINPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/DINPro/DINPro-Light.woff") format("woff"), url("../fonts/DINPro/DINPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DIN Pro Medium";
+  src: url("../fonts/DINPro/DINPro-Medium.eot");
+  src: local("DIN Pro Medium"), local("DINPro-Medium"), url("../fonts/DINPro/DINPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/DINPro/DINPro-Medium.woff") format("woff"), url("../fonts/DINPro/DINPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+input {
+  border-radius: 0;
+  -webkit-border-radius: 0px;
+  -webkit-appearance: none;
+}
+
+button {
+  outline: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15pt;
+  line-height: 1.25;
+}
+
+input [type=checkbox], input [type=radio] {
+  display: none;
+}
+
+.block-head {
+  width: 1170px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.block-head__mobile {
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.block-sign-up {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: url("../images/bg-sign-up.png") no-repeat center 67%;
+  background-size: 110% auto;
+}
+
+.block-services {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 1rem 0;
+}
+
+.block-haircut-services {
+  width: 100%;
+  height: 100vh;
+  background: url("../images/bg-haircut-serv.png") no-repeat center center;
+  background-size: 120% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-gift-card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/gift-card.png") no-repeat 130% center;
+  background-size: auto;
+}
+
+.block-make-up-school {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/palete.png") no-repeat 145% 92.5%, url("../images/sheet5.png") no-repeat -10% 90%, url("../images/palet-circle.png") no-repeat -30% 0%;
+  background-size: auto;
+}
+
+.block-about-us {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/bg-aboutus.png") no-repeat center center;
+  background-size: 164%;
+}
+
+.block-contacts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-head__phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-head__phone__number {
+  font-family: "DIN Pro Cond";
+  font-size: 22.5pt;
+  color: #000;
+  margin-left: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block-head__phone__number img {
+  margin-right: 1rem;
+}
+
+.block-head__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block-head__menu :nth-child(2) {
+  margin: 0 12px;
+}
+
+.block-head__menu__link {
+  padding: 13px;
+  font-size: 22.5pt;
+  font-family: "DIN Pro Cond";
+  letter-spacing: 0.01rem;
+  color: #000;
+  border-bottom: 0.1rem solid #fff;
+}
+.block-head__menu__link:hover {
+  border-bottom: 0.1rem solid #f77a9e;
+}
+
+.block-head__menu__link-language {
+  margin: 0 15px;
+  padding-top: 10px;
+}
+
+.russian-language {
+  margin: 0 0 0 15px !important;
+  padding-top: 10px;
+}
+
+.block-sign-up__cotent {
+  width: 1170px;
+  height: 100%;
+  padding: 0 0.5rem;
+  position: relative;
+}
+
+.block-sign-up__cotent__info {
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  width: 350px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.block-sign-up__cotent__info__name {
+  width: 100%;
+  font-family: "DIN Pro Cond Bold";
+  font-size: 43.5pt;
+  text-align: center;
+}
+
+.block-sign-up__cotent__info__location {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-sign-up__cotent__info__location__image {
+  padding: 0 0.5rem;
+}
+
+.block-sign-up__cotent__info__location__address {
+  padding: 0 0.5rem;
+  font-family: "DIN Pro Cond Reg";
+  font-size: 27pt;
+  font-style: normal;
+  text-align: center;
+}
+
+.block-sign-up__cotent__info__button {
+  background: #f77a9e;
+  padding: 32px 80px;
+  border: 0;
+  color: #fff;
+  font-size: 15pt;
+  border-radius: 50px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.block-sign-up__cotent__info__button:hover {
+  cursor: pointer;
+}
+
+.block-services__head {
+  width: 100%;
+  height: 225px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.block-services__head__line {
+  width: 100%;
+  height: 0.15rem;
+  border: 0;
+  background: #000;
+}
+
+.block-services__head__name {
+  height: 100%;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.block-services__head__name__ru-name {
+  font-family: "DIN Pro Cond Bold";
+  font-size: 37.5pt;
+}
+
+.block-services__head__name__en-name {
+  font-family: "Vaughan-HandstylishFont";
+  font-size: 51pt;
+}
+
+.block-services__content {
+  width: 1170px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-services__content__item {
+  width: 380px;
+  height: 400px;
+  margin: 0 0.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.block-services__content__item__more {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.block-services__content__item__more__button {
+  border: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/arrow.png") no-repeat center center;
+  background-size: 100% auto;
+  z-index: 4;
+}
+.block-services__content__item__more__button:hover {
+  cursor: pointer;
+}
+
+.block-services__content__item__name {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.block-services__content__item__name-text {
+  text-align: left;
+  margin-top: 2rem;
+  font-size: 22.5pt;
+  font-family: "DIN Pro Cond";
+}
+
+.serv-hair {
+  position: relative;
+}
+.serv-hair:before {
+  content: "";
+  position: absolute;
+  height: 470px;
+  width: 400px;
+  background: url("../images/hair-serv.png") no-repeat center center;
+  background-size: auto;
+}
+
+.text-serv-hair {
+  width: 50%;
+}
+
+.serv-hand {
+  position: relative;
+}
+.serv-hand:before {
+  content: "";
+  position: absolute;
+  height: 450px;
+  width: 380px;
+  background: url("../images/nail-serv.png") no-repeat center center;
+  background-size: 55% auto;
+  z-index: 3;
+}
+
+.text-serv-hand {
+  width: 45%;
+  margin-left: 60%;
+}
+
+.serv-body {
+  position: relative;
+}
+.serv-body:before {
+  content: "";
+  position: absolute;
+  height: 450px;
+  width: 450px;
+  left: 15%;
+  background: url("../images/body-serv.png") no-repeat center center;
+  background-size: 100% auto;
+}
+
+.text-serv-body {
+  width: 45%;
+  margin-left: 20%;
+}
+
+.serv-eyebrowns {
+  position: relative;
+}
+.serv-eyebrowns:before {
+  content: "";
+  position: absolute;
+  height: 400px;
+  width: 380px;
+  background: url("../images/eyebrows-serv.png") no-repeat center center;
+  background-size: 70% auto;
+}
+
+.text-serv-eyebrowns {
+  padding-bottom: 10%;
+}
+
+.serv-face {
+  position: relative;
+}
+.serv-face:before {
+  content: "";
+  position: absolute;
+  height: 400px;
+  width: 380px;
+  background: url("../images/face-serc.png") no-repeat 10% center;
+  background-size: 70% auto;
+}
+
+.text-serv-face {
+  width: 45%;
+}
+
+.serv-vaxikation {
+  position: relative;
+}
+.serv-vaxikation:before {
+  content: "";
+  position: absolute;
+  height: 400px;
+  width: 380px;
+  background: url("../images/vaksatia.png") no-repeat center center;
+  background-size: 65% auto;
+}
+
+.text-serv-vaxikation {
+  padding-bottom: 10%;
+}
+
+.block-haircut-services__info {
+  margin-right: 50px;
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.block-haircut-services__content {
+  width: 1170px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.block-haircut-services__info__name-list {
+  font-family: "DIN Pro Cond Bold";
+  font-size: 30pt;
+}
+
+.block-haircut-services__info__list {
+  margin: 23px 0 0 40px;
+  list-style: square;
+}
+
+.block-haircut-services__info__list__item {
+  font-family: "DIN Pro Light";
+  font-size: 14.25pt;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 5px;
+}
+.block-haircut-services__info__list__item span {
+  color: #000;
+}
+
+.block-haircut-services__info__button-price {
+  width: 320px;
+  height: 80px;
+  padding: 30px 80px;
+  border: 3px solid #fff;
+  border-radius: 50px;
+  background: #d1d1d1;
+  color: #fff;
+  margin-top: 50px;
+}
+.block-haircut-services__info__button-price:hover {
+  cursor: pointer;
+}
+
+.block-haircut-services__info__button-sign-up {
+  width: 320px;
+  height: 80px;
+  padding: 30px 80px;
+  border: 3px solid #f77a9e;
+  border-radius: 50px;
+  background: #f77a9e;
+  color: #fff;
+  margin-top: 24px;
+}
+.block-haircut-services__info__button-sign-up:hover {
+  cursor: pointer;
+}
+
+.block-gift-card__content {
+  width: 1170px;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  margin-bottom: 5rem;
+}
+
+.block-gift-card__content__info {
+  width: 50%;
+  height: 100%;
+  padding-top: 80px;
+  margin-left: 68px;
+}
+
+.block-gift-card__content__info__name {
+  text-transform: uppercase;
+  font-size: 42pt;
+  font-family: "DIN Pro Cond Bold";
+}
+
+.block-gift-card__content__info__logo {
+  font-size: 105pt;
+  font-family: "Vaughan-HandstylishFont";
+  color: #ff6699;
+  padding: 20px 0;
+}
+
+.block-gift-card__content__info__text {
+  text-transform: uppercase;
+  font-size: 15pt;
+  font-family: "DIN Pro Light";
+  padding-top: 20px;
+}
+.block-gift-card__content__info__text span {
+  font-weight: 900;
+}
+
+.block-make-up-school__content {
+  width: 1170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-make-up-school__content__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+
+.block-make-up-school__content__info__name {
+  width: 100%;
+  text-align: center;
+  font-size: 18.75pt;
+  font-family: "DIN Pro Cond";
+  font-weight: 700;
+}
+
+.block-make-up-school__content__info__text {
+  text-align: center;
+  font-size: 15.75pt;
+  font-family: "DIN Pro Light";
+  width: 60%;
+  margin-top: 2rem;
+}
+
+.block-make-up-school__content__skills {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+
+.block-make-up-school__content__skills__item {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.block-make-up-school__content__skills__item__name {
+  font-family: "DIN Pro Cond";
+  font-size: 19.5pt;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  width: 70%;
+}
+
+.grim-padding {
+  padding-bottom: 2rem;
+}
+
+.block-make-up-school__course-programm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.block-make-up-school__course-programm__button {
+  border: 3px solid #ff6699;
+  border-radius: 50px;
+  color: #ff6699;
+  font-size: 15pt;
+  text-transform: uppercase;
+  padding: 30px 50px;
+  background: #fff;
+  font-weight: 600;
+}
+.block-make-up-school__course-programm__button:hover {
+  cursor: pointer;
+}
+
+.block-make-up-school__start {
+  margin-top: 75px;
+  width: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-make-up-school__start__name {
+  text-transform: uppercase;
+  font-family: "DIN Pro Cond Bold";
+  font-size: 37.5pt;
+  z-index: 1;
+}
+
+.block-make-up-school__start__date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 5rem;
+  margin-bottom: 3rem;
+}
+
+.block-make-up-school__start__date__line {
+  width: 100%;
+  border: 0;
+  background: #f77a9e;
+  height: 3px;
+  margin-top: 3rem;
+}
+
+.block-make-up-school__start__date__number {
+  position: absolute;
+  background: #fff;
+  padding: 0 1.5rem;
+  font-family: "Vaughan-HandstylishFont";
+  font-size: 105pt;
+  color: #ff6699;
+}
+.block-make-up-school__start__date__number sup {
+  text-transform: uppercase;
+  font-size: 18pt;
+  font-family: "DIN Pro Cond";
+}
+
+.block-make-up-school__start__schedule {
+  text-transform: uppercase;
+  font-size: 19.5pt;
+  font-family: "DIN Pro Light";
+  margin-top: 0.75rem;
+}
+.block-make-up-school__start__schedule span {
+  margin-right: 2rem;
+  font-size: 19.5pt;
+  font-family: "DIN Pro Cond Bold";
+}
+
+.block-make-up-school__start__text {
+  font-family: "DIN Pro Cond";
+  font-weight: 600;
+  font-size: 18pt;
+  text-transform: uppercase;
+  text-align: center;
+  width: 70%;
+  margin-top: 80px;
+}
+
+.block-make-up-school__start__button {
+  border-radius: 50px;
+  color: #fff;
+  font-size: 15pt;
+  text-transform: uppercase;
+  padding: 30px 50px;
+  background: #ff6699;
+  border: 0;
+  margin-top: 65px;
+  margin-bottom: 35px;
+  box-shadow: 0 0 20px rgba(247, 122, 158, 0.5);
+}
+.block-make-up-school__start__button:hover {
+  cursor: pointer;
+}
+
+.block-about-us__content {
+  display: flex;
+  justify-content: center;
+  width: 1170px;
+  margin-bottom: 25px;
+}
+
+.block-about-us__line {
+  width: 37.5%;
+  height: 0.15rem;
+  border: 0;
+  background: #000;
+}
+
+.about-us__line-left {
+  margin-left: 0%;
+}
+
+.block-about-us__head {
+  width: 100%;
+  height: 225px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.block-about-us__head__name {
+  height: 100%;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: calc(55% - 225px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.block-about-us__content__block-first {
+  width: 50%;
+  padding-right: 35px;
+  border-right: 0.75px solid #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.block-about-us__content__block-first__text {
+  text-transform: uppercase;
+  font-family: "DIN Pro Light";
+  font-size: 11.25pt;
+  text-align: left;
+  margin: 1rem 0;
+  width: 95%;
+}
+
+.block-about-us__content__block-first__characters {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.block-about-us__content__block-first__characters-left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.block-about-us__content__block-first__characters-rigth {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.block-about-us__content__block-first__characters-left__item {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+
+.block-about-us__content__block-first__characters-rigth__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+
+.block-about-us__content__block-first__characters-side__item__image {
+  padding: 1rem 1rem;
+}
+
+.block-about-us__content__block-first__characters-side__item__text {
+  font-size: 12pt;
+  font-family: "DIN Pro Medium";
+  text-transform: uppercase;
+}
+
+.block-about-us__content__block-second {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  padding-left: 35px;
+  border-left: 0.75px solid #000;
+}
+
+.block-about-us__content__block-second__name {
+  font-size: 16.5pt;
+  font-family: "DIN Pro Cond";
+  font-weight: 600;
+}
+
+.block-about-us__content__block-second__text {
+  font-size: 12pt;
+  font-family: "DIN Pro Light";
+  padding: 18px 0;
+}
+.block-about-us__content__block-second__text span {
+  font-size: 12pt;
+  font-family: "DIN Pro Cond Bold";
+  color: #ff6699;
+  text-transform: uppercase;
+}
+
+.block-contacts__info {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.block-contacts__info__text {
+  font-family: "DIN Pro Light";
+  text-transform: uppercase;
+  font-size: 15pt;
+  font-style: normal;
+}
+
+.block-contacts__info__name {
+  font-family: "DIN Pro Cond Bold";
+  text-transform: uppercase;
+  font-size: 18pt;
+  font-style: normal;
+}
+
+.block-contacts__info__address {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+.block-contacts__info__time-work {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+
+.time-work-text {
+  margin-top: 60px;
+}
+
+.address-text {
+  margin-top: 30px;
+}
+
+.block-contacts__map {
+  margin-top: 55px;
+  width: 100%;
+}
+
+.block-footer__content {
+  width: 1170px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 30px 0 40px 0;
+}
+
+.block-footer__address {
+  font-family: "DIN Pro Light";
+  font-size: 15pt;
+  text-transform: uppercase;
+  font-style: normal;
+  margin-right: 90px;
+}
+
+.block-footer__phone-number {
+  font-family: "DIN Pro Light";
+  font-size: 15pt;
+  text-transform: uppercase;
+  font-style: normal;
+  margin-right: 90px;
+}
+.block-footer__phone-number a {
+  color: #000;
+}
+
+.block-footer__email {
+  font-family: "DIN Pro Light";
+  font-size: 15pt;
+  text-transform: uppercase;
+  font-style: normal;
+  color: #000;
+}
+
+.block-footer__social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 216px;
+}
+
+.block-footer__social-meadia__icon {
+  width: 30px;
+  height: 30px;
+}
+
+.icon-instagram {
+  background: url("../images/instagram.png") no-repeat center center;
+  background-size: 100% auto;
+}
+
+.icon-facebook {
+  background: url("../images/facebook-logo.png") no-repeat center center;
+  background-size: auto;
+  margin: 0 55px 0 71px;
+}
+
+.icon-vk {
+  background: url("../images/vk.png") no-repeat center center;
+  background-size: 100% auto;
+}
+
+.block-head__mobile__lang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.block-head__mobile__phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.block-head__mobile__phone .block-head__mobile__phone__number {
+  width: 100%;
+  height: 100%;
+}
+
+.block-head__mobile__burger {
+  border: 0;
+  background: rgba(255, 255, 255, 0);
+  width: 10%;
+  height: 100%;
+}
+
+.block-sign-up__logo {
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-services-mobile__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-services-mobile__content__item {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.block-services-mobile__content__item__more {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.block-services-mobile__content__item__more__button {
+  border: 0;
+  width: 65px;
+  height: 65px;
+  background: url("../images/arrow-up.png") no-repeat center center;
+  background-size: 100% auto;
+  z-index: 4;
+}
+.block-services-mobile__content__item__more__button:hover {
+  cursor: pointer;
+}
+
+.block-services-mobile__content__item__name {
+  width: 45%;
+  height: 100%;
+  display: flex;
+}
+
+.block-services-mobile__content__item__name-text {
+  height: 100%;
+  font-size: 22.5pt;
+  font-family: "DIN Pro Cond";
+}
+
+.item-name-left {
+  justify-content: flex-start;
+}
+
+.item-name-rigth {
+  justify-content: flex-end;
+}
+
+.block-gift-card__content__info__image {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.br-mobile {
+  display: none;
+}
+
+.block-about-us-mobile__content__block-first__characters {
+  width: 100%;
+  padding: 1rem;
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-about-us-mobile__content__block-first__characters-block__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+}
+
+.block-about-us__button-rules {
+  border: 3px solid #ff6699;
+  border-radius: 50px;
+  color: #ff6699;
+  font-size: 15pt;
+  text-transform: uppercase;
+  padding: 20px 70px;
+  background: #fff;
+  margin-top: 50px;
+}
+
+.block-footer-mobile__content {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.block-make-up-school__course-programm__info {
+  width: 100%;
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  background: #fff;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.block-make-up-school__course-programm__info__close {
+  width: 50px;
+  height: 50px;
+  background: url("../images/close-button.png") no-repeat center center;
+  background-size: auto;
+  border: 0;
+}
+
+.block-make-up-school__course-programm__info__button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 90%;
+  margin: 1rem 0;
+}
+.block-make-up-school__course-programm__info__button:hover {
+  cursor: pointer;
+}
+
+.block-make-up-school__course-programm__info__name {
+  font-family: "DIN Pro Cond Bold";
+  font-size: 22.5pt;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.block-make-up-school__course-programm__info__class {
+  font-family: "DIN Pro Cond Bold";
+  font-size: 18.75pt;
+  font-weight: 600;
+  color: #f77a9e;
+  text-transform: uppercase;
+  margin: 26px 0 19px 0;
+}
+
+.block-make-up-school__course-programm__info__photo {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.block-make-up-school__course-programm__info__list {
+  list-style-type: square;
+}
+
+.block-make-up-school__course-programm__info__list__item {
+  font-family: "DIN Pro Light";
+  font-weight: 600;
+  font-size: 15pt;
+}
+
+.block-make-up-school__feedback {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  background: #fff;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.block-make-up-school__feedback__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  width: 100%;
+}
+
+.block-make-up-school__feedback__form__input {
+  width: 85%;
+  height: 30px;
+  margin: 15px;
+  border: 0;
+  border-bottom: 2px solid #000;
+  padding: 7px 10px;
+  font-size: 12pt;
+  font-family: "DIN Pro Medium";
+}
+
+.block-make-up-school__feedback__form__submit {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 15pt;
+  text-transform: uppercase;
+  padding: 20px 70px;
+  background: #ff6699;
+  border: 0;
+  box-shadow: 0 0 20px rgba(247, 122, 158, 0.5);
+}
+
+@media screen and (max-width: 700px) {
+  .block-head {
+    width: 100%;
+    padding: 1rem;
+  }
+  .block-head .block-head__logo, .block-head .block-head__phone__number, .block-head .block-head__menu {
+    display: none;
+  }
+  .block-head .block-head__menu__link-language {
+    margin: 0;
+    padding-top: 0.3rem;
+  }
+  .block-head .block-head__mobile {
+    display: flex;
+  }
+
+  .block-sign-up {
+    background: url("../images/bg-sign-up-mobile.png") no-repeat center center;
+    background-size: 100% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .block-sign-up .block-sign-up__cotent {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    position: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .block-sign-up .block-sign-up__cotent .block-sign-up__cotent__info {
+    position: unset;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+  .block-sign-up .block-sign-up__cotent .block-sign-up__cotent__info__name {
+    font-size: 30pt;
+  }
+  .block-sign-up .block-sign-up__cotent .block-sign-up__cotent__info__location {
+    flex-direction: column;
+    width: 50%;
+  }
+  .block-sign-up .block-sign-up__cotent .block-sign-up__cotent__info__location .block-sign-up__cotent__info__location__image {
+    padding: 2rem 0 0 0;
+    height: 4rem;
+  }
+  .block-sign-up .block-sign-up__cotent .block-sign-up__cotent__info__location .block-sign-up__cotent__info__location__address {
+    padding: 0;
+    font-size: 22.5pt;
+    font-family: "DIN Pro Cond Reg";
+    font-weight: 800;
+  }
+  .block-sign-up .block-sign-up__cotent .block-sign-up__cotent__info__button {
+    margin: 7rem 0 2rem 0;
+  }
+
+  .block-haircut-services, .block-services__content {
+    display: none;
+  }
+
+  .block-services {
+    padding: 0;
+  }
+  .block-services .text-serv-hair {
+    width: auto;
+    text-align: right;
+  }
+
+  .block-gift-card {
+    background: none;
+  }
+  .block-gift-card .block-gift-card__content {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .block-gift-card .block-gift-card__content .block-gift-card__content__info {
+    width: 100%;
+    padding-top: 0;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .block-gift-card .block-gift-card__content .block-gift-card__content__info__name {
+    font-size: 30pt;
+  }
+  .block-gift-card .block-gift-card__content .block-gift-card__content__info__logo {
+    display: none;
+  }
+  .block-gift-card .block-gift-card__content .block-gift-card__content__info__text {
+    width: 95%;
+    text-align: center;
+    font-size: 14.25pt;
+    padding-top: 20px;
+  }
+
+  .block-make-up-school {
+    background: none;
+    background-size: none;
+  }
+
+  .block-services__head__name__ru-name {
+    font-size: 30pt;
+  }
+
+  .block-services__head__name__en-name {
+    font-size: 28pt;
+  }
+
+  .block-make-up-school__content {
+    width: 100%;
+  }
+
+  .block-make-up-school__content__info__text {
+    width: 85%;
+  }
+
+  .block-make-up-school__content__skills {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2.5rem;
+  }
+
+  .block-make-up-school__content__skills__item {
+    width: 50%;
+  }
+
+  .block-make-up-school__course-programm__button {
+    padding: 35px 65px;
+  }
+
+  .block-make-up-school__content__skills__item__name {
+    width: 85%;
+  }
+
+  .block-make-up-school__start__name {
+    font-size: 30pt;
+  }
+
+  .block-make-up-school__start {
+    width: 100%;
+  }
+
+  .block-make-up-school__start__date__line {
+    display: none;
+  }
+
+  .block-make-up-school__start__date__number sup {
+    font-size: 25pt;
+  }
+
+  .block-make-up-school__start__date__number {
+    font-size: 124pt;
+  }
+
+  .br-mobile {
+    display: block;
+  }
+
+  .block-make-up-school__start__schedule {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .block-make-up-school__start__text {
+    width: 79%;
+    margin-top: 45px;
+  }
+
+  .block-make-up-school__start__button {
+    margin-top: 25px;
+    margin-bottom: 35px;
+    padding: 30px 70px;
+  }
+
+  .block-about-us {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    background-size: none;
+  }
+
+  .block-about-us__line {
+    width: 50%;
+  }
+
+  .block-about-us__head {
+    justify-content: center;
+    position: unset;
+  }
+
+  .block-about-us__head__name {
+    height: 100%;
+    z-index: 2;
+    position: unset;
+    top: 0;
+    left: 0;
+    padding: 0;
+    width: 70%;
+  }
+
+  .block-about-us__content {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .block-about-us__content__block-second {
+    display: none;
+  }
+
+  .block-about-us__content__block-first {
+    width: 100%;
+    padding-right: 0;
+    border-right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .block-about-us__content__block-first__image {
+    width: 70%;
+  }
+
+  .block-about-us__content__block-first__text {
+    text-transform: none;
+    text-align: center;
+    width: 85%;
+  }
+
+  .block-about-us-mobile__content__block-first__characters {
+    display: flex;
+  }
+
+  .block-about-us__content__block-first__characters {
+    display: none;
+  }
+
+  .block-contacts__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .block-contacts__info__time-work {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .block-contacts__info__name {
+    font-size: 26pt;
+  }
+
+  .time-work-text {
+    margin-top: 15px;
+  }
+
+  .block-contacts__info__address {
+    width: 55%;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .address-text {
+    margin-top: 15px;
+  }
+
+  .block-footer__content {
+    display: none;
+  }
+
+  .block-footer-mobile__content {
+    display: flex;
+  }
+
+  .block-footer__social-media {
+    margin-left: 0;
+  }
+
+  .block-footer__address {
+    margin-right: 0;
+    margin-top: 25px;
+  }
+
+  .block-footer__phone-number {
+    margin: 5px 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

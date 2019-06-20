@@ -1,0 +1,12 @@
+.block-services-mobile__content__item__more__button {
+	border: 0;
+	width: 65px;
+	height: 65px;
+	background: url('../images/arrow-up.png') no-repeat center center;
+	background-size: 100% auto;
+	z-index: 4;
+
+	&:hover {
+		cursor: pointer;
+	}
+}

@@ -1,0 +1,12 @@
+.serv-eyebrowns {
+	position: relative;
+
+	&:before {
+		content: "";
+	    position: absolute;
+	    height: 400px;
+	    width: 380px;
+	    background: url('../images/eyebrows-serv.png') no-repeat center center;
+    	background-size: 70% auto;
+	} 
+}

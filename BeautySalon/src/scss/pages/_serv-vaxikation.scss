@@ -1,0 +1,12 @@
+.serv-vaxikation {
+	position: relative;
+
+	&:before {
+		content: "";
+	    position: absolute;
+	    height: 400px;
+	    width: 380px;
+	    background: url('../images/vaksatia.png')  no-repeat center center;
+    	background-size: 65% auto;
+	} 
+}

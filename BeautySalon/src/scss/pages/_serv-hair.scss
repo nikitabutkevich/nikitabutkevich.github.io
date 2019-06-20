@@ -1,0 +1,13 @@
+.serv-hair {
+	position: relative;
+
+	&:before {
+		content: "";
+		position: absolute;
+		height: 470px;
+    	width: 400px;
+		background: url('../images/hair-serv.png') no-repeat center center;
+		background-size: auto;
+		
+	} 
+}
